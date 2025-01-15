@@ -10,7 +10,7 @@ const Home = () => {
         <Navbar />
       </section>
       <section>
-        Homepage content
+        Homepage content        
         <Hero />
       </section>
       <section>
