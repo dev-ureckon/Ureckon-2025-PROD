@@ -2,8 +2,8 @@ import React from 'react'
 
 const Hero = () => {
   return (
-    <section>
-      Hero Home      
+    <section className='border-none'>
+      Hero     
     </section>
   )
 }

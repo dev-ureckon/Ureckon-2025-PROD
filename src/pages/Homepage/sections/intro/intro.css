@@ -1,0 +1,7 @@
+.introBox {
+  background: radial-gradient(
+    circle,
+    rgba(81, 61, 99, 0.12),
+    rgba(24, 10, 37, 0.75)
+  );
+}
