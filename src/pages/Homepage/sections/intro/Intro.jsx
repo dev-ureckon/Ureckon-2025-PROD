@@ -142,7 +142,7 @@ function TabContent({ title, imageSrc }) {
                 <FaXTwitter className="h-[64px] w-[64px] text-blue-400" />
               </button>
             </Link>
-            <Link to={"https://x.com/Ureckon_Uemk"}>
+            <Link to={"https://whatsapp.com/channel/0029VaBYereHFxP3CiIpRo1H"}>
               <button className="rounded-full bg-[#443664B8] px-4 py-3 h-[54px] w-[54px] flex items-center hover:scale-110 transition-all duration-300">
                 <FaWhatsapp className="h-[64px] w-[64px] text-blue-400" />
               </button>
