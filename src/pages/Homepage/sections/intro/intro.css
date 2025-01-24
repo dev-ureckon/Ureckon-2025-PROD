@@ -4,4 +4,16 @@
     rgba(81, 61, 99, 0.12),
     rgba(24, 10, 37, 0.75)
   );
+  
+}
+.tab{
+  border-top-right-radius: 6rem;
+  border-top-left-radius: 3rem;
+}
+.tab1{
+  border-top-left-radius: 6rem;
+  border-top-right-radius: 3rem;
+}
+@media (max-width: 404px) {
+  
 }

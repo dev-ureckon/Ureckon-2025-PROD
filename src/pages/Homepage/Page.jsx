@@ -4,7 +4,7 @@ import Footer from "../../components/Footer";
 import Intro from "./sections/intro/Intro";
 import Hero from "./sections/Hero";
 import Gallery from "./sections/Gallery";
-import Events from "./sections/Events";
+import Events from "./sections/events/Events";
 import Stats from './sections/Stats'
 import Faq from "./sections/Faq";
 
