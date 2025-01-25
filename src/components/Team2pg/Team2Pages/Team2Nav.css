@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    background-image: url('/src/assets/bg.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    /* Align logos to the left and right */
+    align-items: center;
+    padding: 20px 40px;
+    /* Adjust padding for balance */
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-logo,
+.right-logo {
+    margin: 0 30px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    width: 100%;
+}
+
+.nav-links li {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 12px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fdd835;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #6b0325;
+    transform: scale(1.1);
+}
+
+.register-btn {
+    background-color: #8f0a1c;
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: 3px solid #f7620d;
+    font-size: 18px;
+    font-family: 'Press Start 2P', cursive;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.nav-links .register-btn {
+    color: #000 !important;
+    background-color: #E98A23;
+    padding: 15px 18px;
+    border-radius: 15px;
+    border: 6px solid #CF2228;
+
+    font-size: 18px;
+    font-family: 'Press Start 2P', cursive;
+    transition: background-color 0.3s, transform 0.3s;
+    text-decoration: none;
+}
+
+.register-btn:hover {
+    background-color: #ff784e;
+}
+
+.active {
+    color: #ff4081;
+}
+
+/* Hamburger Button Styles */
+.hamburger {
+    display: none;
+    /* Initially hidden */
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+    cursor: pointer;
+}
+
+.hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Mobile Menu Styles */
+@media (max-width: 768px) {
+
+    /* Show the hamburger menu on mobile */
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 250px;
+        background-color: rgba(0, 0, 0, 0.9);
+        transform: translateX(100%);
+        /* Hidden by default */
+        z-index: 1000;
+    }
+
+    .nav-links.open {
+        transform: translateX(0);
+        /* Slide in */
+    }
+
+    .nav-links ul {
+        margin-top: 100px;
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .nav-links li {
+        font-size: 20px;
+        /* Larger text on mobile */
+    }
+}

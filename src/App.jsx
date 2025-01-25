@@ -10,6 +10,7 @@ import {
 import Loader from './components/Loader';
 import Home from './pages/Homepage/Page';
 import AboutPage from './pages/AboutUs/Page';
+import Team from './components/Team2pg/Team';
 
 
 const App = () => {
@@ -31,16 +32,18 @@ const App = () => {
   };
   return (
     <>
-   {screenLoading ? (<Loader />) : (
-    <BrowserRouter>
-    <Wrapper>
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/about-us' element={<AboutPage />}/>
-      </Routes>
-    </Wrapper>
-    </BrowserRouter>
-   )}
+      {screenLoading ? (<Loader />) : (
+        <BrowserRouter>
+          <Wrapper>
+            <Routes>
+              <Route path='/' element={<Home />} />
+              <Route path='/about-us' element={<AboutPage />} />
+              <Route path='/team' element={<Team />} />
+
+            </Routes>
+          </Wrapper>
+        </BrowserRouter>
+      )}
     </>
   )
 }
