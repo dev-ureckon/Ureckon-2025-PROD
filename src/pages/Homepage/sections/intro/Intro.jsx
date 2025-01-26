@@ -1,10 +1,6 @@
 import React, { useState, useEffect } from "react"
 import "./intro.css"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { ImLinkedin } from "react-icons/im"
-import { BsInstagram } from "react-icons/bs"
-import { FaXTwitter } from "react-icons/fa6"
-import { FaWhatsapp } from "react-icons/fa"
 import { Link } from "react-router"
 import { TextAnimate } from "@/components/ui/text-animate"
 
@@ -107,22 +103,22 @@ function TabContent({ title, firstPara, secondPara, imageSrc }) {
   const links = [
     {
       id: 1,
-      icon: ImLinkedin,
+      icon: './socials/LinkedIn.svg',
       href: "https://www.linkedin.com/company/ureckon/posts/?feedView=all",
     },
     {
       id: 2,
-      icon: BsInstagram,
+      icon: './socials/Instagram.svg',
       href: "https://www.instagram.com/ureckon.uemk/?hl=en",
     },
     {
       id: 3,
-      icon: FaXTwitter,
+      icon: './socials/X.svg',
       href: "https://x.com/Ureckon_Uemk",
     },
     {
       id: 4,
-      icon: FaWhatsapp,
+      icon: './socials/WhatsApp.svg',
       href: "https://whatsapp.com/channel/0029VaBYereHFxP3CiIpRo1H",
     },
   ]
@@ -150,12 +146,12 @@ function TabContent({ title, firstPara, secondPara, imageSrc }) {
             {links.map((item) => (
               <Link to={item.href} key={item.id}>
                 <button
-                  className="rounded-full px-4 py-3 h-[54px] w-[54px] flex items-center justify-center hover:scale-110 transition-all duration-300"
+                  className="rounded-full px-2 py-1 h-[54px] w-[54px] flex items-center justify-center hover:scale-110 transition-all duration-300 drop-shadow-[0_0_4px_#000000]"
                   style={{
                     background: "linear-gradient(to bottom, #3C1E82, #371C77)",
                   }}
                 >
-                  <item.icon className="h-10 w-10" />
+                  <img src={item.icon} className="h-[64px] w-[64px]"/>
                 </button>
               </Link>
             ))}
