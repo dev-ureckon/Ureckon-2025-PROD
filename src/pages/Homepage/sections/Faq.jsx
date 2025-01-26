@@ -21,7 +21,7 @@ function Faq() {
             }}
             className="max-lg:text-4xl text-[52.05px] uppercase font-pixel drop-shadow-[0_0_10px_rgba(234,179,8,0.8)]"
           >
-            <TextAnimate animation="scaleUp" by="text">
+            <TextAnimate animation="slideLeft" by="character">
               FAQ'S
             </TextAnimate>
           </h1>

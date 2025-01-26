@@ -17,7 +17,7 @@ export default function Events() {
              uppercase font-pixel drop-shadow-[0_0_10px_rgba(234,179,8,0.8)] mt-[3rem] relative top-[3rem]"
         
         >
-          <TextAnimate animation="scaleUp" by="text">
+          <TextAnimate animation="slideLeft" by="character">
           Events
           </TextAnimate>
          

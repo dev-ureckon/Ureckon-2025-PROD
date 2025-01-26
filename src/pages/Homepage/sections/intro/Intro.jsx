@@ -155,7 +155,7 @@ function TabContent({ title, firstPara, secondPara, imageSrc }) {
                     background: "linear-gradient(to bottom, #3C1E82, #371C77)",
                   }}
                 >
-                  <item.icon className="h-5 w-5" />
+                  <item.icon className="h-10 w-10" />
                 </button>
               </Link>
             ))}

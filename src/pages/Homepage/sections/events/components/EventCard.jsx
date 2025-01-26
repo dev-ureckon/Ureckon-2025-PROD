@@ -31,7 +31,7 @@ export default function EventCarousel() {
       >
         <CarouselContent className="" >
           {events.map((event) => (
-            <CarouselItem key={event.id} className="md:basis-1/2 lg:basis-1/3 ">
+            <CarouselItem key={event.id} className="md:basis-1/2 lg:basis-1/3">
               <Card title={event.title} className=""/>
             </CarouselItem>
           ))}
