@@ -85,9 +85,25 @@ function Gallery() {
                 No images in this category
               </div>
             )}
+             {filteredImages.length > 1 && (
+              <>
+                <button
+                  onClick={prevSlide}
+                  className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-12 text-[#A81218] text-4xl"
+                >
+                  ◀
+                </button>
+                <button
+                  onClick={nextSlide}
+                  className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-12 text-[#A81218] text-4xl"
+                >
+                  ▶
+                </button>
+              </>
+            )}
           </div>
 
-          {/* {filteredImages.length > 1 && (
+          {/* {filteredImages.length > 0 && (
             <div className="flex justify-center gap-2 mt-4">
               {filteredImages.map((_, index) => (
                 <button
