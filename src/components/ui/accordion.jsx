@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils"
 const Accordion = AccordionPrimitive.Root
 
 const AccordionItem = React.forwardRef(({ className, ...props }, ref) => (
-  <AccordionPrimitive.Item ref={ref} className={cn("border border-[#CACACA] rounded-[25px] px-6", className)} {...props} />
+  <AccordionPrimitive.Item ref={ref} className={cn("border border-[#CACACA] rounded-[25px] px-6 drop-shadow-[0_0_4px_#ffffff]", className)} {...props} />
 ))
 AccordionItem.displayName = "AccordionItem"
 
