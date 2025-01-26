@@ -73,7 +73,7 @@ function Gallery() {
           <PlusIcon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-red-600" />
           <PlusIcon className="absolute h-6 w-6 -bottom-1 -right-3 dark:text-white text-red-600" />
 
-          <div className="aspect-[16/9] border-[12px] border-[#641316]">
+          <div className="aspect-[16/9] border-[12px] border-red-800/50">
             {filteredImages.length > 0 ? (
               <img
                 src={filteredImages[currentSlide].src || "/placeholder.svg"}
@@ -87,7 +87,7 @@ function Gallery() {
             )}
           </div>
 
-          {filteredImages.length > 1 && (
+          {/* {filteredImages.length > 1 && (
             <div className="flex justify-center gap-2 mt-4">
               {filteredImages.map((_, index) => (
                 <button
@@ -97,11 +97,11 @@ function Gallery() {
                 />
               ))}
             </div>
-          )}
+          )} */}
         </div>
       </div>
 
-      <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-4 mt-[2rem]">
+      <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-4 mt-[5rem]">
         {categories.map((category) => (
           <button
             key={category.name}

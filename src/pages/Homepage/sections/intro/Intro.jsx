@@ -123,7 +123,7 @@ function TabContent({ title, firstPara, secondPara, imageSrc }) {
     {
       id: 4,
       icon: FaWhatsapp,
-      href: "#",
+      href: "https://whatsapp.com/channel/0029VaBYereHFxP3CiIpRo1H",
     },
   ]
   return (
