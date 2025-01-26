@@ -1,5 +1,6 @@
 "use client"
 
+import { TextAnimate } from "@/components/ui/text-animate"
 import { PlusIcon } from "lucide-react"
 import React, { useState } from "react"
 
@@ -60,16 +61,17 @@ function Gallery() {
           }}
           className="max-lg:text-2xl text-[52.05px] uppercase font-pixel drop-shadow-[0_0_10px_rgba(234,179,8,0.8)]"
         >
-          U6 GALLERY
+           <TextAnimate animation="scaleUp" by="text">U6 GALLERY</TextAnimate>
+          
         </h1>
       </div>
 
       <div>
         <div className="relative max-w-4xl mx-auto">
           <PlusIcon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-red-600" />
-          <PlusIcon className="absolute h-6 w-6 bottom-3 -left-3 dark:text-white text-red-600" />
+          <PlusIcon className="absolute h-6 w-6 -bottom-1 -left-3 dark:text-white text-red-600" />
           <PlusIcon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-red-600" />
-          <PlusIcon className="absolute h-6 w-6 bottom-3 -right-3 dark:text-white text-red-600" />
+          <PlusIcon className="absolute h-6 w-6 -bottom-1 -right-3 dark:text-white text-red-600" />
 
           <div className="aspect-[16/9] border-[12px] border-[#641316]">
             {filteredImages.length > 0 ? (
@@ -82,22 +84,6 @@ function Gallery() {
               <div className="w-full h-full flex items-center justify-center bg-gray-200 text-gray-500">
                 No images in this category
               </div>
-            )}
-            {filteredImages.length > 1 && (
-              <>
-                <button
-                  onClick={prevSlide}
-                  className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-12 text-[#A81218] text-4xl"
-                >
-                  ◀
-                </button>
-                <button
-                  onClick={nextSlide}
-                  className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-12 text-[#A81218] text-4xl"
-                >
-                  ▶
-                </button>
-              </>
             )}
           </div>
 

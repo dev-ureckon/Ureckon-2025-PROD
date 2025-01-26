@@ -19,7 +19,7 @@ const App = () => {
     setScreenLoading(true);
     setTimeout(() => {
       setScreenLoading(false);
-    }, 2500);
+    }, 3500);
   }, []);
 
   const Wrapper = ({ children }) => {

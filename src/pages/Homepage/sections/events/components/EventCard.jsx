@@ -22,17 +22,17 @@ export default function EventCarousel() {
   ];
 
   return (
-    <div className="py-20 mx-auto px-8">
+    <div className="py-20 w-full mx-auto px-8">
       <Carousel
         opts={{
           align: "start",
         }}
-        className="w-full max-w-xl mx-auto"
+        className="w-full max-w-5xl mx-auto mt-[4rem]"
       >
-        <CarouselContent>
-          {events.map((event, index) => (
-            <CarouselItem key={event.id} className="">
-              <Card title={event.title} />
+        <CarouselContent className="" >
+          {events.map((event) => (
+            <CarouselItem key={event.id} className="md:basis-1/2 lg:basis-1/3 ">
+              <Card title={event.title} className=""/>
             </CarouselItem>
           ))}
         </CarouselContent>
@@ -55,7 +55,7 @@ const Card = ({ title }) => {
       onMouseLeave={() => handleInteraction(false)}
       onTouchStart={() => handleInteraction(true)}
       onTouchEnd={() => handleInteraction(false)}
-      className="group/canvas-card flex items-center justify-center mx-auto p-[5rem] relative h-[30rem]  bg-[#ff0000] bg-opacity-15"
+      className="group/canvas-card flex items-center justify-center mx-auto p-[2rem] relative h-[500px] w-full bg-[#ff0000] bg-opacity-15"
     >
       <CornerIcon className="absolute h-6 w-6 -top-1 -left-1 text-[#ff0000]" />
       <CornerIcon className="absolute h-6 w-6 -bottom-1 -left-1 text-[#ff0000]" />
@@ -73,6 +73,10 @@ const Card = ({ title }) => {
             <CanvasRevealEffect
               animationSpeed={5.1}
               containerClassName="bg-black"
+              colors={[
+                [236, 72, 153],
+                [232, 121, 249],
+              ]}
               dotSize={1}
             />
           </motion.div>
@@ -81,7 +85,7 @@ const Card = ({ title }) => {
 
       <div className="relative z-20">
         <h2
-          className="opacity-100 group-hover/canvas-card:opacity-100 relative z-10 font-bold group-hover/canvas-card:text-[#ff0000] transition duration-200 text-2xl md:text-2xl font-pixel text-center bg-gradient-to-b bg-clip-text text-transparent from-[#FFB74D] to-[#F57C00]
+          className="opacity-100 group-hover/canvas-card:opacity-100 relative z-10 font-bold group-hover/canvas-card:text-[#ff0000] transition duration-200 text-xl md:text-2xl font-pixel text-center bg-gradient-to-b bg-clip-text text-transparent from-[#FFB74D] to-[#F57C00]
              uppercase"
         >
           {title}
