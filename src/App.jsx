@@ -10,7 +10,7 @@ import {
 import Loader from './components/Loader';
 import Home from './pages/Homepage/Page';
 import AboutPage from './pages/AboutUs/Page';
-
+import ContactUsPage from './pages/ContactUs/Page';
 
 const App = () => {
   const [screenLoading, setScreenLoading] = useState(false);
@@ -37,6 +37,7 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about-us' element={<AboutPage />}/>
+        <Route path='/contact-us' element={<ContactUsPage />}/>
       </Routes>
     </Wrapper>
     </BrowserRouter>
