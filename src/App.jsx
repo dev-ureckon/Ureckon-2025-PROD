@@ -13,6 +13,7 @@ import AboutPage from './pages/AboutUs/Page';
 import EventPage from './pages/Events/Event1/Page';
 
 
+
 const App = () => {
   const [screenLoading, setScreenLoading] = useState(false);
 
@@ -39,6 +40,7 @@ const App = () => {
         <Route path='/' element={<Home />} />
         <Route path='/about-us' element={<AboutPage />}/>
         <Route path='/events' element={<EventPage />}/>
+        
       </Routes>
     </Wrapper>
     </BrowserRouter>

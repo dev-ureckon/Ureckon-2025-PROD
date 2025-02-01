@@ -86,10 +86,10 @@ import Cheery from "../assets/TComp/Cheery.svg";
 
 const T = ({ children }) => {
   return (
-    <div className="p-6 hidden lg:block">
+    <div className="p-6 ">
 
       
-      <div className="w-[45%] xl:w-[40%] mx-auto h-[56%] absolute top-[13%] left-[28%] xl:left-[30%] rounded-full border-opacity-0">
+      <div className=" hidden lg:block  w-[45%] xl:w-[40%] mx-auto h-[56%] absolute top-[13%] left-[28%] xl:left-[30%] rounded-full border-opacity-0">
         <img src={TopMT} alt="TOP M T" className="mx-auto w-[90%]" />
         <p className="text-[#B01D15] font-press text-[8px] xl:text-xs font-normal leading-[61px] text-left underline underline-offset-auto decoration-skip-ink-none drop-shadow-[0_4px_4px_#B01D15] absolute -top-[3%] xl:top-[5%] left-[100px]">
           THE OFFICIAL EVENTS OF URECKON’25
@@ -98,7 +98,7 @@ const T = ({ children }) => {
         <img src={DOTS} alt="TOP DOTS" className="absolute top-[40%]" />
       </div>
 
-      <div className="w-[80%] xl:w-[70%] h-[76vh] mx-auto flex justify-between">
+      <div className=" hidden  w-[80%] xl:w-[70%] h-[76vh] mx-auto lg:flex justify-between">
         <div className="rounded-full border-opacity-0">
           <img src={RIGHTT} alt="right M T" className="h-full" />
         </div>
@@ -114,18 +114,20 @@ const T = ({ children }) => {
         
       </div>
 
-      <div className="flex items-center justify-center w-[64%] mx-auto">
-        <div className=" p-3 h-[30vh] w-[56%] absolute top-[54%]">
+      <div className="flex items-center justify-center w-[68%] mx-auto">
+        <div className="  p-2 lg:p-3 h-[30vh] w-[56%] absolute top-[16%] lg:top-[54%] ">
           {children}
         </div>
-      </div>
+      
 
-      <div className="  mx-auto w-[22%] flex items-center justify-center text-2xl gap-4 text-transparent bg-clip-text bg-gradient-to-r from-[#FBD60E] to-[#DD903D] font-pac text-[29.14px] font-normal leading-[37.59px] text-center underline underline-offset-auto decoration-skip-ink-none">
+      <div className=" hidden  mx-auto w-[22%] lg:flex items-center justify-center text-2xl gap-4 text-transparent bg-clip-text bg-gradient-to-b from-[#FBD60E] to-[#DD903D] font-pac text-[29.14px] font-normal leading-[37.59px] text-center underline underline-offset-auto decoration-skip-ink-none">
 
-        <div className='  flex gap-4 w-full text-4xl '>
+        <div className='  flex gap-3 w-full text-4xl '>
         <div>1</div>
         <div>............</div>
         <div>9</div>
+        </div>
+
         </div>
 
       </div>
