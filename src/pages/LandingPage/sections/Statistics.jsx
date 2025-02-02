@@ -54,7 +54,7 @@ function Statistics() {
         {rowTwo.map((stat, index) => (
           <div
             key={index}
-            className="w-[270px] sm:w-[320px] md:w-[400px] lg:w-full lg:max-w-[90%] min-w-[270px] relative right-4"
+            className="w-[270px] sm:w-[320px] md:w-[400px] lg:w-full lg:max-w-[85%] min-w-[270px] relative right-4"
           >
             <CardContainer className="inter-var" perspective="2000px">
               <CardBody className="bg-transparent relative group/card w-full rounded-xl flex justify-center items-center m-0 p-0">
