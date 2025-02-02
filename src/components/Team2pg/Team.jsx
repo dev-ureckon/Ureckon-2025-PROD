@@ -5,7 +5,6 @@ import Teampage from "./Team2page2/TeamPage";
 const Team = () => {
     return (
         <>
-            <Team2Nav />
             <Teampage />
         </>
     );
