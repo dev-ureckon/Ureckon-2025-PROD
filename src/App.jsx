@@ -10,6 +10,7 @@ import {
 import Loader from './components/Loader';
 import Home from './pages/Homepage/Page';
 import AboutPage from './pages/AboutUs/Page';
+import TeamPage from './pages/Teampage/Page';
 
 
 const App = () => {
@@ -37,6 +38,7 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about-us' element={<AboutPage />}/>
+        <Route path='/team' element={<TeamPage />}/>
       </Routes>
     </Wrapper>
     </BrowserRouter>
