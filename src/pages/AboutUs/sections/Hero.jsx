@@ -24,10 +24,10 @@ const Hero = () => {
       <div className="relative z-10 w-full max-w-4xl mx-auto">
         {/* Title with double text effect for red blur */}
         <div className="relative text-center mb-4 sm:mb-6 md:mb-8">
-          <h1 className="text-[#FF2D2D] font-press text-3xl sm:text-4xl md:text-5xl font-mono tracking-wider absolute inset-0 blur-[1px]">
+          <h1 className="text-[#FF2D2D] font-press text-3xl sm:text-4xl md:text-5xl  tracking-wider absolute inset-0 blur-[1px]">
             ABOUT US
           </h1>
-          <h1 className="text-[#FF2D2D] font-press text-3xl sm:text-4xl md:text-5xl font-mono tracking-wider relative">
+          <h1 className="text-[#FF2D2D] font-press text-3xl sm:text-4xl md:text-5xl  tracking-wider relative">
             ABOUT US
           </h1>
         </div>
@@ -85,8 +85,8 @@ const Hero = () => {
 
 
         {/* Content with enhanced glow effect using Tailwind */}
-        <div className="text-gray-300 font-mono leading-relaxed text-sm sm:text-base md:text-lg space-y-4 max-w-4xl mx-auto px-2 sm:px-4">
-          <p className="text-2xl text-gray-200 drop-shadow-[0_0_8px_rgba(255,255,255,0.8)] shadow-white">
+        <div className="text-balance text-gray-300 font-mono leading-relaxed text-sm sm:text-base md:text-lg space-y-4 max-w-4xl mx-auto px-2 sm:px-4">
+          <p className="text-sm md:text-2xl  text-gray-200 drop-shadow-[0_0_8px_rgba(255,255,255,0.8)] shadow-white">
             Ureckon, the annual techno-management fest of the University of Engineering and Management (UEM), Kolkata,
             is back with its 7th edition! A confluence of innovation, technology, and creativity.
             We offer thrilling competitions, interactive workshops, inspiring talks, and business extravaganzas. With
