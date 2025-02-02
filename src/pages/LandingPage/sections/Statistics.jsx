@@ -25,6 +25,8 @@ function Statistics() {
         Statistics
       </h1>
 
+      {/* row one */}
+
       <div className="row-one flex flex-wrap justify-center items-center gap-8 m-4 p-4">
         {rowOne.map((stat, index) => (
           <CardContainer key={index} className="inter-var min-w-[270px] sm:w-[320px] md:w-[400px] lg:w-[350px] xl:w-[400px]">
@@ -44,21 +46,30 @@ function Statistics() {
         ))}
       </div>
 
-     <div className="row-two flex flex-wrap justify-center items-center gap-8 m-4 p-4">
-      {rowTwo.map((stat, index) => (
-        <CardContainer key={index} className="inter-var w-[270px] sm:w-[320px] md:w-[400px] lg:w-full">
-          <CardBody className="bg-transparent relative group/card w-full rounded-xl flex justify-center items-center m-0 p-0">
-            <CardItem translateZ="50" className="text-xl font-bold text-neutral-600 dark:text-white">
-              <div className="bg-[rgba(320,0,10,0.15)] rounded-xl flex flex-col justify-evenly items-center min-w-[270px] sm:min-w-[320px] md:w-[400px] lg:w-full min-h-[200px] sm:h-[226px] p-4 m-0">
-                <p className="text-center font-press text-xl md:text-2xl font-semibold text-red-700 statistics-text-shadow">
-                  {stat.title}
-                </p> 
-              </div>
-            </CardItem>
-          </CardBody>
-        </CardContainer>
-      ))}
-    </div>
+      {/* row two */}
+
+      <div className="row-two flex flex-wrap justify-center items-center gap-4 m-4 p-4 w-full">
+        {rowTwo.map((stat, index) => (
+          <div
+            key={index}
+            className="w-[270px] sm:w-[320px] md:w-[400px] lg:w-full lg:max-w-[90%] min-w-[270px] relative right-4"
+          >
+            <CardContainer className="inter-var" perspective="2000px">
+              <CardBody className="bg-transparent relative group/card w-full rounded-xl flex justify-center items-center m-0 p-0">
+                <CardItem translateZ="50" className="text-xl font-bold text-neutral-600 dark:text-white w-full">
+                  <div className="bg-[rgba(320,0,10,0.15)] rounded-xl flex flex-col justify-evenly items-center w-full min-h-[200px] sm:h-[226px] p-4">
+                    <p className="text-center font-press text-xl md:text-2xl font-semibold text-red-700 statistics-text-shadow">
+                      {stat.title}
+                    </p>
+                  </div>
+                </CardItem>
+              </CardBody>
+            </CardContainer>
+          </div>
+        ))}
+      </div>
+
+      {/* row three */}
 
       <div className="row-three flex flex-wrap justify-center items-center gap-8 m-4 p-4">
         {rowThree.map((stat, index) => (

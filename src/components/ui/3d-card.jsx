@@ -12,7 +12,8 @@ const MouseEnterContext = createContext(undefined);
 export const CardContainer = ({
   children,
   className,
-  containerClassName
+  containerClassName,
+  perspective = "500px", // Default perspective value
 }) => {
   const containerRef = useRef(null);
   const [isMouseEntered, setIsMouseEntered] = useState(false);
@@ -36,37 +37,31 @@ export const CardContainer = ({
     setIsMouseEntered(false);
     containerRef.current.style.transform = `rotateY(0deg) rotateX(0deg)`;
   };
+
   return (
-    (<MouseEnterContext.Provider value={[isMouseEntered, setIsMouseEntered]}>
+    <MouseEnterContext.Provider value={[isMouseEntered, setIsMouseEntered]}>
       <div
-        // className={cn("flex items-center justify-center", containerClassName)}
         className={cn("", containerClassName)}
         style={{
-          // perspective: "1000px",
-          perspective: "500px"
-        }}>
+          perspective: perspective, // Use the perspective prop
+        }}
+      >
         <div
           ref={containerRef}
           onMouseEnter={handleMouseEnter}
           onMouseMove={handleMouseMove}
           onMouseLeave={handleMouseLeave}
-          className={cn(
-            "transition-all duration-200 ease-linear",
-            className
-          )}
-          // className={cn(
-          //   "flex items-center justify-center relative transition-all duration-200 ease-linear",
-          //   className
-          // )}
+          className={cn("transition-all duration-200 ease-linear", className)}
           style={{
             transformStyle: "preserve-3d",
-          }}>
+          }}
+        >
           {children}
         </div>
       </div>
-    </MouseEnterContext.Provider>)
+    </MouseEnterContext.Provider>
   );
-}
+};
 
 export const CardBody = ({
   children,
