@@ -19,8 +19,10 @@ function Statistics() {
     { title: "NO OF EVENTS", value: "10" },
   ];
 
+  // use this in classname in section for test
+  // bg-[url(https://s3-alpha-sig.figma.com/img/a022/2427/cb72bd1a23d589f87ac7dbc5b75ad743?Expires=1738540800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=WvAKjsBBM1AQgxv2lZ5GlPEQ1RdABiiZ0DRJuhkniStXYWe5zfCQWd6oPRnyj~ts6iiIml~DUyqWsmnJUxIs~J~CLaGirCZbpw3MFj5nKxAJWYcdZb7ywOLr0rENN1zMX8HVN6eBtzETxszN0fzfl2SaF2EGkEz9~rr1CJ-qzpmcZxJP9tBE47cxT5-M47II0bGLJ2sI7ur6lFoGUOEHzOKgeC~lTqDX7OzAIKIouUeJfEGAgAFH82YRMWqelqjGH-3F5VyKFIs0R0oHejK73PL4yTWCcPO9p3ggwOO9HNVj12BhmQhJO-Lm0GkJDYouW-OxOp9JXWRjh3YUknrfMw__)] bg-cover p-8
   return (
-    <section className="bg-[url(https://s3-alpha-sig.figma.com/img/a022/2427/cb72bd1a23d589f87ac7dbc5b75ad743?Expires=1738540800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=WvAKjsBBM1AQgxv2lZ5GlPEQ1RdABiiZ0DRJuhkniStXYWe5zfCQWd6oPRnyj~ts6iiIml~DUyqWsmnJUxIs~J~CLaGirCZbpw3MFj5nKxAJWYcdZb7ywOLr0rENN1zMX8HVN6eBtzETxszN0fzfl2SaF2EGkEz9~rr1CJ-qzpmcZxJP9tBE47cxT5-M47II0bGLJ2sI7ur6lFoGUOEHzOKgeC~lTqDX7OzAIKIouUeJfEGAgAFH82YRMWqelqjGH-3F5VyKFIs0R0oHejK73PL4yTWCcPO9p3ggwOO9HNVj12BhmQhJO-Lm0GkJDYouW-OxOp9JXWRjh3YUknrfMw__)] bg-cover p-8">
+    <section className="">
       <h1 className="font-press text-2xl md:text-5xl lg:text-7xl font-semibold leading-[102px] text-center gradient-text drop-shadow-[0_0_10px_rgba(235,169,42,0.8)]">
         Statistics
       </h1>
