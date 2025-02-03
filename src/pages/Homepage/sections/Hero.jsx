@@ -33,7 +33,7 @@ const Hero = () => {
 
   return (
     <section
-      className="relative bg-black w-full min-h-screen flex flex-col items-center justify-center bg-cover bg-center p-6 md:p-12 lg:p-20"
+      className="relative bg-black w-full min-h-screen flex flex-col items-center justify-center bg-cover bg-center p-6 md:p-12 lg:p-20 overflow-hidden"
       style={{ backgroundImage: `url(${bg})` }}
     >
       <div className="text-center lg:p-4 p-4 bg-black">
@@ -49,7 +49,7 @@ const Hero = () => {
         <div className="flex bg-black p-2 md:p-4 space-x-2 md:space-x-4 rounded-lg">
           {Object.entries(time).map(([unit, value], index) => (
             <React.Fragment key={unit}>
-              <div className="flex flex-col items-center justify-center bg-[#1a1a1a] text-white w-16 h-16 md:w-20 md:h-20 border-2 border-white">
+              <div className="flex flex-col items-center justify-center bg-[#1a1a1a] text-white w-14 h-16 md:w-20 md:h-20 border-2 border-white">
                 <div className="text-lg md:text-3xl font-press">{value}</div>
               </div>
               {index < 3 && (
