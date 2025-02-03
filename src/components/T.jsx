@@ -115,7 +115,7 @@ const T = ({ children }) => {
       </div>
 
       <div className="flex items-center justify-center w-[68%] mx-auto">
-        <div className="  p-2 lg:p-3 h-[30vh] w-[56%] absolute top-[16%] lg:top-[54%] ">
+        <div className="  p-2 lg:p-3 h-[30vh] w-[56%] absolute top-[6%] lg:top-[54%]  ">
           {children}
         </div>
       
