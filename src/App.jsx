@@ -32,19 +32,17 @@ const App = () => {
   };
   return (
     <>
-   {screenLoading ? (<Loader />) : (
-    <BrowserRouter>
-    <Wrapper>
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/about-us' element={<AboutPage />}/>
-        <Route path='/contact-us' element={<ContactUsPage />}/>
-      </Routes>
-    </Wrapper>
-    </BrowserRouter>
-   )}
-
-   <Statistics/>{/* delete this its just for testing */}
+      {screenLoading ? (<Loader />) : (
+        <BrowserRouter>
+          <Wrapper>
+            <Routes>
+              <Route path='/' element={<Home />} />
+              <Route path='/about-us' element={<AboutPage />} />
+              <Route path='/contact-us' element={<ContactUsPage />} />
+            </Routes>
+          </Wrapper>
+        </BrowserRouter>
+      )}
     </>
   )
 }
