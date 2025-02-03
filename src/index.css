@@ -11,6 +11,10 @@
     font-weight: normal;
     font-style: normal;
   }
+
+  *:root{
+    background-color: #05071A;
+  }
   
   .gradient-text { 
     background: linear-gradient(179.38deg, #FBD60E 0.54%, #DD903D 55.34%);

@@ -11,7 +11,9 @@ import {
 import Loader from './components/Loader';
 import Home from './pages/Homepage/Page';
 import AboutPage from './pages/AboutUs/Page';
+import EventPage from './pages/Events/Event1/Page';
 import ContactUsPage from './pages/ContactUs/Page';
+
 
 const App = () => {
   const [screenLoading, setScreenLoading] = useState(false);
@@ -39,6 +41,7 @@ const App = () => {
               <Route path='/' element={<Home />} />
               <Route path='/about-us' element={<AboutPage />} />
               <Route path='/contact-us' element={<ContactUsPage />} />
+              <Route path='/events' element={<EventPage />}/>
             </Routes>
           </Wrapper>
         </BrowserRouter>
