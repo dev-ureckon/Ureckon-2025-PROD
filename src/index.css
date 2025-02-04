@@ -75,10 +75,19 @@
   body {
     @apply bg-[#020c1c] text-foreground;
     }
-   
+
     .font-pixel {
       font-family: 'Press Start 2P', cursive;
       font-weight: 400;
     }
 }
-  
+
+
+  .gradient-text {
+    background: linear-gradient(179.38deg, #FBD60E 0.54%, #DD903D 55.34%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .statistics-text-shadow {
+    text-shadow: 0 0 50px rgba(185, 28, 28, 0.8), 0 0 50px rgba(185, 28, 28, 0.5);
+  }

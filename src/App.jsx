@@ -1,5 +1,6 @@
 import React from 'react'
 import { useEffect, useLayoutEffect, useState } from "react";
+import Statistics from './pages/LandingPage/sections/Statistics'; //delete this its just for testing
 import {
   BrowserRouter,
   Routes,
@@ -10,6 +11,8 @@ import {
 import Loader from './components/Loader';
 import Home from './pages/Homepage/Page';
 import AboutPage from './pages/AboutUs/Page';
+import EventPage from './pages/Events/Event1/Page';
+import ContactUsPage from './pages/ContactUs/Page';
 
 
 const App = () => {
@@ -31,16 +34,18 @@ const App = () => {
   };
   return (
     <>
-   {screenLoading ? (<Loader />) : (
-    <BrowserRouter>
-    <Wrapper>
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/about-us' element={<AboutPage />}/>
-      </Routes>
-    </Wrapper>
-    </BrowserRouter>
-   )}
+      {screenLoading ? (<Loader />) : (
+        <BrowserRouter>
+          <Wrapper>
+            <Routes>
+              <Route path='/' element={<Home />} />
+              <Route path='/about-us' element={<AboutPage />} />
+              <Route path='/contact-us' element={<ContactUsPage />} />
+              <Route path='/events' element={<EventPage />}/>
+            </Routes>
+          </Wrapper>
+        </BrowserRouter>
+      )}
     </>
   )
 }
