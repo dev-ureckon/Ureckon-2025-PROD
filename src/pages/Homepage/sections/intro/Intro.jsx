@@ -49,19 +49,19 @@ function Intro() {
   return (
     <section className="min-h-screen px-5 mx-auto sm:p-6 md:p-10">
       <div className="flex items-center justify-center">
-        <TextAnimate animation="scaleUp" by="text">
-          <h1
-            className="mx-auto font-pixel mb-[2rem] flex gap-[16px] items-center"
+        <h1
+            className="mx-auto font-pixel mb-[2rem] flex gap-[16px] items-center animate-bounce"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
             Designed By
-            <img src={isHovered ? "./animate orange.svg" : "animate white.svg"} className="h-[33.37px] w-[158px]" />
+            <img src={isHovered ? "./animate orange.svg" : "animate white.svg"} className="h-[33.37px] w-[158px] cursor-pointer" />
           </h1>
-        </TextAnimate>
+        
+          
       </div>
 
-      <div className="container mx-auto rounded-[54.35px] sm:p-4 lg:p-6 introBox relative h-auto w-[90vw] border-[#3f3b4f] border">
+      <div className="container mx-auto rounded-[54.35px] sm:p-4 md:px-8 lg:p-6 introBox relative h-auto w-[90vw] border-[#3f3b4f] border">
         <Tabs defaultValue="what is ureckon" value={currentTab}>
         <TabsList className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 bg-transparent gap-5 sm:gap-[4rem] md:gap-[5rem] font-pixel absolute top-1 max-lg:w-full">
             <TabsTrigger
@@ -128,21 +128,21 @@ function TabContent({ title, firstPara, secondPara, imageSrc }) {
         <img
           src={imageSrc || "/placeholder.svg"}
           alt={title}
-          className="relative lg:left-[5rem] max-lg:hidden h-[467.42px] lg:top-[6rem]"
+          className="relative lg:left-[5rem] max-lg:hidden lg:h-[467.42px] lg:top-[6rem]"
         />
       </div>
-      <div className="flex flex-col gap-5 md:gap-10 relative w-full md:mx-auto bottom-[5rem] md:right-[3rem] md:top-[1rem] lg:right-[5rem]">
-        <h1 className="text-[#58EEFF] text-xl md:text-2xl xl:text-[26px] font-pixel relative md:top-[6rem] lg:top-[4rem] md:right-[26rem] lg:right-0 md:min-w-[600px]">
+      <div className="flex flex-col gap-5 md:gap-12 relative w-full lg:right-[4rem] xl:right-4 bottom-[5rem] md:bottom-0 md:left-[6rem] lg:left-0">
+        <h1 className="text-[#58EEFF] text-xl md:text-[18px] xl:text-[22px] font-pixel relative md:top-[6rem] lg:top-[4rem] md:right-[26rem] lg:right-0 md:min-w-[600px]">
           {title}
         </h1>
-        <div className="flex flex-col gap-5 md:gap-10 mx-auto mt-4 md:mt-[5rem] font-pixel relative md:right-[26rem] lg:right-0">
-          <p className="text-[10px] sm:text-[11px] md:text-[12px] text-[#C0C0C0] text-wrap md:min-w-[600px] lg:w-full">
+        <div className="flex flex-col gap-5 mx-auto md:gap-10 mt-4 md:mt-[5rem] font-pixel relative md:right-[26rem] lg:right-0">
+          <p className="text-[10px] sm:text-[11px] md:text-[12px] text-[#C0C0C0] text-wrap">
             {firstPara}
           </p>
-          <p className="text-[10px] sm:text-[11px] md:text-[12px] text-[#C0C0C0] text-wrap sm:min-w-[600px]">
+          <p className="text-[10px] sm:text-[11px] md:text-[12px] text-[#C0C0C0] text-wrap">
             {secondPara}
           </p>
-          <div className="flex items-center gap-5 mx-auto">
+          <div className="flex items-center gap-5 mx-auto mt-[2rem] md:mt-0">
             {links.map((item) => (
               <Link to={item.href} key={item.id}>
                 <button
