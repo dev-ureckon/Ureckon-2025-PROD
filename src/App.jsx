@@ -1,6 +1,5 @@
 import React from 'react'
 import { useEffect, useLayoutEffect, useState } from "react";
-import Statistics from './pages/LandingPage/sections/Statistics'; //delete this its just for testing
 import {
   BrowserRouter,
   Routes,
