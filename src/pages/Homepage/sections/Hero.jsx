@@ -37,16 +37,16 @@ const Hero = () => {
       style={{ backgroundImage: `url(${bg})` }}
     >
       <div className="text-center lg:p-4 p-4 bg-black">
-        <h1 className="text-5xl lg:text-8xl font-press text-[#7AD0E5] drop-shadow-[0_0_20px_#7AD0E5]">
+        <h1 className="text-4xl md:text-6xl lg:text-8xl font-press text-[#7AD0E5] drop-shadow-[0_0_20px_#7AD0E5]">
           URECKON
         </h1>
-        <p className="my-4 text-3xl lg:text-6xl font-helvetica text-yellow-300 drop-shadow-md">
+        <p className="my-4 text-2xl md:text-4xl lg:text-6xl font-helvetica text-yellow-300 drop-shadow-md">
           BLAST FROM THE PAST
         </p>
       </div>
 
       <div className="absolute bottom-8 w-full flex justify-center">
-        <div className="flex bg-black p-2 md:p-4 space-x-2 md:space-x-4 rounded-lg">
+        <div className="flex bg-black p-2 md:p-4 space-x-0 md:space-x-4 rounded-lg">
           {Object.entries(time).map(([unit, value], index) => (
             <React.Fragment key={unit}>
               <div className="flex flex-col items-center justify-center bg-[#1a1a1a] text-white w-14 h-16 md:w-20 md:h-20 border-2 border-white">
