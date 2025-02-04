@@ -28,13 +28,13 @@ function Faq() {
           <div className="max-w-5xl mx-auto mt-[1rem] font-pixel">
             <Accordion type="single" collapsible className="w-full space-y-6">
               <AccordionItem value="item-1" className="bg-[#030418]" >
-                <AccordionTrigger>Who can participate?</AccordionTrigger>
+                <AccordionTrigger className="text-left">Who can participate?</AccordionTrigger>
                 <AccordionContent className="text-left">
                   Yes. It adheres to the WAI-ARIA design pattern.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-2" className="bg-[#030418]">
-                <AccordionTrigger>
+                <AccordionTrigger className="text-left">
                   How can I register for Ureckon events??
                 </AccordionTrigger>
                 <AccordionContent className="text-left">
