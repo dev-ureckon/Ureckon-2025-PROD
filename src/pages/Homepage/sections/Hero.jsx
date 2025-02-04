@@ -32,8 +32,6 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className=''>
-      Hero     
     <section
       className="relative bg-black w-full min-h-screen flex flex-col items-center justify-center bg-cover bg-center p-6 md:p-12 lg:p-20 overflow-hidden"
       style={{ backgroundImage: `url(${bg})` }}
