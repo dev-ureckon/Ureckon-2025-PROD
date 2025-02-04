@@ -14,3 +14,9 @@
   border-top-left-radius: 6rem;
   border-top-right-radius: 3rem;
 }
+@media(max-width:767px){
+  .tab1{
+    border-top-right-radius: 6rem;
+  }
+
+}

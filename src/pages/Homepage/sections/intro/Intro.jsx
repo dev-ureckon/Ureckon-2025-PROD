@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from "react"
+"use client"
+
+import { useState, useEffect } from "react"
 import "./intro.css"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Link } from "react-router"
-import { TextAnimate } from "@/components/ui/text-animate"
+import { Link } from "react-router-dom"
 
 function Intro() {
   const [isHovered, setIsHovered] = useState(false)
@@ -18,6 +19,10 @@ function Intro() {
 
     return () => clearTimeout(timer)
   }, [currentTab])
+
+  const handleTabChange = (value) => {
+    setCurrentTab(value)
+  }
 
   const tabContent = {
     "what is ureckon": {
@@ -50,20 +55,22 @@ function Intro() {
     <section className="min-h-screen px-5 mx-auto sm:p-6 md:p-10">
       <div className="flex items-center justify-center">
         <h1
-            className="mx-auto font-pixel mb-[2rem] flex gap-[16px] items-center animate-bounce"
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-          >
-            Designed By
-            <img src={isHovered ? "./animate orange.svg" : "animate white.svg"} className="h-[33.37px] w-[158px] cursor-pointer" />
-          </h1>
-        
-          
+          className="mx-auto font-pixel mb-[2rem] flex gap-[16px] items-center animate-bounce"
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+        >
+          Designed By
+          <img
+            src={isHovered ? "./animate orange.svg" : "./animate white.svg"}
+            className="h-[33.37px] w-[158px] cursor-pointer"
+            alt="Designed By"
+          />
+        </h1>
       </div>
 
       <div className="container mx-auto rounded-[54.35px] sm:p-4 md:px-8 lg:p-6 introBox relative h-auto w-[90vw] border-[#3f3b4f] border">
-        <Tabs defaultValue="what is ureckon" value={currentTab}>
-        <TabsList className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 bg-transparent gap-5 sm:gap-[4rem] md:gap-[5rem] font-pixel absolute top-1 max-lg:w-full">
+        <Tabs defaultValue="what is ureckon" value={currentTab} onValueChange={handleTabChange}>
+          <TabsList className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 bg-transparent gap-5 sm:gap-[4rem] md:gap-[8rem] font-pixel absolute top-1 max-lg:w-full">
             <TabsTrigger
               className="text-xs sm:text-sm md:text-[9px] lg:text-[12px] xl:text-base tab1 relative md:right-5"
               value="what is ureckon"
@@ -82,7 +89,7 @@ function Intro() {
             >
               WHAT'S NEW THIS YEAR ?
             </TabsTrigger>
-          </TabsList> 
+          </TabsList>
           {tabs.map((tab) => (
             <TabsContent key={tab} value={tab}>
               <TabContent
@@ -103,22 +110,22 @@ function TabContent({ title, firstPara, secondPara, imageSrc }) {
   const links = [
     {
       id: 1,
-      icon: './socials/LinkedIn.svg',
+      icon: "./socials/LinkedIn.svg",
       href: "https://www.linkedin.com/company/ureckon/posts/?feedView=all",
     },
     {
       id: 2,
-      icon: './socials/Instagram.svg',
+      icon: "./socials/Instagram.svg",
       href: "https://www.instagram.com/ureckon.uemk/?hl=en",
     },
     {
       id: 3,
-      icon: './socials/X.svg',
+      icon: "./socials/X.svg",
       href: "https://x.com/Ureckon_Uemk",
     },
     {
       id: 4,
-      icon: './socials/WhatsApp.svg',
+      icon: "./socials/WhatsApp.svg",
       href: "https://whatsapp.com/channel/0029VaBYereHFxP3CiIpRo1H",
     },
   ]
@@ -136,12 +143,8 @@ function TabContent({ title, firstPara, secondPara, imageSrc }) {
           {title}
         </h1>
         <div className="flex flex-col gap-5 mx-auto md:gap-10 mt-4 md:mt-[5rem] font-pixel relative md:right-[26rem] lg:right-0">
-          <p className="text-[10px] sm:text-[11px] md:text-[12px] text-[#C0C0C0] text-wrap">
-            {firstPara}
-          </p>
-          <p className="text-[10px] sm:text-[11px] md:text-[12px] text-[#C0C0C0] text-wrap">
-            {secondPara}
-          </p>
+          <p className="text-[10px] sm:text-[11px] md:text-[12px] text-[#C0C0C0] text-wrap">{firstPara}</p>
+          <p className="text-[10px] sm:text-[11px] md:text-[12px] text-[#C0C0C0] text-wrap">{secondPara}</p>
           <div className="flex items-center gap-5 mx-auto mt-[2rem] md:mt-0">
             {links.map((item) => (
               <Link to={item.href} key={item.id}>
@@ -151,7 +154,7 @@ function TabContent({ title, firstPara, secondPara, imageSrc }) {
                     background: "linear-gradient(to bottom, #3C1E82, #371C77)",
                   }}
                 >
-                  <img src={item.icon} className="h-[64px] w-[64px]"/>
+                  <img src={item.icon || "/placeholder.svg"} className="h-[64px] w-[64px]" alt={`${item.id} icon`} />
                 </button>
               </Link>
             ))}
