@@ -48,7 +48,7 @@ const NavLogo = () => {
 
 const NavRegisterButton = () => {
   return (
-    <button className="relative flex items-center justify-center w-[250px] h-[64px]">
+    <NavLink to={"/events"} className="relative flex items-center justify-center w-[250px] h-[64px]">
       <svg xmlns="http://www.w3.org/2000/svg" width="250" height="64" viewBox="0 0 250 64" fill="none">
         <g clipPath="url(#clip0_3013_23)">
           <rect width="250" height="64" rx="15" fill="#CF2228" />
@@ -61,7 +61,7 @@ const NavRegisterButton = () => {
         </defs>
       </svg>
       <span className="absolute inset-0 flex items-center justify-center uppercase text-black font-freon text-center text-[1.5rem] font-normal bottom-[-5px]">Register</span>
-    </button>
+    </NavLink>
   );
 };
 const Navbar = () => {
