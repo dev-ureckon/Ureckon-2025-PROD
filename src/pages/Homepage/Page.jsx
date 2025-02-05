@@ -7,10 +7,6 @@ const Home = () => {
   return (
     <main>
       <section>
-        <Navbar />
-      </section>
-      <section>
-        Homepage content        
         <Hero />
       </section>
       <section>

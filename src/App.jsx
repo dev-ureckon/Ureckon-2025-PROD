@@ -12,6 +12,7 @@ import Home from './pages/Homepage/Page';
 import AboutPage from './pages/AboutUs/Page';
 import EventPage from './pages/Events/Event1/Page';
 import ContactUsPage from './pages/ContactUs/Page';
+import Navbar from './components/Navbar';
 
 
 const App = () => {
@@ -36,6 +37,7 @@ const App = () => {
       {screenLoading ? (<Loader />) : (
         <BrowserRouter>
           <Wrapper>
+            <Navbar />
             <Routes>
               <Route path='/' element={<Home />} />
               <Route path='/about-us' element={<AboutPage />} />
