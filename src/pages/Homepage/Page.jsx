@@ -1,6 +1,4 @@
 import React from "react";
-import Navbar from "../../components/Navbar";
-import Footer from "../../components/Footer";
 import Hero from "./sections/Hero";
 
 const Home = () => {
@@ -8,9 +6,6 @@ const Home = () => {
     <main>
       <section>
         <Hero />
-      </section>
-      <section>
-        <Footer />
       </section>
     </main>
   );

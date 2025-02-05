@@ -13,6 +13,7 @@ import AboutPage from './pages/AboutUs/Page';
 import EventPage from './pages/Events/Event1/Page';
 import ContactUsPage from './pages/ContactUs/Page';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 
 const App = () => {
@@ -44,6 +45,7 @@ const App = () => {
               <Route path='/contact-us' element={<ContactUsPage />} />
               <Route path='/events' element={<EventPage />}/>
             </Routes>
+            <Footer />
           </Wrapper>
         </BrowserRouter>
       )}
