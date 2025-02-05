@@ -172,18 +172,19 @@ const EventDetails = () => {
   </div>
 
   {/* Date & Time */}
-  <div className="flex items-center justify-center gap-4 mt-6">
-    <div className="relative flex flex-col items-center">
-      <span className="bg-[#B01D15]/50 px-4 py-5 rounded text-[#B01D15] tracking-wide mt-2">
-        {event.date}
-      </span>
-    </div>
-    <div className="relative flex flex-col items-center">
-      <span className="bg-[#B01D15]/50 px-4 py-5 rounded text-[#B01D15] tracking-wide mt-2">
-        {event.time}
-      </span>
-    </div>
+  <div className="flex flex-col lg:flex-row items-center justify-center gap-4 mt-6">
+  <div className="relative flex flex-col items-center">
+    <span className="bg-[#B01D15]/50 px-6 py-6 rounded-md text-[#B01D15] tracking-wide mt-2 text-lg sm:text-xl">
+      {event.date}
+    </span>
   </div>
+  <div className="relative flex flex-col items-center">
+    <span className="bg-[#B01D15]/50 px-6 py-6 rounded-md text-[#B01D15] tracking-wide mt-2 text-lg sm:text-xl">
+      {event.time}
+    </span>
+  </div>
+</div>
+
 </div>
 
 
