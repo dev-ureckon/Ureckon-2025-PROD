@@ -9,24 +9,13 @@ import SectionContainer from "../../components/SectionContainer";
 const ContactsPage = () => {
   return (
     <SectionContainer>
-      <div className="bg-[#05071A]  h-auto ">
-        <div className="p-4 mx-auto max-w-full  ">
-          <h1
-            className="text-[#ff0000] text-center text-2xl md:text-4xl font-mono uppercase "
-            style={{
-              textShadow: `
-            0 0 7px #ff0000,
-            0 0 10px #ff0000,
-            0 0 21px #ff0000,
-            0 0 42px #ff0000
-          `,
-              fontFamily: "'Press Start 2P', monospace",
-            }}
-          >
+      <div className="bg-[#05071A]  h-auto">
+        <div className="p-4 mx-auto max-w-full">
+          <h1 className="text-4xl text-center uppercase md:text-6xl mb-5 lg:mb-12 lg:text-6xl font-press text-[#B01D15] drop-shadow-[0_0_20px_#B01D15]">
             Contact Us
           </h1>
 
-          <div className="   w-[92%] xl:w-[98%] 2xl:w-[76%] mx-auto flex justify-center  ">
+          <div className="  w-[92%] xl:w-[98%] 2xl:w-[76%] mx-auto flex justify-center  ">
             <div className="items-center justify-center flex gap-4 md:gap-8 lg:gap-10 xl:gap-18 2xl:gap-24 mb-6 lg:mb-8">
               <div className="flex flex-col justify-center items-center mt-12">
                 <img src={Dots} className="  " />
