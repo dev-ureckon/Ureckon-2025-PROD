@@ -79,6 +79,22 @@ const events = [
             twitter: "https://twitter.com/amit_verma",
             image: "https://example.com/amit.jpg",
           },
+          {
+            name: "Anil Verma",
+            mobile: "9876543210",
+            instagram: "https://instagram.com/amit_verma",
+            linkedin: "https://linkedin.com/in/amit-verma",
+            twitter: "https://twitter.com/amit_verma",
+            image: "https://example.com/amit.jpg",
+          },
+          {
+            name: "Anil Verma",
+            mobile: "9876543210",
+            instagram: "https://instagram.com/amit_verma",
+            linkedin: "https://linkedin.com/in/amit-verma",
+            twitter: "https://twitter.com/amit_verma",
+            image: "https://example.com/amit.jpg",
+          },
         ],
         problemStatementLink: "https://www.youtube.com/watch?v=1pc60L6mBt0&list=RDjmpUP1MaQ9Q&index=12",
         registerLink: "/register/robo-wars",
@@ -237,7 +253,9 @@ const EventDetails = () => {
 
 
 
-      
+<h2 className="text-2xl font-press uppercase text-center lg:text-left md:text-2xl mb-4 text-[#B01D15]  drop-shadow-[0_0_20px_#B01D15] tracking-widest">
+    Event Coordinators
+  </h2>
 {/* Event Coordinators */}
 {event.coordinators && event.coordinators.length > 0 ? (
   <div className="grid lg:grid-cols-3 grid-cols-1 bg-[#FF000A]/10 lg:gap-0 font-press gap-6">
@@ -257,19 +275,19 @@ const EventDetails = () => {
         </div>
 
         {/* Social Media Icons */}
-        <div className="flex items-center justify-center mt-4 relative gap-x-[-2px]">
+        <div className="flex items-center justify-center mt-4 relative gap-x-2">
   <a href={coordinator.instagram} target="_blank" rel="noopener noreferrer">
-    <div className="w-12 h-12 bg-[#B01D15] flex justify-center items-center rounded-full absolute left-[50%] z-10">
+    <div className="w-12 h-12 bg-[#B01D15] flex justify-center items-center rounded-full   z-10">
       <FaInstagram className="text-white" />
     </div>
   </a>
   <a href={coordinator.linkedin} target="_blank" rel="noopener noreferrer">
-    <div className="w-12 h-12 bg-[#B01D15] flex justify-center items-center rounded-full absolute left-[42%] z-20">
+    <div className="w-12 h-12 bg-[#B01D15] flex justify-center items-center rounded-full   z-20">
       <FaLinkedin className="text-white" />
     </div>
   </a>
   <a href={coordinator.twitter} target="_blank" rel="noopener noreferrer">
-    <div className="w-12 h-12 bg-[#B01D15] flex justify-center items-center rounded-full absolute left-[34%] z-30">
+    <div className="w-12 h-12 bg-[#B01D15] flex justify-center items-center rounded-full   z-30">
       <FaTwitter className="text-white" />
     </div>
   </a>
