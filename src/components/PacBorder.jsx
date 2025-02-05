@@ -1,30 +1,37 @@
 import { useEffect, useRef, useState } from "react";
 
-const PacBorder = () => {
+const PacBorderWrapper = ({ children, className = "" }) => {
+    const [container, setContainer] = useState(null);
     const canvasRef = useRef(null);
     const pacmanImage = new Image();
     pacmanImage.src = "animations.gif";
-
-    const [canvasSize, setCanvasSize] = useState({ width: 600, height: 400 });
-
-    useEffect(() => {
-        const updateCanvasSize = () => {
-            const width = window.innerWidth < 768 ? window.innerWidth - 40 : 600;
-            const height = window.innerWidth < 768 ? window.innerHeight * 0.6 : 400;
-            setCanvasSize({ width, height });
-        };
-
-        updateCanvasSize();
-        window.addEventListener("resize", updateCanvasSize);
-        return () => window.removeEventListener("resize", updateCanvasSize);
-    }, []);
+    const observerRef = useRef(null);
 
     useEffect(() => {
+        if (!container) return;
+        
         const canvas = canvasRef.current;
         const ctx = canvas.getContext("2d");
+        
+        const updateCanvasSize = () => {
+            const scrollHeight = Math.max(
+                container.scrollHeight,
+                document.documentElement.scrollHeight,
+                container.offsetHeight,
+                document.documentElement.offsetHeight
+            );
+            canvas.width = container.offsetWidth;
+            canvas.height = scrollHeight;
+        };
 
-        const oneBlockSize = canvas.width / 15;
-        const speed = oneBlockSize / 25;
+        observerRef.current = new ResizeObserver(updateCanvasSize);
+        observerRef.current.observe(container);
+        
+        updateCanvasSize();
+        window.addEventListener("resize", updateCanvasSize);
+
+        const oneBlockSize = 20;
+        const speed = 1;
         const frameWidth = 20;
         const frameCount = 8;
         let frameIndex = 0;
@@ -35,32 +42,42 @@ const PacBorder = () => {
 
         function generateFood() {
             food = [];
-            for (let i = 0; i < canvas.width; i += oneBlockSize) food.push({ x: i, y: 0 });
-            for (let i = 0; i < canvas.height; i += oneBlockSize) food.push({ x: canvas.width - oneBlockSize, y: i });
-            for (let i = canvas.width - oneBlockSize; i >= 0; i -= oneBlockSize) food.push({ x: i, y: canvas.height - oneBlockSize });
-            for (let i = canvas.height - oneBlockSize; i >= 0; i -= oneBlockSize) food.push({ x: 0, y: i });
+            const width = canvas.width;
+            const height = canvas.height;
+            const spacing = 25; 
+            
+            for (let i = 0; i < width; i += spacing) {
+                food.push({ x: i, y: 0 });
+            }
+            
+            for (let i = 0; i < height; i += spacing) {
+                food.push({ x: width - oneBlockSize, y: i });
+            }
+            
+            for (let i = width - oneBlockSize; i >= 0; i -= spacing) {
+                food.push({ x: i, y: height - oneBlockSize });
+            }
+            
+            for (let i = height - oneBlockSize; i >= 0; i -= spacing) {
+                food.push({ x: 0, y: i });
+            }
         }
 
-        generateFood();
-
         function respawnFood(dot) {
-            setTimeout(() => {
-                food.push(dot);
-            }, 2000);
+            setTimeout(() => food.push(dot), 4000);
         }
 
         function update() {
             ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-            // Draw food
+           
             ctx.fillStyle = "yellow";
             food.forEach(dot => {
                 ctx.beginPath();
-                ctx.arc(dot.x + oneBlockSize / 2, dot.y + oneBlockSize / 2, 5, 0, Math.PI * 2);
+                ctx.arc(dot.x + oneBlockSize / 2, dot.y + oneBlockSize / 2, 4, 0, Math.PI * 2); 
                 ctx.fill();
             });
 
-            // Draw Pac-Man
             ctx.save();
             ctx.translate(x + oneBlockSize / 2, y + oneBlockSize / 2);
 
@@ -82,24 +99,22 @@ const PacBorder = () => {
             );
             ctx.restore();
 
-            // Movement logic
             if (direction === "right") {
                 x += speed;
-                if (x + oneBlockSize >= canvas.width) direction = "down";
+                if (x + oneBlockSize >= canvas.width - 2) direction = "down";
             } else if (direction === "down") {
                 y += speed;
-                if (y + oneBlockSize >= canvas.height) direction = "left";
+                if (y + oneBlockSize >= canvas.height - 2) direction = "left";
             } else if (direction === "left") {
                 x -= speed;
-                if (x <= 0) direction = "up";
+                if (x <= 2) direction = "up";
             } else if (direction === "up") {
                 y -= speed;
-                if (y <= 0) direction = "right";
+                if (y <= 2) direction = "right";
             }
 
-            // Eat food logic
             food = food.filter(dot => {
-                if (Math.abs(dot.x - x) < speed && Math.abs(dot.y - y) < speed) {
+                if (Math.abs(dot.x - x) < oneBlockSize/2 && Math.abs(dot.y - y) < oneBlockSize/2) {
                     respawnFood(dot);
                     return false;
                 }
@@ -110,19 +125,29 @@ const PacBorder = () => {
             requestAnimationFrame(update);
         }
 
+        generateFood();
         update();
-    }, [canvasSize]);
+
+        return () => {
+            window.removeEventListener("resize", updateCanvasSize);
+            observerRef.current?.disconnect();
+        };
+    }, [container]);
 
     return (
-        <div className="flex justify-center items-center h-screen bg-black p-2">
+        <div 
+            ref={setContainer} 
+            className={`relative min-h-screen ${className}`}
+        >
             <canvas
                 ref={canvasRef}
-                width={canvasSize.width}
-                height={canvasSize.height}
-                className="border-4 border-white rounded-lg"
-            ></canvas>
+                className="absolute inset-0 pointer-events-none"
+            />
+            <div className="relative z-10">
+                {children}
+            </div>
         </div>
     );
 };
 
-export default PacBorder;
+export default PacBorderWrapper;
