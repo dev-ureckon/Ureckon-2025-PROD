@@ -7,10 +7,11 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        grand: ['"Grand Hotel"', 'serif'], 
+        grand: ['"Grand Hotel"', 'serif'],
         press: ['"Press Start 2P"', 'cursive'],
         pac: ['PacFont', 'sans-serif'],
         helvetica: ['"Helvetica Neue"', 'Helvetica', 'Arial', 'sans-serif'],
+        freon: ['"Freon"', 'sans-serif'],
       }
     },
   },
