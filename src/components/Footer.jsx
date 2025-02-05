@@ -105,9 +105,9 @@ const SocialLink = ({ url, icon }) => {
   return (
     <Link
       to={url}
-      className="flex items-center justify-center w-[2.70544rem] h-[2.70544rem] rounded-full bg-[#371C77] overflow-hidden"
+      className="flex items-center justify-center w-[2.70544rem] h-[2.70544rem] rounded-full p-[0.5rem] bg-[#371C77] overflow-hidden"
     >
-      <img src={icon} alt="Social Icon" />
+      <img className="w-full" src={icon} alt="Social Icon" />
     </Link>
   );
 };
