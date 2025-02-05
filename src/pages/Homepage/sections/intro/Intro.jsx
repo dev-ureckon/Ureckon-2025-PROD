@@ -68,23 +68,23 @@ function Intro() {
         </h1>
       </div>
 
-      <div className="container mx-auto rounded-[54.35px] sm:p-4 md:px-8 lg:p-6 introBox relative h-auto w-[90vw] border-[#3f3b4f] border">
+      <div className="container mx-auto rounded-[54.35px] md:px-8 lg:p-6 introBox relative h-auto w-[90vw] border-[#3f3b4f] border">
         <Tabs defaultValue="what is ureckon" value={currentTab} onValueChange={handleTabChange}>
           <TabsList className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 bg-transparent gap-5 sm:gap-[4rem] md:gap-[3rem] lg:gap-[8rem] font-pixel absolute top-1 max-lg:w-full">
             <TabsTrigger
-              className="text-xs sm:text-sm md:text-[9px] lg:text-[12px] xl:text-base tab1 relative md:right-5"
+              className="text-xs sm:text-[0.7rem] md:text-[9px] lg:text-[12px] xl:text-[0.9rem] tab1 relative md:right-5"
               value="what is ureckon"
             >
               WHAT IS URECKON ?
             </TabsTrigger>
             <TabsTrigger
-              className="text-xs sm:text-sm md:text-[9px] lg:text-[12px] xl:text-base relative md:right-[2rem] right-0"
+              className="text-xs sm:text-[0.7rem] md:text-[9px] lg:text-[12px] xl:text-[0.9rem] relative md:right-[2rem] right-0"
               value="when , where and more"
             >
               WHEN, WHERE,& MORE
             </TabsTrigger>
             <TabsTrigger
-              className="text-xs sm:text-sm md:text-[9px] lg:text-[12px] xl:text-base items-center tab relative md:right-[3rem] lg:right-0 md:px-10"
+              className="text-xs sm:text-[0.7rem] md:text-[9px] lg:text-[12px] xl:text-[0.9rem] items-center tab relative md:right-[3rem] lg:right-0 sm:px-[6.5rem]"
               value="whats new this year"
             >
               WHAT'S NEW THIS YEAR ?
@@ -128,6 +128,17 @@ function TabContent({ title, firstPara, secondPara, imageSrc }) {
       icon: "./socials/WhatsApp.svg",
       href: "https://whatsapp.com/channel/0029VaBYereHFxP3CiIpRo1H",
     },
+    {
+      id: 5,
+      icon: "./socials/YouTube.svg",
+      href: "https://whatsapp.com/channel/0029VaBYereHFxP3CiIpRo1H",
+    },
+    {
+      id: 6,
+      icon: "./socials/Facebook.svg",
+      href: "https://whatsapp.com/channel/0029VaBYereHFxP3CiIpRo1H",
+    },
+
   ]
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-[20rem] p-3 sm:p-4 md:p-5 max-lg:mt-4">
@@ -138,14 +149,14 @@ function TabContent({ title, firstPara, secondPara, imageSrc }) {
           className="relative lg:left-[5rem] max-lg:hidden lg:h-[467.42px] lg:top-[6rem]"
         />
       </div>
-      <div className="flex flex-col gap-5 md:gap-12 relative w-full lg:right-[4rem] xl:right-4 bottom-[5rem] md:bottom-0 md:left-[6rem] lg:left-0">
+      <div className="flex flex-col gap-5 md:gap-12 relative w-full lg:right-[4rem] xl:right-4 bottom-[7rem] md:bottom-0 md:left-[6rem] lg:left-0">
         <h1 className="text-[#58EEFF] text-xl md:text-[18px] xl:text-[22px] font-pixel relative md:top-[6rem] lg:top-[4rem] md:right-[26rem] lg:right-0 md:min-w-[600px]">
           {title}
         </h1>
-        <div className="flex flex-col gap-5 mx-auto md:gap-10 mt-4 md:mt-[5rem] font-pixel relative md:right-[26rem] lg:right-0">
-          <p className="text-[10px] sm:text-[11px] md:text-[12px] text-[#C0C0C0] text-wrap">{firstPara}</p>
-          <p className="text-[10px] sm:text-[11px] md:text-[12px] text-[#C0C0C0] text-wrap">{secondPara}</p>
-          <div className="flex items-center gap-5 mx-auto mt-[2rem] md:mt-0">
+        <div className="flex flex-col  mx-auto gap-5 md:gap-10 mt-4 md:mt-[5rem] font-pixel md:right-[24rem] relative lg:right-0">
+          <p className="text-[10px] sm:text-[11px] md:text-[12px] text-[#C0C0C0] text-wrap w-full sm:max-w-[900px]">{firstPara}</p>
+          <p className="text-[10px] sm:text-[11px] md:text-[12px] text-[#C0C0C0] text-wrap w-full sm:max-w-[900px]">{secondPara}</p>
+          <div className="flex items-center  justify-center gap-5 mx-auto flex-wrap">
             {links.map((item) => (
               <Link to={item.href} key={item.id}>
                 <button
