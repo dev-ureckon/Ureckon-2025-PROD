@@ -70,7 +70,7 @@ function Intro() {
 
       <div className="container mx-auto rounded-[54.35px] sm:p-4 md:px-8 lg:p-6 introBox relative h-auto w-[90vw] border-[#3f3b4f] border">
         <Tabs defaultValue="what is ureckon" value={currentTab} onValueChange={handleTabChange}>
-          <TabsList className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 bg-transparent gap-5 sm:gap-[4rem] md:gap-[8rem] font-pixel absolute top-1 max-lg:w-full">
+          <TabsList className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 bg-transparent gap-5 sm:gap-[4rem] md:gap-[3rem] lg:gap-[8rem] font-pixel absolute top-1 max-lg:w-full">
             <TabsTrigger
               className="text-xs sm:text-sm md:text-[9px] lg:text-[12px] xl:text-base tab1 relative md:right-5"
               value="what is ureckon"
@@ -78,7 +78,7 @@ function Intro() {
               WHAT IS URECKON ?
             </TabsTrigger>
             <TabsTrigger
-              className="text-xs sm:text-sm md:text-[9px] lg:text-[12px] xl:text-base"
+              className="text-xs sm:text-sm md:text-[9px] lg:text-[12px] xl:text-base relative md:right-[2rem] right-0"
               value="when , where and more"
             >
               WHEN, WHERE,& MORE
