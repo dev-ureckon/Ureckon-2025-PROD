@@ -7,7 +7,7 @@ import strawberry from "../assets/SectionContainer/strawberry.svg";
 const vectorArray = [pacman, ghost, cherry, strawberry];
 
 const VerticalLine = ({ height }) => {
-  return <div className="w-20 rounded-full border-4 border-blue-500 bg-transparent shadow-md" style={{ height }} />;
+  return <div className="w-12 lg:w-20 rounded-full border-4 border-blue-500 bg-transparent shadow-md" style={{ height }} />;
 };
 
 const SectionContainer = ({ height = "25rem", children }) => {
@@ -60,7 +60,7 @@ const SectionContainer = ({ height = "25rem", children }) => {
   };
 
   return (
-    <section ref={containerRef} className={`flex justify-between w-full relative`}>
+    <section ref={containerRef} className={`flex justify-evenly w-full relative`}>
       <div className="flex flex-col gap-4">{generateLines(height, [])}</div>
       <div className="relative">{children}</div>
       <div className="flex flex-col gap-4">{generateLines(height, [])}</div>
