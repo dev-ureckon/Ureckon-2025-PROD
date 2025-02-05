@@ -13,6 +13,7 @@ import AboutPage from './pages/AboutUs/Page';
 import TeamPage from './pages/Teampage/Page';
 import EventPage from './pages/Events/Event1/Page';
 import ContactUsPage from './pages/ContactUs/Page';
+import EventDetails from './pages/Events/EventDetails';
 
 
 const App = () => {
@@ -43,6 +44,7 @@ const App = () => {
               <Route path='/team' element={<TeamPage />} />
               <Route path='/contact-us' element={<ContactUsPage />} />
               <Route path='/events' element={<EventPage />}/>
+              <Route path="/event/:eventId" element={<EventDetails />} />
             </Routes>
           </Wrapper>
         </BrowserRouter>
