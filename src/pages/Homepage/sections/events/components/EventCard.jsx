@@ -1,13 +1,13 @@
 import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { CanvasRevealEffect } from "../components/ui/canvas-reveal-effect";
+import { CanvasRevealEffect } from "../../../../../components/ui/canvas-reveal-effect";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "../components/ui/carousel";
+} from "../../../../../components/ui/carousel";
 
 export default function EventCarousel() {
   const events = [
