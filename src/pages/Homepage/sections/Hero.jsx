@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import bg from "../../../assets/svg/hero_bg.svg";
+import bg from "../../../assets/hero.gif";
 
 const Hero = () => {
   const [time, setTime] = useState({

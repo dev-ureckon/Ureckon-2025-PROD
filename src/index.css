@@ -5,6 +5,25 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .text-shadow-white {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8), 0 0 16px rgba(255, 255, 255, 0.6);
+  }
+  .text-shadow-red {
+    text-shadow: 0 0 8px rgba(255, 0, 0, 0.8), 0 0 16px rgba(255, 0, 0, 0.6);
+  }
+}
+
+@layer components {
+  .text-glow-white {
+    @apply text-shadow-white;
+  }
+  .text-glow-red {
+    @apply text-shadow-red;
+  }
+}
+
+
 @font-face {
     font-family: 'PacFont';
     src: url('/src/assets/fonts/PacFont.ttf') format('truetype');
