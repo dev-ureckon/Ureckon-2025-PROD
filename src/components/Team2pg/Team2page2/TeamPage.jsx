@@ -97,8 +97,8 @@ const TeamPage = () => {
             <div className="back-button">
                 <button><p className="text-2xl md:text-3xl lg:text-4xl text-gray-400 text-center shadow-glow transition-all duration-300 fixed left-8 top-10 md:left-24">{"<< BACK"}</p></button>
             </div>
-            <div className=" flex w-[90%] mx-auto">
-                <div className="bg -rose-300 w-[66%] lg:w-[80%] mx-auto grid-cols-1 md:grid-cols-2 lg:grid-cols-3  grid gap-4">
+            <div className=" flex w-[90%] mx-4 md:mx-auto">
+                <div className="bg -rose-300 w-[100%] lg:w-[80%] mx-auto grid-cols-1 md:grid-cols-2 lg:grid-cols-3  grid gap-4">
                     {teamMembers.map((member) => (
                         <div className={`team-card ${member.cardcolor}`} key={member.id}>
                             <img src={member.image} alt={member.name} className="w-full h-40 object-cover rounded-md" />
