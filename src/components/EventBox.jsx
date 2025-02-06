@@ -1,7 +1,7 @@
 import React from 'react';
 
 const EventBox = ({ image, title, description, venue, time }) => (
-  <div className="relative w-full max-w-[90%] min-h-[200px] sm:min-h-[350px] bg-[#3D0000] border-2 border-[#FF0000] rounded-lg p-2 mx-auto">
+  <div className="relative w-full max-w-[90%] md:max-w-[70%] min-h-[200px] sm:min-h-[350px] bg-[#3D0000] border-2 border-[#FF0000] rounded-lg p-2 mx-auto">
     <div className="absolute -top-4 -left-2 text-[#FF0000] text-xl font-bold">+</div>
     <div className="absolute -top-4 -right-2 text-[#FF0000] text-xl font-bold">+</div>
     <div className="absolute -bottom-4 -left-1 text-[#FF0000] text-xl font-bold">+</div>
