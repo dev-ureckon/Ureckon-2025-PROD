@@ -1,21 +1,26 @@
 import React from "react";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
+import Intro from "./sections/intro/Intro";
 import Hero from "./sections/Hero";
+import Gallery from "./sections/Gallery";
+import Events from "./sections/events/Events";
+import Stats from './sections/Stats'
+import Faq from "./sections/Faq";
 
 const Home = () => {
   return (
-    <main>
-      <section>
+    <main className="min-h-screen bg-[url('./bg.png')] bg-[#020c1c] bg-center overflow-hidden">
         <Navbar />
-      </section>
-      <section>
-        Homepage content        
+      <section className="min-h-screen flex flex-col text-white">
         <Hero />
+        <Intro />
+        <Gallery />
+        <Events />
+        <Stats />
+        <Faq/>
       </section>
-      <section>
         <Footer />
-      </section>
     </main>
   );
 };
