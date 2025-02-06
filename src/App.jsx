@@ -18,7 +18,6 @@ import EventDetails from './pages/Events/EventDetails';
 import EventsPage2 from './pages/Events/Event2/Page';
 import Partners from './pages/Partners/Partners';
 
-
 const App = () => {
   const [screenLoading, setScreenLoading] = useState(false);
 
