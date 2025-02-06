@@ -7,6 +7,7 @@ import Gallery from "./sections/Gallery";
 import Events from "./sections/events/Events";
 
 import Faq from "./sections/Faq";
+import Statistics from "../LandingPage/sections/Statistics";
 
 const Home = () => {
   return (
@@ -17,7 +18,7 @@ const Home = () => {
         <Intro />
         <Gallery />
         <Events />
-       
+       <Statistics/>
         <Faq/>
       </section>
         <Footer />
