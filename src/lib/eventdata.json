@@ -1,0 +1,7 @@
+[
+    { "image": "../../../assets/Rectangle 115.svg", "title": "BOSHE AKO PROTIJOGITA", "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "venue": "XYZ HALL", "time": "04:20 AM" },
+    { "image": "../../../assets/Rectangle 70.svg", "title": "ANOTHER EVENT", "description": "Another description here.", "venue": "ABC HALL", "time": "02:00 PM" },
+    { "image": "../../../assets/Rectangle 115.svg", "title": "BOSHE AKO PROTIJOGITA" , "description" :"Another description here.", "venue" :"ABC HALL" , "time" :"02:00 PM" },
+    { "image": "../../../assets/Rectangle 70.svg", "title": "ANOTHER EVENT", "description": "Another description here.", "venue": "ABC HALL", "time": "02:00 PM" },
+    { "image": "../../../assets/Rectangle 115.svg", "title": "BOSHE AKO PROTIJOGITA" , "description" :"Another description here.", "venue" :"ABC HALL" , "time" :"02:00 PM" }
+]
