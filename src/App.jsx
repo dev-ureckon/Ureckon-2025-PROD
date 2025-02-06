@@ -11,6 +11,10 @@ import Loader from './components/Loader';
 import Home from './pages/Homepage/Page';
 import AboutPage from './pages/AboutUs/Page';
 import Team from './components/Team2pg/Team';
+import TeamPage from './pages/Teampage/Page';
+import EventPage from './pages/Events/Event1/Page';
+import ContactUsPage from './pages/ContactUs/Page';
+import EventDetails from './pages/Events/EventDetails';
 
 
 const App = () => {
@@ -20,7 +24,7 @@ const App = () => {
     setScreenLoading(true);
     setTimeout(() => {
       setScreenLoading(false);
-    }, 2500);
+    }, 3500);
   }, []);
 
   const Wrapper = ({ children }) => {
@@ -39,7 +43,10 @@ const App = () => {
               <Route path='/' element={<Home />} />
               <Route path='/about-us' element={<AboutPage />} />
               <Route path='/team' element={<Team />} />
-
+              <Route path='/team' element={<TeamPage />} />
+              <Route path='/contact-us' element={<ContactUsPage />} />
+              <Route path='/events' element={<EventPage />}/>
+              <Route path="/event/:eventId" element={<EventDetails />} />
             </Routes>
           </Wrapper>
         </BrowserRouter>

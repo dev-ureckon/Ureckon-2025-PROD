@@ -1,0 +1,32 @@
+.introBox {
+  background: radial-gradient(
+    circle,
+    rgba(81, 61, 99, 0.12),
+    rgba(24, 10, 37, 0.75)
+  );
+  
+}
+.tab{
+  border-top-right-radius: 6rem;
+  border-top-left-radius: 3rem;
+}
+.tab1{
+  border-top-left-radius: 6rem;
+  border-top-right-radius: 3rem;
+}
+@media(max-width:768px){
+  .tab1{
+    border-top-right-radius: 6rem;
+  }
+  .tab{
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+
+    padding-bottom: 0.5rem;
+  }
+
+  
+
+}
