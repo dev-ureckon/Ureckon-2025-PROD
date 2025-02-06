@@ -177,4 +177,3 @@ function TabContent({ title, firstPara, secondPara, imageSrc }) {
 }
 
 export default Intro
-

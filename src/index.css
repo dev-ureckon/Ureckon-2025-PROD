@@ -1,14 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Press+Start+2P&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Press+Start+2P&family=Roboto+Serif&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'PacFont';
+  src: url('/src/assets/fonts/PacFont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Freon';
+  src: url('/src/assets/fonts/Freon.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 @layer utilities {
   .text-shadow-white {
     text-shadow: 0 0 8px rgba(255, 255, 255, 0.8), 0 0 16px rgba(255, 255, 255, 0.6);
   }
+
   .text-shadow-red {
     text-shadow: 0 0 8px rgba(255, 0, 0, 0.8), 0 0 16px rgba(255, 0, 0, 0.6);
   }
@@ -18,28 +32,23 @@
   .text-glow-white {
     @apply text-shadow-white;
   }
+
   .text-glow-red {
     @apply text-shadow-red;
   }
 }
 
+*:root {
+  background-color: #05071A;
+}
 
-@font-face {
-    font-family: 'PacFont';
-    src: url('/src/assets/fonts/PacFont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
+.gradient-text {
+  background: linear-gradient(179.38deg, #FBD60E 0.54%, #DD903D 55.34%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
-  *:root{
-    background-color: #05071A;
-  }
-  
-  .gradient-text { 
-    background: linear-gradient(179.38deg, #FBD60E 0.54%, #DD903D 55.34%);
-    -webkit-background-clip: text; 
-    -webkit-text-fill-color: transparent;
-  }
-  .statistics-text-shadow {
-    text-shadow: 0 0 50px rgba(185, 28, 28, 0.8), 0 0 50px rgba(185, 28, 28, 0.5);
-  }
+.statistics-text-shadow {
+  text-shadow: 0 0 50px rgba(185, 28, 28, 0.8), 0 0 50px rgba(185, 28, 28, 0.5);
+}
