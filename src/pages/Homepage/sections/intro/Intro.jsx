@@ -153,10 +153,10 @@ function TabContent({ title, firstPara, secondPara, imageSrc }) {
         <h1 className="text-[#58EEFF] text-xl md:text-[18px] xl:text-[22px] font-pixel relative md:top-[6rem] lg:top-[4rem] md:right-[26rem] lg:right-0 md:min-w-[600px]">
           {title}
         </h1>
-        <div className="flex flex-col  mx-auto gap-5 md:gap-10 mt-4 md:mt-[5rem] font-pixel md:right-[24rem] relative lg:right-0">
-          <p className="text-[10px] sm:text-[11px] md:text-[12px] text-[#C0C0C0] text-wrap w-full sm:max-w-[900px]">{firstPara}</p>
-          <p className="text-[10px] sm:text-[11px] md:text-[12px] text-[#C0C0C0] text-wrap w-full sm:max-w-[900px]">{secondPara}</p>
-          <div className="flex items-center  justify-center gap-5 mx-auto flex-wrap">
+        <div className="flex flex-col mx-auto gap-5 md:gap-10 mt-4 md:mt-[5rem] font-pixel md:right-[24rem] relative lg:right-0">
+          <p className="text-[10px] sm:text-[11px] md:text-[12px] text-[#C0C0C0] text-wrap w-full">{firstPara}</p>
+          <p className="text-[10px] sm:text-[11px] md:text-[12px] text-[#C0C0C0] text-wrap w-full">{secondPara}</p>
+          <div className="flex items-center  justify-center gap-5 mx-auto flex-wrap mt-10 md:mt-0">
             {links.map((item) => (
               <Link to={item.href} key={item.id}>
                 <button

@@ -1,36 +1,64 @@
-"use client"
-
 import { TextAnimate } from "@/components/ui/text-animate"
 import { PlusIcon } from "lucide-react"
-import React, { useState } from "react"
+import { useState, useEffect } from "react"
 
 function Gallery() {
-  const images = [
-    { src: "mountain.png", category: "ROBOTICS" },
-    { src: "./scene.jpg", category: "QUIZ" },
-    { src: "scene1.jpg", category: "CODING" },
-    { src: "/path/to/image4.jpg", category: "GAMING" },
-    { src: "/path/to/image5.jpg", category: "FLAGSHIP" },
-    { src: "/path/to/image6.jpg", category: "INITIATIVES" },
-    { src: "/path/to/image7.jpg", category: "BIO-TECH" },
-    { src: "/path/to/image8.jpg", category: "BIZ EVENTS" },
-  ]
+  const images = {
+    ROBOTICS: [
+      { src: "/robotics1.jpg", alt: "Robotics 1" },
+      { src: "/robotics2.jpg", alt: "Robotics 2" },
+      { src: "/robotics3.jpg", alt: "Robotics 3" },
+    ],
+    QUIZ: [
+      { src: "/quiz1.jpg", alt: "Quiz 1" },
+      { src: "/quiz2.jpg", alt: "Quiz 2" },
+    ],
+    CODING: [
+      { src: "/coding1.jpg", alt: "Coding 1" },
+      { src: "/coding2.jpg", alt: "Coding 3" },
+      { src: "/coding3.jpg", alt: "Coding 3" },
+    ],
+    GAMING: [
+      { src: "/gaming1.jpg", alt: "Gaming 1" },
+      { src: "/gaming2.jpg", alt: "Gaming 2" },
+    ],
+    FLAGSHIP: [
+      { src: "/flagship1.jpg", alt: "Flagship 1" },
+      { src: "/flagship2.jpg", alt: "Flagship 2" },
+      { src: "/flagship3.jpg", alt: "Flagship 3" },
+    ],
+    INITIATIVES: [
+      { src: "/initiatives1.jpg", alt: "Initiatives 1" },
+      { src: "/initiatives2.jpg", alt: "Initiatives 2" },
+    ],
+    "BIO-TECH": [
+      { src: "/biotech1.jpg", alt: "Bio-Tech 1" },
+      { src: "/biotech2.jpg", alt: "Bio-Tech 2" },
+      { src: "/biotech3.jpg", alt: "Bio-Tech 3" },
+    ],
+    "BIZ EVENTS": [
+      { src: "/bizevents1.jpg", alt: "Biz Events 1" },
+      { src: "/bizevents2.jpg", alt: "Biz Events 2" },
+    ],
+  }
 
   const [currentSlide, setCurrentSlide] = useState(0)
   const [selectedCategory, setSelectedCategory] = useState(null)
 
-  const filteredImages = selectedCategory ? images.filter((img) => img.category === selectedCategory) : images
+  useEffect(() => {
+    setCurrentSlide(0)
+  }, []) //Removed selectedCategory from dependency array
 
   const nextSlide = () => {
-    setCurrentSlide((prev) => (prev === filteredImages.length - 1 ? 0 : prev + 1))
+    if (selectedCategory) {
+      setCurrentSlide((prev) => (prev === images[selectedCategory].length - 1 ? 0 : prev + 1))
+    }
   }
 
   const prevSlide = () => {
-    setCurrentSlide((prev) => (prev === 0 ? filteredImages.length - 1 : prev - 1))
-  }
-
-  const goToSlide = (index) => {
-    setCurrentSlide(index)
+    if (selectedCategory) {
+      setCurrentSlide((prev) => (prev === 0 ? images[selectedCategory].length - 1 : prev - 1))
+    }
   }
 
   const categories = [
@@ -45,8 +73,7 @@ function Gallery() {
   ]
 
   const handleCategoryClick = (category) => {
-    setSelectedCategory((prevCategory) => (prevCategory === category ? null : category))
-    setCurrentSlide(0)
+    setSelectedCategory(category)
   }
 
   return (
@@ -61,31 +88,32 @@ function Gallery() {
           }}
           className="max-lg:text-2xl text-[52.05px] uppercase font-pixel drop-shadow-[0_0_10px_rgba(234,179,8,0.8)]"
         >
-           <TextAnimate animation="slideLeft" by="character">U6 GALLERY</TextAnimate>
-          
+          <TextAnimate animation="slideLeft" by="character">
+            U6 GALLERY
+          </TextAnimate>
         </h1>
       </div>
 
       <div>
         <div className="relative max-w-4xl mx-auto">
-          <PlusIcon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-red-600" />
-          <PlusIcon className="absolute h-6 w-6 -bottom-1 -left-3 dark:text-white text-red-600" />
-          <PlusIcon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-red-600" />
-          <PlusIcon className="absolute h-6 w-6 -bottom-1 -right-3 dark:text-white text-red-600" />
+          <PlusIcon className="absolute h-6 w-6 -top-3 -left-3  text-red-600" />
+          <PlusIcon className="absolute h-6 w-6 -bottom-1 -left-3  text-red-600" />
+          <PlusIcon className="absolute h-6 w-6 -top-3 -right-3  text-red-600" />
+          <PlusIcon className="absolute h-6 w-6 -bottom-1 -right-3  text-red-600" />
 
           <div className="aspect-[16/9] border-[12px] border-red-800/50">
-            {filteredImages.length > 0 ? (
+            {selectedCategory ? (
               <img
-                src={filteredImages[currentSlide].src || "/placeholder.svg"}
-                alt={`Slide ${currentSlide + 1}`}
+                src={images[selectedCategory][currentSlide].src || "/placeholder.svg"}
+                alt={images[selectedCategory][currentSlide].alt}
                 className="w-full h-full object-cover"
               />
             ) : (
-              <div className="w-full h-full flex items-center justify-center bg-gray-200 text-gray-500">
-                No images in this category
+              <div className="w-full h-full flex items-center justify-center bg-black  text-white font-pixel">
+                Select a category to view images
               </div>
             )}
-             {filteredImages.length > 1 && (
+            {selectedCategory && images[selectedCategory].length > 1 && (
               <>
                 <button
                   onClick={prevSlide}
@@ -103,17 +131,17 @@ function Gallery() {
             )}
           </div>
 
-          {/* {filteredImages.length > 0 && (
+          {selectedCategory && (
             <div className="flex justify-center gap-2 mt-4">
-              {filteredImages.map((_, index) => (
+              {images[selectedCategory].map((_, index) => (
                 <button
                   key={index}
-                  onClick={() => goToSlide(index)}
+                  onClick={() => setCurrentSlide(index)}
                   className={`w-3 h-3 rounded-full ${currentSlide === index ? "bg-red-600" : "bg-white"}`}
                 />
               ))}
             </div>
-          )} */}
+          )}
         </div>
       </div>
 
