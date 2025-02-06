@@ -131,12 +131,12 @@ function TabContent({ title, firstPara, secondPara, imageSrc }) {
     {
       id: 5,
       icon: "./socials/YouTube.svg",
-      href: "https://whatsapp.com/channel/0029VaBYereHFxP3CiIpRo1H",
+      href: "https://www.youtube.com/@UreckonUEMKolkata",
     },
     {
       id: 6,
       icon: "./socials/Facebook.svg",
-      href: "https://whatsapp.com/channel/0029VaBYereHFxP3CiIpRo1H",
+      href: "https://www.facebook.com/ureckon.uemk/",
     },
 
   ]
