@@ -6,11 +6,14 @@ import Events from "./sections/events/Events";
 
 import Faq from "./sections/Faq";
 import Statistics from "../LandingPage/sections/Statistics";
+import PacBorderWrapper from "../../components/PacBorder";
 
 const Home = () => {
   return (
-    <main className="min-h-screen bg-[url('./bg.png')] bg-[#020c1c] bg-center overflow-hidden">
-      <section className="min-h-screen flex flex-col text-white">
+    
+    <main className=" bg-[url('./bg.png')] bg-[#020c1c] bg-center overflow-hidden">
+      <PacBorderWrapper>
+      <section className="m flex flex-col text-white">
         <Hero />
         <Intro />
         <Gallery />
@@ -18,7 +21,9 @@ const Home = () => {
         <Statistics />
         <Faq />
       </section>
+      </PacBorderWrapper>
     </main>
+     
   );
 };
 

@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom"; // Import useNavigate from react-router-dom
+import SectionContainer from "../../components/SectionContainer";
 
 const Partners = () => {
     const navigate = useNavigate(); // Create a navigate function
@@ -23,22 +24,23 @@ const Partners = () => {
     ];
 
     return (
+        <SectionContainer>
         <div className="team-page font-press px-4 py-8 bg-black text-white min-h-screen space-bg">
-            <button 
+            {/* <button 
                 className="absolute left-4 top-4 text-xl text-gray-300 hover:text-white transition"
                 onClick={() => navigate(-1)} // This will navigate to the previous page
             >
                 {"<< BACK"}
-            </button>
+            </button> */}
             
-            <h1 className="text-4xl text-center md:text-6xl mb-5 lg:mb-12 uppercase lg:text-6xl font-press text-[#B01D15] drop-shadow-[0_0_20px_#B01D15]">
-                our partners
+            <h1 className="text-2xl text-center  mb-12 lg:mb-12 uppercase lg:text-5xl font-press text-[#B01D15] drop-shadow-[0_0_20px_#B01D15]">
+             the official PARTNERS of ureckon’25 
             </h1>
             
             <div className="w-full mx-auto space-y-12">
                 {partner.map((category, index) => (
                     <div key={index} className="text-center">
-                        <h2 className="text-2xl text-center mb-5 lg:mb-12 lg:text-4xl font-press text-[#B01D15] drop-shadow-[0_0_20px_#B01D15]">
+                        <h2 className="text-xl text-center mb-5 lg:mb-12 lg:text-3xl font-press text-[#B01D15] drop-shadow-[0_0_20px_#B01D15]">
                             {category.title}
                         </h2>
                         
@@ -55,6 +57,7 @@ const Partners = () => {
                 ))}
             </div>
         </div>
+        </SectionContainer>
     );
 };
 
