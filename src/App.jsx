@@ -21,7 +21,6 @@ import EventsPage2 from './pages/Events/Event2/Page';
 import Partners from './pages/Partners/Partners';
 import PacBorderWrapper from './components/PacBorder';
 
-
 const App = () => {
   const [screenLoading, setScreenLoading] = useState(false);
 
