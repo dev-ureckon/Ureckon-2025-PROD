@@ -12,6 +12,7 @@ export default {
         pixel: ['"Press Start 2P"', 'cursive'],
         pac: ['PacFont', 'sans-serif'],
         helvetica: ['"Helvetica Neue"', 'Helvetica', 'Arial', 'sans-serif'],
+        freon: ['"Freon"', 'sans-serif'],
         roboto: ['Roboto', 'sans-serif']
       },
       borderRadius: {
