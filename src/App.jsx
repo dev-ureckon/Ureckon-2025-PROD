@@ -19,6 +19,7 @@ import Footer from './components/Footer';
 import EventDetails from './pages/Events/EventDetails';
 import EventsPage2 from './pages/Events/Event2/Page';
 import Partners from './pages/Partners/Partners';
+import PacBorderWrapper from './components/PacBorder';
 
 
 const App = () => {
@@ -44,6 +45,7 @@ const App = () => {
         <BrowserRouter>
           <Wrapper>
             <Navbar />
+            {/* <PacBorderWrapper> */}
             <Routes>
               <Route path='/' element={<Home />} />
               <Route path='/about-us' element={<AboutPage />} />
@@ -55,6 +57,7 @@ const App = () => {
               <Route path="/event/:eventId" element={<EventDetails />} />
               <Route path='/events/details' element={<EventsPage2/>} />
             </Routes>
+            {/* </PacBorderWrapper> */}
             <Footer />
           </Wrapper>
         </BrowserRouter>

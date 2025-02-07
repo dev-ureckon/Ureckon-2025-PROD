@@ -137,13 +137,13 @@ const PacBorderWrapper = ({ children, className = "" }) => {
     return (
         <div 
             ref={setContainer} 
-            className={`relative min-h-screen ${className}`}
+            className={`relative h-full m-8 ${className}`}
         >
             <canvas
                 ref={canvasRef}
                 className="absolute inset-0 pointer-events-none"
             />
-            <div className="relative z-10">
+            <div className="relative p-14  z-10">
                 {children}
             </div>
         </div>
