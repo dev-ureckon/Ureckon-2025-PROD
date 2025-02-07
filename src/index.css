@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Press+Start+2P&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Press+Start+2P&family=Roboto+Serif&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -19,14 +18,34 @@
   font-style: normal;
 }
 
+@layer utilities {
+  .text-shadow-white {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8), 0 0 16px rgba(255, 255, 255, 0.6);
+  }
+
+  .text-shadow-red {
+    text-shadow: 0 0 8px rgba(255, 0, 0, 0.8), 0 0 16px rgba(255, 0, 0, 0.6);
+  }
+}
+
+@layer components {
+  .text-glow-white {
+    @apply text-shadow-white;
+  }
+
+  .text-glow-red {
+    @apply text-shadow-red;
+  }
+}
+
 *:root {
   background-color: #05071A;
 }
 
 .gradient-text {
   background: linear-gradient(179.38deg, #FBD60E 0.54%, #DD903D 55.34%);
-  -webkit-background-clip: text;
   background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 

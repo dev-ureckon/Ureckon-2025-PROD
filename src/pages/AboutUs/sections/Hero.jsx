@@ -26,20 +26,9 @@ const Hero = () => {
           {/* Title with enhanced red glow effect */}
           <div className="relative text-center mb-4 sm:mb-6 md:mb-8">
 
-            <h1
-        className="text-[#ff0000] text-center text-2xl md:text-4xl font-mono uppercase "
-        style={{
-          textShadow: `
-            0 0 7px #ff0000,
-            0 0 10px #ff0000,
-            0 0 21px #ff0000,
-            0 0 42px #ff0000
-          `,
-          fontFamily: "'Press Start 2P', monospace",
-        }}
-      >
-        About Us
-      </h1>
+          <h1 className="text-4xl text-center uppercase md:text-6xl mb-5 lg:mb-12 lg:text-6xl font-press text-[#B01D15] drop-shadow-[0_0_20px_#B01D15]">
+            About Us
+          </h1>
           </div>
 
           {/* Pac-Man dots - Hide on very small screens */}
