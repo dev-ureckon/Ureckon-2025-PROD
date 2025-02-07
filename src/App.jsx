@@ -14,6 +14,8 @@ import Team from './components/Team2pg/Team';
 import TeamPage from './pages/Teampage/Page';
 import EventPage from './pages/Events/Event1/Page';
 import ContactUsPage from './pages/ContactUs/Page';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import EventDetails from './pages/Events/EventDetails';
 import EventsPage2 from './pages/Events/Event2/Page';
 import Partners from './pages/Partners/Partners';
@@ -40,6 +42,7 @@ const App = () => {
       {screenLoading ? (<Loader />) : (
         <BrowserRouter>
           <Wrapper>
+            <Navbar />
             <Routes>
               <Route path='/' element={<Home />} />
               <Route path='/about-us' element={<AboutPage />} />
@@ -51,6 +54,7 @@ const App = () => {
               <Route path="/event/:eventId" element={<EventDetails />} />
               <Route path='/events/details' element={<EventsPage2/>} />
             </Routes>
+            <Footer />
           </Wrapper>
         </BrowserRouter>
       )}
