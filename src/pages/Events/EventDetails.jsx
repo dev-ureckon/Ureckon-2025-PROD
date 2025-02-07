@@ -4,103 +4,181 @@ import { Link, useParams } from "react-router-dom";
 import { FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 const events = [
-    {
-      id: "spyder",
-      name: "SPYDER",
-      description: "Ureckon, the annual techno-management fest of the University of Engineering and Management (UEM), Kolkata, is back with its 7th edition! A confluence of innovation, technology, and creativity, We  offer thrilling competitions, interactive workshops, inspiring talks, and business extravaganzas.We  offer thrilling competitions, interactive workshops, inspiring talks, and business extravaganzas.",
-      eventimage: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Rectangle%20114%20(1)-LR16oNm7NSNK3ETjtBvmGBskvgCC5S.png",
-      date: "3RD MARCH",
-      time: "09:30 AM",
-      rules: [
-        "Follow the competition guidelines strictly.",
-        "Team sizes may vary.",
-        "Use of unfair means will result in disqualification.",
-      ],
-      coordinators: [
-        {
-          name: "Supriya Saha",
-          mobile: "9865523203",
-          instagram: "https://www.instagram.com/",
-          linkedin: "https://linkedin.com/in/supriya-saha",
-          twitter: "https://twitter.com/supriya_saha",
-          image: "https://example.com/supriya.jpg",
-        },
-        {
-          name: "sayan snigdha pal",
-          mobile: "9876543211",
-          instagram: "https://www.instagram.com/",
-          linkedin: "https://linkedin.com/in/rahul-gupta",
-          twitter: "https://twitter.com/rahul_gupta",
-          image: "https://example.com/rahul.jpg",
-        },
-        {
-          name: "Biswa Ganguly",
-          mobile: "9876543211",
-          instagram: "https://www.instagram.com/",
-          linkedin: "https://linkedin.com/in/rahul-gupta",
-          twitter: "https://twitter.com/rahul_gupta",
-          image: "https://example.com/rahul.jpg",
-        },
-        
-      ],
-      problemStatementLink: "https://www.youtube.com/watch?v=ZAkr0KFFLLs&list=RDjmpUP1MaQ9Q&index=9",
-      registerLink: "/register/spyder",
-      
-    },
-    {
-        id: "robo-wars",
-        name: "ROBO WARS",
-        description: "Battle of autonomous and remote-controlled robots.",
-        date: "4TH MARCH",
-        time: "10:00 AM",
-        rules: ["Register before deadline.", "Only allowed materials.", "No interference."],
-        coordinators: [
-          {
-            name: "Amit Verma",
-            mobile: "9876543210",
-            instagram: "https://instagram.com/amit_verma",
-            linkedin: "https://linkedin.com/in/amit-verma",
-            twitter: "https://twitter.com/amit_verma",
-            image: "https://example.com/amit.jpg",
-          },
-          {
-            name: "Ami Verma",
-            mobile: "9876543210",
-            instagram: "https://instagram.com/amit_verma",
-            linkedin: "https://linkedin.com/in/amit-verma",
-            twitter: "https://twitter.com/amit_verma",
-            image: "https://example.com/amit.jpg",
-          },
-          {
-            name: "Anil Verma",
-            mobile: "9876543210",
-            instagram: "https://instagram.com/amit_verma",
-            linkedin: "https://linkedin.com/in/amit-verma",
-            twitter: "https://twitter.com/amit_verma",
-            image: "https://example.com/amit.jpg",
-          },
-          {
-            name: "Anil Verma",
-            mobile: "9876543210",
-            instagram: "https://instagram.com/amit_verma",
-            linkedin: "https://linkedin.com/in/amit-verma",
-            twitter: "https://twitter.com/amit_verma",
-            image: "https://example.com/amit.jpg",
-          },
-          {
-            name: "Anil Verma",
-            mobile: "9876543210",
-            instagram: "https://instagram.com/amit_verma",
-            linkedin: "https://linkedin.com/in/amit-verma",
-            twitter: "https://twitter.com/amit_verma",
-            image: "https://example.com/amit.jpg",
-          },
-        ],
-        problemStatementLink: "https://www.youtube.com/watch?v=1pc60L6mBt0&list=RDjmpUP1MaQ9Q&index=12",
-        registerLink: "/register/robo-wars",
-      },
-    ];
-  
+  {
+    id: "biozinformatica",
+    name: "BIOZINFORMATICA",
+    description: "An inter-college bio quiz event covering everything from basic biology to biotechnology and bioinformatics.",
+    eventimage: "https://example.com/biozinformatica.png",
+    date: "1ST & 2ND MARCH",
+    time: "10:00 AM",
+    rules: [
+      "Solo (1 member) or Duo (2 members).",
+      "Malpractice is strictly prohibited.",
+      "Judge’s decision is final."
+    ],
+    coordinators: [
+      { name: "Harshit Choudhury", mobile: "9339010670" },
+      { name: "Pousali Saha", mobile: "7085154794" }
+    ],
+    registerLink: "/register/biozinformatica"
+  },
+  {
+    id: "biotexpression",
+    name: "BIOTEXPRESSION",
+    description: "A dynamic event for showcasing models, posters, and presentations on various aspects of biotechnology.",
+    eventimage: "https://example.com/biotexpression.png",
+    date: "1ST MARCH",
+    time: "11:00 AM",
+    rules: [
+      "1 to 4 members per team.",
+      "Only poster boards provided; bring your own equipment.",
+      "Judgment criteria: Idea & creativity, usefulness, innovation, presentation."
+    ],
+    coordinators: [
+      { name: "Sayantan Biswas", mobile: "9330773760" },
+      { name: "Pousali Saha", mobile: "7085154794" }
+    ],
+    registerLink: "/register/biotexpression"
+  },
+  {
+    id: "code-golf",
+    name: "CODE GOLF",
+    description: "Think you can solve problems in the fewest characters? URECKON'25 presents CODE GOLF! Sharpen your skills, trim your code, and prove less is more.",
+    eventimage: "https://example.com/codegolf.png",
+    date: "1ST MARCH",
+    time: "TBD",
+    rules: [
+      "Equal points for all problems.",
+      "Bonus points for shorter code.",
+      "Rankings based on shortest code and number of problems solved.",
+      "No penalties, but total time is calculated.",
+      "Bonus language marks for solving in specific languages.",
+      "Tie-breaker: least time taken, then last accepted submission time.",
+      "Malpractice leads to disqualification."
+    ],
+    coordinators: [
+      { name: "Debanjan Mukherjee", mobile: "7865891741" },
+      { name: "Diprajit Chakraborty", mobile: "9875383377" }
+    ],
+    registerLink: "/register/code-golf"
+  },
+  {
+    id: "code-ranch",
+    name: "CODE RANCH",
+    description: "Race against the clock to solve challenges with speed and precision.",
+    eventimage: "https://example.com/coderanch.png",
+    date: "1ST MARCH",
+    time: "7:00 PM - 9:00 PM",
+    rules: [
+      "Max 2 members per team.",
+      "Duration: 2 hours.",
+      "Platform: Hackerrank.",
+      "5 questions.",
+      "Ranking based on ICPC system.",
+      "Penalty time for incorrect submissions.",
+      "Tie-breaker: least time taken, then last accepted submission time.",
+      "Plagiarism leads to disqualification."
+    ],
+    coordinators: [
+      { name: "Prithvi Sen", mobile: "9734466555" },
+      { name: "Santadip Rudra", mobile: "7044522841" }
+    ],
+    registerLink: "/register/code-ranch"
+  },
+  {
+    id: "debugger",
+    name: "DEBUGGER",
+    description: "Can you fix broken code under pressure? Join URECKON'25's DEBUGGER! Outsmart the bugs, fix the errors, and beat the clock.",
+    eventimage: "https://example.com/debugger.png",
+    date: "1ST MARCH",
+    time: "TBD",
+    rules: [
+      "Max 1 participant per team (solo event).",
+      "Duration: 1 hour.",
+      "Platform: Hackerrank.",
+      "8 questions.",
+      "Ranking based on ICPC system.",
+      "Penalty time for incorrect submissions.",
+      "Tie-breaker: least time taken, then last accepted submission time.",
+      "Plagiarism leads to disqualification."
+    ],
+    coordinators: [
+      { name: "Debojit Ganguly", mobile: "8777589882" },
+      { name: "Rudranil Malik", mobile: "9883210925" }
+    ],
+    registerLink: "/register/debugger"
+  },
+  {
+    id: "mindful-minds",
+    name: "MINDFUL MINDS",
+    description: "Ready to push ML boundaries? Mindful Machines at Ureckon'25 challenges you to build the most powerful, high-performing model for real-world problems.",
+    eventimage: "https://example.com/mindfulminds.png",
+    date: "1ST - 2ND MARCH",
+    time: "TBD",
+    rules: [
+      "Max 3 members per team, solo participation allowed.",
+      "Must address the given problem statement.",
+      "Tools allowed: Figma, Adobe XD, Notion.",
+      "Duration: 2 days.",
+      "Plagiarized submissions will be disqualified.",
+      "Final submission: PowerPoint presentation/Notion case study.",
+      "Judging criteria: The decision of the coordinators will be final."
+    ],
+    coordinators: [
+      { name: "Anita Mukherjee", mobile: "8250289175" },
+      { name: "Debargha Bandyopadhyay", mobile: "8167336506" },
+      { name: "Anirban Basak", mobile: "9804516488" }
+    ],
+    registerLink: "/register/mindful-minds"
+  },
+  {
+    id: "product-game",
+    name: "PRODUCT GAME 4.0",
+    description: "Revolutionize the world with Product Game 4.0! Tackle society's challenges, turn ideas into game-changing products, and lead the change.",
+    eventimage: "https://example.com/productgame.png",
+    date: "1ST - 2ND MARCH",
+    time: "TBD",
+    rules: [
+      "Preliminary: Google Form quiz before the competition.",
+      "Final: Develop an optimized AI model based on the provided problem statement.",
+      "Evaluation based on accuracy, precision, and inference time.",
+      "Only Python allowed.",
+      "AI tools (ChatGPT, Deepseek, Claude) are allowed.",
+      "Submissions must be pushed to the provided Git repository.",
+      "Plagiarism leads to disqualification.",
+      "Offline event, deadlines must be met.",
+      "Judging criteria: Model performance, inference speed, and innovation."
+    ],
+    coordinators: [
+      { name: "Mrinmay Das", mobile: "9836014691" },
+      { name: "Swarnavo Mukherjee", mobile: "9903619331" },
+      { name: "Indranil Saha", mobile: "9330074221" }
+    ],
+    registerLink: "/register/product-game"
+  },
+  {
+    id: "cyber-cipher",
+    name: "CYBER CIPHER",
+    description: "Ready to test your hacking skills? Join URECKON'25's CYBER CIPHER! Tackle cryptographic puzzles and real-world penetration testing.",
+    eventimage: "https://example.com/cybercipher.png",
+    date: "1ST & 2ND MARCH",
+    time: "TBD",
+    rules: [
+      "Must have a new TryHackMe account before registration.",
+      "Max team size: 3, solo participation allowed.",
+      "DDoS attacks are strictly prohibited.",
+      "Participants must carry their own systems and tools.",
+      "College ID required for verification.",
+      "The decisions of the coordinators shall be final."
+    ],
+    coordinators: [
+      { name: "Arkaprabha Chakraborty", mobile: "6289844601" },
+      { name: "Arkapravo Ghosh", mobile: "7003768803" }
+    ],
+    registerLink: "/register/cyber-cipher"
+  }
+];
+
 
 const EventDetails = () => {
     const { eventId } = useParams();
@@ -162,7 +240,7 @@ const EventDetails = () => {
 
     {/* Image Section */}
     <div className="relative mx-auto w-full max-w-sm">
-      <div className="relative w-full h-[280px] md:h-[360px] lg:h-[420px]">
+      <div className="relative w-full h-[280px] lg:h-[380px]">
         <img
           src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Rectangle%2065-QH9qk4m1nzxH4K5CsMyf7n8IJySbwz.png"
           alt="Red Background"
@@ -252,15 +330,22 @@ const EventDetails = () => {
 
 
 
+<h2 className="text-2xl font-press uppercase text-center lg:text-left md:text-2xl mb-4 text-[#B01D15] drop-shadow-[0_0_20px_#B01D15] tracking-widest">
+  Event Coordinators
+</h2>
 
-<h2 className="text-2xl font-press uppercase text-center lg:text-left md:text-2xl mb-4 text-[#B01D15]  drop-shadow-[0_0_20px_#B01D15] tracking-widest">
-    Event Coordinators
-  </h2>
 {/* Event Coordinators */}
 {event.coordinators && event.coordinators.length > 0 ? (
-  <div className="grid lg:grid-cols-3 grid-cols-1 bg-[#FF000A]/10 lg:gap-0 font-press gap-6">
+  <div
+    className={`grid gap-6 font-press justify-center 
+    ${event.coordinators.length === 1 ? "grid-cols-1" : ""} 
+    ${event.coordinators.length === 2 ? "lg:grid-cols-2 grid-cols-1 justify-center" : ""} 
+    ${event.coordinators.length >= 3 ? "lg:grid-cols-3 md:grid-cols-2 grid-cols-1" : ""} 
+    bg-[#FF000A]/10`}
+  >
     {event.coordinators.map((coordinator, index) => (
       <div key={index} className="text-center h-[380px] py-6 bg-[#FF000A]/10">
+        
         {/* Coordinator Image */}
         <div className="w-32 h-32 bg-[#B01D15] rounded-full mx-auto mb-2 overflow-hidden">
           <img src={coordinator.image} alt={coordinator.name} className="w-full h-full object-cover" />
@@ -276,22 +361,22 @@ const EventDetails = () => {
 
         {/* Social Media Icons */}
         <div className="flex items-center justify-center mt-4 relative gap-x-2">
-  <a href={coordinator.instagram} target="_blank" rel="noopener noreferrer">
-    <div className="w-12 h-12 bg-[#B01D15] flex justify-center items-center rounded-full   z-10">
-      <FaInstagram className="text-white" />
-    </div>
-  </a>
-  <a href={coordinator.linkedin} target="_blank" rel="noopener noreferrer">
-    <div className="w-12 h-12 bg-[#B01D15] flex justify-center items-center rounded-full   z-20">
-      <FaLinkedin className="text-white" />
-    </div>
-  </a>
-  <a href={coordinator.twitter} target="_blank" rel="noopener noreferrer">
-    <div className="w-12 h-12 bg-[#B01D15] flex justify-center items-center rounded-full   z-30">
-      <FaTwitter className="text-white" />
-    </div>
-  </a>
-</div>
+          <a href={coordinator.instagram} target="_blank" rel="noopener noreferrer">
+            <div className="w-12 h-12 bg-[#B01D15] flex justify-center items-center rounded-full">
+              <FaInstagram className="text-white" />
+            </div>
+          </a>
+          <a href={coordinator.linkedin} target="_blank" rel="noopener noreferrer">
+            <div className="w-12 h-12 bg-[#B01D15] flex justify-center items-center rounded-full">
+              <FaLinkedin className="text-white" />
+            </div>
+          </a>
+          <a href={coordinator.twitter} target="_blank" rel="noopener noreferrer">
+            <div className="w-12 h-12 bg-[#B01D15] flex justify-center items-center rounded-full">
+              <FaTwitter className="text-white" />
+            </div>
+          </a>
+        </div>
 
       </div>
     ))}
@@ -299,7 +384,6 @@ const EventDetails = () => {
 ) : (
   <p className="text-center text-gray-500">Loading coordinators...</p>
 )}
-
 
 
        {/* Buttons */}
