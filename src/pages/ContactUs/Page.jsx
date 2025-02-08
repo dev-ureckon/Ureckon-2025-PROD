@@ -37,7 +37,7 @@ const ContactsPage = () => {
                 HERE ARE WE!
               </h1>
 
-              <div>
+              <div className="hidden md:block">
                 <PinContainer
                   title="https://maps.app.goo.gl/KFRT3UGtFcYqjbyL7"
                   href="https://maps.app.goo.gl/KFRT3UGtFcYqjbyL7"
