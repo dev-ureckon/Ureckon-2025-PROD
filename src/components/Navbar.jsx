@@ -7,7 +7,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-50 w-full   shadow-lg p-4 max-w-full">
+    <header className="sticky top-0 z-50 w-full   shadow-lg px-6 py-6 max-w-full ">
       <nav className="container mx-auto flex h-14 items-center justify-between px-4">
         {/* Logo */}
         <a href="/" className="flex items-center space-x-2">
@@ -17,14 +17,14 @@ export default function Navbar() {
         </a>
 
         {/* Desktop Navigation */}
-        <div className="hidden items-center space-x-6 text-[#F8E461] lg:flex">
-          <a href="/" className="md:text-lg text-base  hover:text-yellow-500">
+        <div className="hidden items-center space-x-16 text-[#F8E461] lg:flex">
+          <a href="/" className="md:text-xl text-base  hover:text-yellow-500">
             HOME
           </a>
-          <a href="/about-us" className="md:text-lg text-base hover:text-yellow-500">
+          <a href="/about-us" className="md:text-xl text-base hover:text-yellow-500">
             ABOUT
           </a>
-          <a href="/partners" className="md:text-lg text-base hover:text-yellow-500">
+          <a href="/partners" className="md:text-xl text-base hover:text-yellow-500">
             PARTNERS
           </a>
         </div>
@@ -37,14 +37,14 @@ export default function Navbar() {
         </a>
 
         {/* Desktop Navigation Continued */}
-        <div className="hidden items-center space-x-6 text-yellow-400 lg:flex">
-          <a href="/events" className="md:text-lg text-base hover:text-yellow-500">
+        <div className="hidden items-center space-x-16 text-yellow-400 lg:flex">
+          <a href="/events" className="md:text-xl text-base hover:text-yellow-500">
             EVENTS
           </a>
-          <a href="/team" className="md:text-lg text-base hover:text-yellow-500">
+          <a href="/team" className="md:text-xl text-base hover:text-yellow-500">
             TEAM
           </a>
-          <a href="/contact-us" className="md:text-lg text-base hover:text-yellow-500">
+          <a href="/contact-us" className="md:text-xl text-base hover:text-yellow-500">
             CONTACT US
           </a>
         </div>

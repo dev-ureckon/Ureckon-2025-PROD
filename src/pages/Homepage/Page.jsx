@@ -12,7 +12,7 @@ const Home = () => {
   return (
     
     <main className=" bg-[url('./bg.png')] bg-[#020c1c] bg-center overflow-hidden">
-      {/* <PacBorderWrapper> */}
+      <PacBorderWrapper>
       <section className="m flex flex-col text-white">
         <Hero />
         <Intro />
@@ -21,7 +21,7 @@ const Home = () => {
         <Statistics />
         <Faq />
       </section>
-      {/* </PacBorderWrapper> */}
+      </PacBorderWrapper>
     </main>
      
   );
