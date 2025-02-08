@@ -1,4 +1,8 @@
-"use client";
+import load from "/ureckon.svg"
+import u7 from "/Frame 25.svg"
+import arrow from "/loader/arrow.svg"
+import space from "/loader/space.svg"
+import tab from "/loader/tap.svg"
 
 import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
@@ -43,11 +47,11 @@ const Loader = () => {
       className="h-screen px-8 py-8 md:px-8 lg:px-16 max-lg:p-10 bg-[#020c1c] flex flex-col justify-center items-center bg-[url('./bg.png')] relative opacity-0"
     >
       <div className="mb-16">
-        <img src="./ureckon.svg" className="mx-auto" alt="Ureckon logo" />
+        <img src={load} className="mx-auto" alt="Ureckon logo" />
       </div>
       <div className="flex flex-col gap-5 mb-[5rem]">
         <img
-          src="./Frame 25.svg"
+          src={u7}
           className="mx-auto h-[225px]"
           alt="Frame 25"
         />
@@ -63,7 +67,7 @@ const Loader = () => {
             <div className="flex items-center md:relative mx-auto">
               <div className="flex items-center gap-1 md:relative md:left-20">
                 <button className="w-[300.16px]">
-                  <img src="./loader/arrow.svg" className="" />
+                  <img src={arrow} className="" />
                 </button>
                 <h1 className="font-pixel text-[#C0C0C0] text-opacity-[60%] drop-shadow-[0_0_10px_#fff] text-[15.33px] w-full">
                   to move,
@@ -71,12 +75,12 @@ const Loader = () => {
               </div>
 
               <button className="w-[200.16px]">
-                <img src="./loader/space.svg" />
+                <img src={space} />
               </button>
             </div>
           ) : (
             <button className="w-[244.16px]">
-              <img src="./loader/tap.svg" className="" />
+              <img src={tab} className="" />
             </button>
           )}
 
