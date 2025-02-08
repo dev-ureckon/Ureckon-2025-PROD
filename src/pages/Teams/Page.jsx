@@ -1,6 +1,7 @@
 import React from 'react'
 import T from '../../components/T'
 import { motion } from 'framer-motion'
+import { PinContainer } from '../../components/ui/3d-pin'
 
 const TeamsPage = () => {
 
@@ -51,7 +52,8 @@ const TeamsPage = () => {
 
         
     </div>
-</div>
+
+  </div>
   )
 }
 
