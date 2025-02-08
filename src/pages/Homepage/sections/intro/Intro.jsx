@@ -52,10 +52,10 @@ function Intro() {
   }
 
   return (
-    <section className="min-h-screen px-5 mx-auto sm:p-6 md:p-10">
+    <section>
       <div className="flex items-center justify-center">
         <h1
-          className="mx-auto font-pixel mb-[2rem] flex gap-[16px] items-center animate-bounce"
+          className="mx-auto font-pixel my-2 flex gap-[16px] items-center animate-bounce"
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
@@ -67,10 +67,11 @@ function Intro() {
           />
         </h1>
       </div>
+    <section className="min-h-screen flex items-center justify-center mx-auto  md:p-10">
 
-      <div className="container mx-auto rounded-[54.35px] md:px-8 lg:p-6 introBox relative h-auto w-[90vw] border-[#3f3b4f] border">
+      <div className="container  mx-auto rounded-[54.35px] md:px-8 lg:p-6 introBox relative lg:h-[800px] w-[500px] lg:w-[90vw] border-[#3f3b4f] border">
         <Tabs defaultValue="what is ureckon" value={currentTab} onValueChange={handleTabChange}>
-          <TabsList className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 bg-transparent gap-5 sm:gap-[4rem] md:gap-[3rem] lg:gap-[8rem] font-pixel absolute top-1 max-lg:w-full">
+          <TabsList className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 bg-transparent gap-5 sm:gap-[4rem] md:gap-[3rem] lg:gap-[8rem] font-pixel absolute top-1 max-lg:w-full">
             <TabsTrigger
               className="text-xs sm:text-[0.7rem] md:text-[9px] lg:text-[12px] xl:text-[0.9rem] tab1 relative md:right-5"
               value="what is ureckon"
@@ -102,6 +103,7 @@ function Intro() {
           ))}
         </Tabs>
       </div>
+    </section>
     </section>
   )
 }
