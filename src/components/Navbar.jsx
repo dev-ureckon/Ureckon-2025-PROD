@@ -4,8 +4,17 @@ import { useState } from "react";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
+  const navLinks = [
+    { name: "Home", link: "/" },
+    { name: "About", link: "/about-us" },
+    { name: "Partners", link: "/partners" },
+    { name: "Events", link: "/events" },
+    { name: "Team", link: "/team" },
+    { name: "Contact Us", link: "/contact-us" }
+  ];
+
   return (
-    <header className="sticky top-0 z-50 w-full shadow-lg px-6 py-6 max-w-full ">
+    <header className="sticky top-0 z-50 w-full shadow-lg px-6 py-6 max-w-full">
       <nav className="container mx-auto flex h-14 items-center justify-between px-4">
         {/* Logo */}
         <a href="/" className="flex items-center space-x-2">
@@ -16,25 +25,25 @@ export default function Navbar() {
 
         {/* Desktop Navigation */}
         <div className="hidden items-center space-x-16 text-[#F8E461] lg:flex">
-          {['HOME', 'ABOUT', 'PARTNERS'].map((item) => (
-            <a key={item} href={`/${item.toLowerCase()}`} className="md:text-xl text-base hover:text-yellow-500">
-              {item}
+          {navLinks.slice(0, 3).map(({ name, link }) => (
+            <a key={name} href={link} className="md:text-xl text-base hover:text-yellow-500">
+              {name.toUpperCase()}
             </a>
           ))}
         </div>
 
         {/* Register Button - Always Centered */}
         <a href="/events">
-          <button className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-xl bg-[#E98A23] px-4 py-2 font-freon text-black text-sm md:text-base  transition-colors hover:bg-[#FF6B00]/90 border-4 border-[#CF2228]">
+          <button className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-xl bg-[#E98A23] px-4 py-2 font-freon text-black text-sm md:text-base transition-colors hover:bg-[#FF6B00]/90 border-4 border-[#CF2228]">
             REGISTER NOW
           </button>
         </a>
 
         {/* Desktop Navigation Continued */}
         <div className="hidden items-center space-x-16 text-yellow-400 lg:flex">
-          {['EVENTS', 'TEAM', 'CONTACT US'].map((item) => (
-            <a key={item} href={`/${item.replace(/ /g, '-').toLowerCase()}`} className="md:text-xl text-base hover:text-yellow-500">
-              {item}
+          {navLinks.slice(3).map(({ name, link }) => (
+            <a key={name} href={link} className="md:text-xl text-base hover:text-yellow-500">
+              {name.toUpperCase()}
             </a>
           ))}
         </div>
@@ -58,9 +67,9 @@ export default function Navbar() {
           </button>
           
           <div className="flex flex-col space-y-6 text-[#F8E461] mt-8">
-            {['HOME', 'ABOUT', 'PARTNERS', 'EVENTS', 'TEAM', 'CONTACT US'].map((item) => (
-              <a key={item} href={`/${item.replace(/ /g, '-').toLowerCase()}`} className="md:text-lg text-base hover:text-yellow-500" onClick={() => setIsOpen(false)}>
-                {item}
+            {navLinks.map(({ name, link }) => (
+              <a key={name} href={link} className="md:text-lg text-base hover:text-yellow-500" onClick={() => setIsOpen(false)}>
+                {name.toUpperCase()}
               </a>
             ))}
           </div>
