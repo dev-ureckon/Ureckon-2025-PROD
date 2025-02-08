@@ -137,7 +137,7 @@ const PacBorderWrapper = ({ children, className = "" }) => {
     return (
         <div 
             ref={setContainer} 
-            className={`relative h-full m-8 ${className}`}
+            className={`relative h-full lg:m-8 m-2 ${className}`}
         >
             <canvas
                 ref={canvasRef}
