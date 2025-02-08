@@ -41,7 +41,7 @@ const Hero = () => {
         <h1 className="text-4xl md:text-6xl lg:text-8xl font-press text-[#7AD0E5] drop-shadow-[0_0_20px_#7AD0E5]">
           URECKON
         </h1>
-        <p className="my-4 text-2xl md:text-4xl lg:text-6xl font-helvetica text-yellow-300 drop-shadow-[0_0_20px_#7AD0E5]">
+        <p className="my-4 bg-gradient-to-b from-[#FBD60E] to-[#DD903D] bg-clip-text  text-transparent font-press lg:text-5xl text-2xl tracking-wider">
           BLAST FROM THE PAST
         </p>
       </div>
@@ -69,7 +69,7 @@ const Hero = () => {
     <h1 className="text-4xl md:text-6xl font-press text-[#7AD0E5] drop-shadow-[0_0_20px_#7AD0E5]">
       URECKON
     </h1>
-    <p className="my-4 text-2xl md:text-4xl font-helvetica text-yellow-300 drop-shadow-md">
+    <p className="my-4 bg-gradient-to-b from-[#FBD60E] to-[#DD903D] bg-clip-text  text-transparent font-press lg:text-5xl text-2xl tracking-wider">
       BLAST FROM THE PAST
     </p>
   </div>
