@@ -12,8 +12,8 @@ const Home = () => {
   return (
     
     <main className=" bg-[url('./bg.png')] bg-[#020c1c] bg-center overflow-hidden">
-      <PacBorderWrapper>
-      <section className="m flex flex-col text-white">
+      {/* <PacBorderWrapper> */}
+      <section className="mx-2 flex flex-col text-white">
         <Hero />
         <Intro />
         <Gallery />
@@ -21,7 +21,7 @@ const Home = () => {
         <Statistics />
         <Faq />
       </section>
-      </PacBorderWrapper>
+      {/* </PacBorderWrapper> */}
     </main>
      
   );

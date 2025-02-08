@@ -13,8 +13,7 @@ export default function Events() {
           WebkitTextFillColor: "transparent",
           backgroundClip: "text",
         }}
-          className="text-[52.05px] max-lg:text-4xl
-             uppercase font-pixel drop-shadow-[0_0_10px_rgba(234,179,8,0.8)] mt-[3rem] relative top-[3rem]"
+          className="text-2xl lg:text-6xl uppercase font-pixel drop-shadow-[0_0_10px_rgba(234,179,8,0.8)] mt-[3rem]  top-[3rem]"
         
         >
           <TextAnimate animation="slideLeft" by="character">
@@ -23,7 +22,7 @@ export default function Events() {
          
         </h1>
       </div>
-      <div className="">
+      <div className="mx-6 lg:mx-0">
       <EventCard/>
       </div>
     </section>
