@@ -21,26 +21,26 @@ function Faq() {
         <div className="max-w-5xl font-press mx-auto">
           <Accordion type="single" collapsible className="w-full space-y-6">
             <AccordionItem value="item-1" className="bg-[#030418]  p-4">
-              <AccordionTrigger className="text-left text-lg sm:text-xl">
+              <AccordionTrigger className="text-left text-xs lg:text-xl">
                 Who can participate?
               </AccordionTrigger>
-              <AccordionContent className="text-left text-sm sm:text-base">
+              <AccordionContent className="text-left text-xs lg:text-base">
                 Anyone interested in innovation, competitions, and networking can participate!
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2" className="bg-[#030418] p-4">
-              <AccordionTrigger className="text-left text-lg sm:text-xl">
+              <AccordionTrigger className="text-left text-xs lg:text-xl">
                 How can I register for Ureckon events?
               </AccordionTrigger>
-              <AccordionContent className="text-left text-sm sm:text-base">
+              <AccordionContent className="text-left text-xs lg:text-base">
                 You can register via our official website. Check the events page for details.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3" className="bg-[#030418]  p-4">
-              <AccordionTrigger className="text-left text-lg sm:text-xl">
+              <AccordionTrigger className="text-left text-xs lg:text-xl">
                 Can I attend Ureckon if I'm not participating in any events?
               </AccordionTrigger>
-              <AccordionContent className="text-left text-sm sm:text-base">
+              <AccordionContent className="text-left text-xs lg:text-base">
                 Yes! You can enjoy workshops, exhibitions, and various activities.
               </AccordionContent>
             </AccordionItem>

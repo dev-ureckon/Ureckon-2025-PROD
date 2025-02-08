@@ -34,7 +34,7 @@ const Hero = () => {
   return (
     <section>
     <section
-      className="hidden  relative  w-full min-h-screen lg:flex flex-col items-center justify-center bg-cover bg-center p-6 md:p-12 lg:p-20 overflow-hidden"
+      className="hidden  relative  w-full h-[90vh] lg:flex flex-col items-center justify-center bg-cover bg-center p-6 md:p-12 lg:p-20 overflow-hidden"
       style={{ backgroundImage: `url(${bg})` }}
     >
       <div className="text-center lg:p-4 p-4 bg-black">
