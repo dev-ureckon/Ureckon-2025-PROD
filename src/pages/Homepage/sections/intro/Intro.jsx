@@ -53,23 +53,23 @@ function Intro() {
 
   return (
     <section>
-      <div className="flex items-center justify-center">
+      <div className="flex items-center lg:mt-4 mb-4 justify-center">
         <h1
-          className="mx-auto font-pixel my-2 flex gap-[16px] items-center animate-bounce"
+          className="mx-auto font-pixel flex gap-[16px] items-center text-xs lg:text-xl animate-bounce transition delay-200"
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
           Designed By
           <img
             src={isHovered ? "./animate orange.svg" : "./animate white.svg"}
-            className="h-[33.37px] w-[158px] cursor-pointer"
+            className="lg:h-[33.37px] lg:w-[158px] h-[20px] w-[22vw] cursor-pointer"
             alt="Designed By"
           />
         </h1>
       </div>
     <section className="min-h-screen flex items-center justify-center mx-auto  md:p-10">
 
-      <div className="container  mx-auto rounded-[54.35px] md:px-8 lg:p-6 introBox relative lg:h-[800px] w-[500px] lg:w-[90vw] border-[#3f3b4f] border">
+      <div className="container  mx-auto rounded-[54.35px] md:px-8 lg:p-6 introBox relative lg:h-[800px] h-[100%]  w-[500px] lg:w-[90vw] border-[#3f3b4f] border">
         <Tabs defaultValue="what is ureckon" value={currentTab} onValueChange={handleTabChange}>
           <TabsList className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 bg-transparent gap-5 sm:gap-[4rem] md:gap-[3rem] lg:gap-[8rem] font-pixel absolute top-1 max-lg:w-full">
             <TabsTrigger
@@ -85,7 +85,7 @@ function Intro() {
               WHEN, WHERE,& MORE
             </TabsTrigger>
             <TabsTrigger
-              className="text-xs sm:text-[0.7rem] md:text-[9px] lg:text-[12px] xl:text-[0.9rem] items-center tab relative md:right-[3rem] lg:right-0 sm:px-[6.5rem]"
+              className="text-[10px]  md:text-[9px] lg:text-[12px] xl:text-[0.9rem] items-center tab relative md:right-[3rem] lg:right-0 sm:px-[6.5rem]"
               value="whats new this year"
             >
               WHAT'S NEW THIS YEAR ?
@@ -158,7 +158,7 @@ function TabContent({ title, firstPara, secondPara, imageSrc }) {
         <div className="flex flex-col mx-auto gap-5 md:gap-10 mt-4 md:mt-[5rem] font-pixel md:right-[24rem] relative lg:right-0">
           <p className="text-[10px] sm:text-[11px] md:text-[12px] text-[#C0C0C0] text-wrap w-full">{firstPara}</p>
           <p className="text-[10px] sm:text-[11px] md:text-[12px] text-[#C0C0C0] text-wrap w-full">{secondPara}</p>
-          <div className="flex items-center  justify-center gap-5 mx-auto flex-wrap mt-10 md:mt-0">
+          <div className="flex items-center  justify-center gap-4 mx-auto flex-wrap mt-4 md:mt-0">
             {links.map((item) => (
               <Link to={item.href} key={item.id}>
                 <button

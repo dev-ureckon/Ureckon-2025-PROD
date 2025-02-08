@@ -2,8 +2,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { cn } from "../../lib/utils.js";
-import Contactpic from "../../assets/ContactUs/ILLUATRATED MAP.png";
-// import Link from "next/link";
+
 
 export const PinContainer = ({
   children,
@@ -23,7 +22,7 @@ export const PinContainer = ({
 
   return (
     (<a
-      className={cn("relative group/pin z-50  cursor-pointer", containerClassName)}
+      className={cn("relative group/pin z-50  cursor-pointer   lg:p-2 p-0 w-[52vw] md:w-[32vw] mx-auto lg:w-[45%] flex items-center justify-center lg:items-start", containerClassName)}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
       href={href || "/uem.com"}
@@ -33,16 +32,21 @@ export const PinContainer = ({
           perspective: "1000px",
           transform: "rotateX(70deg) translateZ(0deg)",
         }}
-        className="absolute left-1/2 top-1/2 ml-[0.09375rem] mt-4 -translate-x-1/2 -translate-y-1/2">
-        <div
+        className=" absolute left-[49.5%] top-1/2 ml-[0.09375rem] flex items-center justify-center mt-4 -translate-x-1/2 -translate-y-1/2">
+
+         
+
+            <div
           style={{
             transform: transform,
           }}
-          className="absolute left-1/2 p-2 top-1/2  flex justify-start items-start  rounded-2xl  shadow-[0_8px_16px_rgb(0_0_0/0.4)] bg-[#CF2228] black border border-white/[0.1] group-hover/pin:border-white/[0.2] transition duration-700 overflow-hidden -mt-4">
+          className="absolute left-1/2 p-2 lg top-1/2  flex max-w-[260px] lg:max-w-[360px] justify-center items-center  rounded-2xl  shadow-[0_8px_16px_rgb(0_0_0/0.4)] bg-[#CF2228] black border border-white/[0.1] group-hover/pin:border-white/[0.2] transition duration-700 overflow-hidden -mt-4">
 
             
           <div className={cn(" relative z-50 ", className)}>{children}</div>
         </div>
+         
+        
       </div>
       <PinPerspective title={title} href={href} />
     </a>)

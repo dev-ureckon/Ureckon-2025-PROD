@@ -22,7 +22,7 @@ export default function EventCarousel() {
   ];
 
   return (
-    <div className="py-20 w-full mx-auto px-8">
+    <div className="lg:pb-20 w-full mx-auto lg:px-8 ">
       <Carousel
         opts={{
           align: "start",
@@ -31,7 +31,7 @@ export default function EventCarousel() {
       >
         <CarouselContent className="" >
           {events.map((event) => (
-            <CarouselItem key={event.id} className="md:basis-1/2 lg:basis-1/3">
+            <CarouselItem key={event.id} className=" lg:basis-1/3">
               <Card title={event.title} className=""/>
             </CarouselItem>
           ))}
@@ -55,7 +55,7 @@ const Card = ({ title }) => {
       onMouseLeave={() => handleInteraction(false)}
       onTouchStart={() => handleInteraction(true)}
       onTouchEnd={() => handleInteraction(false)}
-      className="group/canvas-card flex items-center justify-center mx-auto p-[2rem] relative h-[500px] w-full bg-[#ff0000] bg-opacity-15"
+      className="group/canvas-card flex items-center justify-center mx-auto p-[rem] relative lg:h-[500px] h-[400px] w-full bg-[#ff0000] bg-opacity-15"
     >
       <CornerIcon className="absolute h-6 w-6 -top-1 -left-1 text-[#ff0000]" />
       <CornerIcon className="absolute h-6 w-6 -bottom-1 -left-1 text-[#ff0000]" />
@@ -83,9 +83,9 @@ const Card = ({ title }) => {
         )}
       </AnimatePresence>
 
-      <div className="relative z-20">
+      <div className="relative p z-20">
         <h2
-          className="opacity-100 group-hover/canvas-card:opacity-100 relative z-10 font-bold group-hover/canvas-card:text-[#ff0000] transition duration-200 text-xl md:text-2xl font-pixel text-center bg-gradient-to-b bg-clip-text text-transparent from-[#FFB74D] to-[#F57C00]
+          className="opacity-100  group-hover/canvas-card:opacity-100 relative z-10 font-bold group-hover/canvas-card:text-[#ff0000] transition duration-200 text-lg md:text-2xl font-pixel text-center bg-gradient-to-b bg-clip-text text-transparent from-[#FFB74D] to-[#F57C00]
              uppercase"
         >
           {title}
