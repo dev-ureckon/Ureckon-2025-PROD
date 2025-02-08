@@ -98,7 +98,8 @@ const T = ({ children }) => {
         <img src={DOTS} alt="TOP DOTS" className="absolute top-[40%]" />
       </div>
 
-      <div className=" hidden  w-[80%] xl:w-[70%] h-[76vh] mx-auto lg:flex justify-between">
+    
+      <div className=" hidden   w-[80%] xl:w-[70%] h-[76vh] mx-auto lg:flex justify-between">
         <div className="rounded-full border-opacity-0">
           <img src={RIGHTT} alt="right M T" className="h-full" />
         </div>
@@ -115,7 +116,7 @@ const T = ({ children }) => {
       </div>
 
       <div className="flex items-center justify-center w-[68%] mx-auto">
-        <div className="  p-2 lg:p-3 h-[30vh] w-[56%] absolute top-[6%] lg:top-[54%]  ">
+        <div className="  p-2 lg:p-3 h-[30vh] w-[56%] absolute top-[6%] lg:top-[60%]   ">
           {children}
         </div>
       

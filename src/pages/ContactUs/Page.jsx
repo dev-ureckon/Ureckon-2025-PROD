@@ -9,9 +9,9 @@ import SectionContainer from "../../components/SectionContainer";
 const ContactsPage = () => {
   return (
     <SectionContainer>
-      <div className="  h-auto">
-        <div className="p-4 mx-auto max-w-full">
-          <h1 className="text-4xl text-center uppercase md:text-6xl mb-5 lg:mb-12 lg:text-6xl font-press text-[#B01D15] drop-shadow-[0_0_20px_#B01D15]">
+      <div className=" h-auto">
+        <div className=" p-1 lg:p-4 mx-auto max-w-full">
+          <h1 className="text-lg text-center uppercase md:text-4xl mb-5 lg:mb-12 lg:text-6xl font-press text-[#B01D15] drop-shadow-[0_0_20px_#B01D15]">
             Contact Us
           </h1>
 
@@ -22,32 +22,36 @@ const ContactsPage = () => {
 
                 <img
                   src={pacman}
-                  className="absolute top-12 lg:top-12 md:top-10 mb-10 w-28 h-28 md:h-36 md:w-36 lg:w-40 lg:h-40"
+                  className="absolute top-9  lg:top-12 md:top-5 mb-10 w-20 h-20 md:h-36 md:w-36 lg:w-40 lg:h-40"
                 />
               </div>
             </div>
           </div>
 
-          <div className=" opacity-60 max-w-full mx-auto flex flex-col-reverse lg:flex-row justify-between gap-6 lg:gap-8 mt-10 ">
-            <div className=" flex flex-col items-center p-4 max-w-full">
+          <div className="  opacity-60 max -w-full mx-auto flex flex-col-reverse lg:flex-row justify-between gap-6 lg:gap-8 mt-10 ">
+            <div className="  flex flex-col items-center  p-0 lg:p-3 w-full lg:w-[60%]">
               <h1
-                className="text-[#C0C0C0] font-press text-sm lg:text-xl font-normal leading-[44px] lg:text-left underline underline-offset-auto decoration-skip-ink-none  mb-1 lg:mb-2 text-center [text-shadow:0_0_10px_rgb(255_255_255/30%),_0_0_20px_rgb(220_240_255/50%),_0_0_30px_rgb(200_230_255/40%),_0_0_40px_rgb(180_220_255/_20%)]
-        drop-shadow-[0_0_40px_rgba(220,240,255,0.9)] "
+                className="text-[#C0C0C0] font-press text-sm lg:text-xl font-normal leading-[44px] lg:text-left underline underline-offset-auto decoration-skip-ink-none mb-1 text-center [text-shadow:0_0_10px_rgb(255_255_255/30%),_0_0_20px_rgb(220_240_255/50%),_0_0_30px_rgb(200_230_255/40%),_0_0_40px_rgb(180_220_255/_20%)]
+        drop-shadow-[0_0_40px_rgba(220,240,255,0.9)] lg:mb-6 md:mb-4 "
               >
                 HERE ARE WE!
               </h1>
 
-              <div className="hidden md:block">
-                <PinContainer
-                  title="https://maps.app.goo.gl/KFRT3UGtFcYqjbyL7"
-                  href="https://maps.app.goo.gl/KFRT3UGtFcYqjbyL7"
-                  className="max-w-full"
-                >
-                  <div className="basis-full   text-slate-100/50 sm:basis-1/2 w-[15rem] lg:w-[18rem] h-[18rem] flex justify-center items-center ">
-                    <img src={Contactpic} className="h-full w-full" />
+
+
+              <div className="  w-full  flex items-center justify-center ">
+                    <PinContainer
+                      title="uem kolkata"
+                      href="https://maps.app.goo.gl/KFRT3UGtFcYqjbyL7"
+                    >
+                      <div className="  text-slate-100/50 s w-[11rem] lg:w-[18rem] h-[16rem] md:w-[15rem]  md:h-[22rem]  flex justify-center items-center">
+                        
+                      <img src={Contactpic} className="h-full w-full" />
+                        
+                      </div>
+                    </PinContainer>
                   </div>
-                </PinContainer>
-              </div>
+              
             </div>
 
             <div className=" bg- emerald-400 p-4 w-full lg:w-[60%]">
@@ -55,7 +59,7 @@ const ContactsPage = () => {
                 <div>
                   <label
                     htmlFor="name"
-                    className="block text-sm font-press leading-[27px] underline underline-offset-auto decoration-skip-ink-none text-[#FDFDFD]"
+                    className="block text-xs md:text-sm font-press leading-[27px] underline underline-offset-auto decoration-skip-ink-none text-[#FDFDFD]"
                   >
                     NAME
                   </label>
@@ -69,21 +73,21 @@ const ContactsPage = () => {
                 <div>
                   <label
                     htmlFor="email"
-                    className="block text-sm font-press leading-[27px] underline underline-offset-auto decoration-skip-ink-none text-[#FDFDFD]"
+                    className="block text-xs md:text-sm font-press leading-[27px] underline underline-offset-auto decoration-skip-ink-none text-[#FDFDFD]"
                   >
                     EMAIL
                   </label>
                   <input
                     type="email"
                     id="email"
-                    className="w-full bg-transparent border-b border-gray-400 focus:outline-none text-sm tracking-widest border-dashed "
+                    className="w-full bg-transparent border-b border-gray-400 focus:outline-none text-xs md:text-sm tracking-widest border-dashed "
                   />
                 </div>
 
                 <div>
                   <label
                     htmlFor="phone"
-                    className="block text-sm font-press leading-[27px] underline underline-offset-auto decoration-skip-ink-none text-[#FDFDFD]"
+                    className="block text-xs md:text-sm font-press leading-[27px] underline underline-offset-auto decoration-skip-ink-none text-[#FDFDFD]"
                   >
                     PHONE
                   </label>
@@ -97,7 +101,7 @@ const ContactsPage = () => {
                 <div>
                   <label
                     htmlFor="message"
-                    className="block text-sm font-press leading-[27px] underline underline-offset-auto decoration-skip-ink-none text-[#FDFDFD] mb-2"
+                    className="block text-xs md:text-sm font-press leading-[27px] underline underline-offset-auto decoration-skip-ink-none text-[#FDFDFD] mb-2"
                   >
                     MESSAGE
                   </label>

@@ -20,6 +20,7 @@ import EventDetails from './pages/Events/EventDetails';
 import EventsPage2 from './pages/Events/Event2/Page';
 import Partners from './pages/Partners/Partners';
 import PacBorderWrapper from './components/PacBorder';
+import TeamsPage from './pages/Teams/Page';
 
 const App = () => {
   const [screenLoading, setScreenLoading] = useState(false);
@@ -55,6 +56,7 @@ const App = () => {
               <Route path='/events' element={<EventPage />}/>
               <Route path="/event/:eventId" element={<EventDetails />} />
               <Route path='/events/details' element={<EventsPage2/>} />
+              <Route path='/teams' element={<TeamsPage />} />
             </Routes>
             {/* </PacBorderWrapper> */}
             <Footer />
