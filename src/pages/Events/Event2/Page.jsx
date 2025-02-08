@@ -1,113 +1,114 @@
 import React from "react";
-import T from "../../../components/T";
-import SectionContainer from '../../../components/SectionContainer'
-import rectangle115 from "../../../assets/Rectangle 115.svg";
-import rectangle70 from "../../../assets/Rectangle 70.svg"
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
+import SectionContainer from "../../../components/SectionContainer";
+import dummyEvent from "../../../assets/dummyEvent.png";
+import PacBorderWrapper from "../../../components/PacBorder";
 
-const EventsPage2 = () => {
+const EventsPage2 = ({ events }) => {
   return (
-    <div className="mt-12">
+    <div className="mt-12 px-4 w-full">
       <SectionContainer>
-      <Link to="/events" className="w-full py-2 sm:py-3 lg:py-4 px-3 sm:px-4 lg:px-6 relative block">
-        <h1 className="font-['Press_Start_2P'] text-[16px] sm:text-[20px] lg:text-[24px] leading-[24px] sm:leading-[32px] lg:leading-[44px] font-normal text-white">&lt;&lt; BACK</h1>
-        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-black/10 to-black/30"></div>
-      </Link>
-        <div className="mt-12">
-          <div className="relative w-full max-w-[800px] min-h-[200px] sm:min-h-[350px] bg-[#3D0000] border-2 border-[#FF0000] rounded-lg p-2 sm:p-4">
-            <div className="absolute -top-4 -left-2 text-[#FF0000] text-xl font-bold">+</div>
-            <div className="absolute -top-4 -right-2 text-[#FF0000] text-xl font-bold">+</div>
-            <div className="absolute -bottom-4 -left-1 text-[#FF0000] text-xl font-bold">+</div>
-            <div className="absolute -bottom-4 -right-1 text-[#FF0000] text-xl font-bold">+</div>
+        <Link
+          to="/events"
+          className="w-full py-2 sm:py-3 lg:py-4 px-3 sm:px-4 lg:px-6 relative block"
+        >
+          <h1 className="font-['Press_Start_2P'] text-[12px] sm:text-[20px] lg:text-[24px] leading-[24px] sm:leading-[32px] lg:leading-[44px] font-normal text-white">
+            &lt;&lt; BACK
+          </h1>
+          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-black/10 to-black/30"></div>
+        </Link>
 
-            <div className="grid grid-cols-2 gap-2 sm:gap-6">
-              <div className="h-[200px] sm:h-[350px] lg:h-[300px]">
-                <img
-                  src={rectangle115}
-                  alt="Event"
-                  className="w-full h-full object-cover rounded"
-                />
-              </div>
+        {events.map((event, index) => (
+          <div key={index} className="mt-12 flex justify-center">
+            <div className="relative w-full max-w-2xl bg-[rgba(255,0,0,0.2)] mx-4 p-4 lg:p-6">
+              {/* Decorative "+" Signs */}
+              {[
+                "-top-3 -left-3",
+                "-top-3 -right-3",
+                "-bottom-3 -left-3",
+                "-bottom-3 -right-3",
+              ].map((pos, idx) => (
+                <div
+                  key={idx}
+                  className={`absolute ${pos} w-6 h-6 flex items-center justify-center`}
+                >
+                  <span className="text-[#FF0000] text-2xl sm:text-3xl font-bold leading-none">
+                    +
+                  </span>
+                </div>
+              ))}
 
-              <div className="flex flex-col justify-center items-center space-y-4">
-                <h2 className="font-['Press_Start_2P'] text-[7px] sm:text-xs lg:text-base text-white text-center">
-                  <span className="block sm:hidden">BOSHE</span>
-                  <span className="block sm:hidden">AKO</span>
-                  <span className="block sm:hidden">PROTIJOGITA</span>
-                  <span className="hidden sm:block">BOSHE AKO PROTIJOGITA</span>
-                </h2>
-                <p className="font-['Press_Start_2P'] text-[5px] sm:text-[10px] lg:text-sm text-center leading-relaxed text-white">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-                <div className="flex flex-col items-center space-y-2">
-                  <p className="font-['Press_Start_2P'] text-[5px] sm:text-[10px] lg:text-sm whitespace-nowrap text-white">
-                    VENUE- XYZ HALL
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+                {/* Image Section */}
+                <div className="h-48 sm:h-64 lg:h-72">
+                  <img
+                    src={event.image}
+                    alt={event.title}
+                    className="w-full h-full object-cover rounded"
+                  />
+                </div>
+
+                {/* Event Details */}
+                <div className="flex flex-col justify-center items-center space-y-4 text-center">
+                  <h2 className="font-['Press_Start_2P'] text-xs lg:text-lg text-white">
+                    {event.title}
+                  </h2>
+                  <p className="font-['Press_Start_2P'] text-[8px] lg:text-[10px] text-white text-center leading-relaxed">
+                    {event.description}
                   </p>
-                  <p className="font-['Press_Start_2P'] text-[5px] sm:text-[10px] lg:text-sm whitespace-nowrap text-white">
-                    TIME- 04:20 AM
-                  </p>
-                  <div className="flex gap-2 py-5 sm:gap-4 justify-center">
-                    <button className="bg-[#FF0000] px-1 sm:px-4 lg:px-6 py-1 sm:py-2 font-['Press_Start_2P'] text-[4px] sm:text-[10px] lg:text-sm hover:bg-[#cc0000] transition-colors whitespace-nowrap">
-                      REGISTER
-                    </button>
-                    <button className="bg-[#FF0000] px-1 sm:px-4 lg:px-6 py-1 sm:py-2 font-['Press_Start_2P'] text-[4px] sm:text-[10px] lg:text-sm hover:bg-[#cc0000] transition-colors whitespace-nowrap">
-                      CONTACT
-                    </button>
+                  <div className="flex flex-col items-center space-y-2 text-white">
+                    <p className="text-[8px] lg:text-xs font-press">
+                      VENUE: {event.venue}
+                    </p>
+                    <p className="text-[8px] lg:text-xs font-press">
+                      TIME: {event.time}
+                    </p>
+                  </div>
+
+                  {/* Buttons */}
+                  <div className="flex gap-2 sm:gap-4 py-3">
+                    {event.actions.map((action, idx) => (
+                      <Link
+                        key={idx}
+                        to={`/event/${event.title
+                          .replace(/\s+/g, "-")
+                          .toLowerCase()}`}
+                        className="bg-[#FF0000] px-4 sm:px-6 py-2 text-xs sm:text-sm lg:text-base font-['Press_Start_2P'] hover:bg-[#cc0000] transition-colors"
+                      >
+                        {action}
+                      </Link>
+                    ))}
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div className="mt-12">
-          <div className="relative w-full max-w-[800px] min-h-[200px] sm:min-h-[350px] bg-[#588C8A33] border-2 border-[#FF0000] rounded-lg p-2 sm:p-4">
-            <div className="absolute -top-4 -left-2 text-[#FF0000] text-xl font-bold">+</div>
-            <div className="absolute -top-4 -right-2 text-[#FF0000] text-xl font-bold">+</div>
-            <div className="absolute -bottom-4 -left-1 text-[#FF0000] text-xl font-bold">+</div>
-            <div className="absolute -bottom-4 -right-1 text-[#FF0000] text-xl font-bold">+</div>
-
-            <div className="grid grid-cols-2 gap-2 sm:gap-6">
-              <div className="h-[200px] sm:h-[350px] lg:h-[300px]">
-                <img
-                  src={rectangle70}
-                  alt="Event"
-                  className="w-full h-full object-cover rounded"
-                />
-              </div>
-
-              <div className="flex flex-col justify-center items-center space-y-4">
-                <h2 className="font-['Press_Start_2P'] text-[7px] sm:text-xs lg:text-base text-white text-center">
-                  <span className="block sm:hidden">BOSHE</span>
-                  <span className="block sm:hidden">AKO</span>
-                  <span className="block sm:hidden">PROTIJOGITA</span>
-                  <span className="hidden sm:block">BOSHE AKO PROTIJOGITA</span>
-                </h2>
-                <p className="font-['Press_Start_2P'] text-[5px] sm:text-[10px] lg:text-sm text-center leading-relaxed text-white">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-                <div className="flex flex-col items-center space-y-2">
-                  <p className="font-['Press_Start_2P'] text-[5px] sm:text-[10px] lg:text-sm whitespace-nowrap text-white">
-                    VENUE- XYZ HALL
-                  </p>
-                  <p className="font-['Press_Start_2P'] text-[5px] sm:text-[10px] lg:text-sm whitespace-nowrap text-white">
-                    TIME- 04:20 AM
-                  </p>
-                  <div className="flex gap-2 py-5 sm:gap-4 justify-center">
-                    <button className="bg-[#FF0000] px-1 sm:px-4 lg:px-6 py-1 sm:py-2 font-['Press_Start_2P'] text-[4px] sm:text-[10px] lg:text-sm hover:bg-[#cc0000] transition-colors whitespace-nowrap">
-                      REGISTER
-                    </button>
-                    <button className="bg-[#FF0000] px-1 sm:px-4 lg:px-6 py-1 sm:py-2 font-['Press_Start_2P'] text-[4px] sm:text-[10px] lg:text-sm hover:bg-[#cc0000] transition-colors whitespace-nowrap">
-                      CONTACT
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        ))}
       </SectionContainer>
     </div>
   );
 };
 
-export default EventsPage2;
+// Dummy event data with proper image paths
+const dummyEvents = [
+  {
+    title: "BOSHE AKO PROTIJOGITA",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    venue: "XYZ HALL",
+    time: "04:20 AM",
+    image: dummyEvent, // Fix image path
+    actions: ["VIEW"],
+  },
+  {
+    title: "DRAWING COMPETITION",
+    description:
+      "Showcase your creativity with colors. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    venue: "ABC CENTER",
+    time: "10:30 AM",
+    image: dummyEvent, // Fix image path
+    actions: ["VIEW"],
+  },
+];
+
+export default () => <EventsPage2 events={dummyEvents} />;
