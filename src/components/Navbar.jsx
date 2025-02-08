@@ -18,31 +18,33 @@ export default function Navbar() {
 
         {/* Desktop Navigation */}
         <div className="hidden items-center space-x-6 text-[#F8E461] lg:flex">
-          <a href="#" className="md:text-lg text-base  hover:text-yellow-500">
+          <a href="/" className="md:text-lg text-base  hover:text-yellow-500">
             HOME
           </a>
-          <a href="#" className="md:text-lg text-base hover:text-yellow-500">
+          <a href="/about-us" className="md:text-lg text-base hover:text-yellow-500">
             ABOUT
           </a>
-          <a href="#" className="md:text-lg text-base hover:text-yellow-500">
+          <a href="/partners" className="md:text-lg text-base hover:text-yellow-500">
             PARTNERS
           </a>
         </div>
 
         {/* Register Button - Always Centered */}
+        <a href="/events">
         <button className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-xl bg-[#E98A23] px-4 py-2  font-freon text-black transition-colors hover:bg-[#FF6B00]/90 border-4 border-[#CF2228]">
           REGISTER NOW
         </button>
+        </a>
 
         {/* Desktop Navigation Continued */}
         <div className="hidden items-center space-x-6 text-yellow-400 lg:flex">
-          <a href="#" className="md:text-lg text-base hover:text-yellow-500">
+          <a href="/events" className="md:text-lg text-base hover:text-yellow-500">
             EVENTS
           </a>
-          <a href="#" className="md:text-lg text-base hover:text-yellow-500">
+          <a href="/team" className="md:text-lg text-base hover:text-yellow-500">
             TEAM
           </a>
-          <a href="#" className="md:text-lg text-base hover:text-yellow-500">
+          <a href="/contact-us" className="md:text-lg text-base hover:text-yellow-500">
             CONTACT US
           </a>
         </div>
@@ -65,22 +67,22 @@ export default function Navbar() {
           } lg:hidden`}
         >
           <div className="flex flex-col space-y-4 text-[#F8E461]">
-            <a href="#" className="md:text-lg text-base hover:text-yellow-500" onClick={() => setIsOpen(false)}>
+            <a href="/" className="md:text-lg text-base hover:text-yellow-500" onClick={() => setIsOpen(false)}>
               HOME
             </a>
-            <a href="#" className="md:text-lg text-base hover:text-yellow-500" onClick={() => setIsOpen(false)}>
+            <a href="/about-us" className="md:text-lg text-base hover:text-yellow-500" onClick={() => setIsOpen(false)}>
               ABOUT
             </a>
-            <a href="#" className="md:text-lg text-base hover:text-yellow-500" onClick={() => setIsOpen(false)}>
+            <a href="/partners" className="md:text-lg text-base hover:text-yellow-500" onClick={() => setIsOpen(false)}>
               PARTNERS
             </a>
-            <a href="#" className="md:text-lg text-base hover:text-yellow-500" onClick={() => setIsOpen(false)}>
+            <a href="/events" className="md:text-lg text-base hover:text-yellow-500" onClick={() => setIsOpen(false)}>
               EVENTS
             </a>
-            <a href="#" className="md:text-lg text-base hover:text-yellow-500" onClick={() => setIsOpen(false)}>
+            <a href="/team" className="md:text-lg text-base hover:text-yellow-500" onClick={() => setIsOpen(false)}>
               TEAM
             </a>
-            <a href="#" className="md:text-lg text-base hover:text-yellow-500" onClick={() => setIsOpen(false)}>
+            <a href="/contact-us" className="md:text-lg text-base hover:text-yellow-500" onClick={() => setIsOpen(false)}>
               CONTACT US
             </a>
           </div>

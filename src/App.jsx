@@ -57,7 +57,7 @@ const App = () => {
               <Route path='/events/details' element={<EventsPage2/>} />
             </Routes>
             {/* </PacBorderWrapper> */}
-            {/* <Footer /> */}
+            <Footer />
           </Wrapper>
         </BrowserRouter>
       )}
