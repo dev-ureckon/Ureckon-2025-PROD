@@ -9,7 +9,7 @@ import SectionContainer from "../../components/SectionContainer";
 const ContactsPage = () => {
   return (
     <SectionContainer>
-      <div className="bg-[#05071A]  h-auto">
+      <div className="  h-auto">
         <div className="p-4 mx-auto max-w-full">
           <h1 className="text-4xl text-center uppercase md:text-6xl mb-5 lg:mb-12 lg:text-6xl font-press text-[#B01D15] drop-shadow-[0_0_20px_#B01D15]">
             Contact Us
