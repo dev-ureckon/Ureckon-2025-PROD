@@ -1,83 +1,95 @@
-import React from "react";
-import Logo from "../assets/svg/Pixel logo.svg";
-import { NavLink } from "react-router-dom";
 
-const NavLinksLeft = [
-  {
-    to: "/",
-    text: "Home",
-  },
-  {
-    to: "/about-us",
-    text: "About Us",
-  },
-  {
-    to: "/partners",
-    text: "Partners",
-  },
-];
 
-const NavLinksRight = [
-  {
-    to: "/events",
-    text: "Events",
-  },
-  {
-    to: "/team",
-    text: "Team",
-  },
-  {
-    to: "/contact-us",
-    text: "Contact Us",
-  },
-];
+import { Menu, Twitter } from "lucide-react"
+import { useState } from "react"
 
-const NavButtons = ({ to, text }) => {
+export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false)
+
   return (
-    <NavLink to={to} className="font-helvetica text-[1.5rem] font-medium">
-      {text}
-    </NavLink>
-  );
-};
+    <header className="sticky top-0 z-50 w-full   shadow-lg p-4 max-w-full">
+      <nav className="container mx-auto flex h-14 items-center justify-between px-4">
+        {/* Logo */}
+        <a href="/" className="flex items-center space-x-2">
+          <div className="h-8 w-8 rounded-full" >
+            <img src="/ureckon.svg"/>
+          </div>
+        </a>
 
-const NavLogo = () => {
-  return (
-    <img src={Logo} alt="Pixel Logo" className="w-[4.5rem] h-[4.5rem] block" />
-  );
-};
+        {/* Desktop Navigation */}
+        <div className="hidden items-center space-x-6 text-[#F8E461] lg:flex">
+          <a href="#" className="md:text-lg text-base  hover:text-yellow-500">
+            HOME
+          </a>
+          <a href="#" className="md:text-lg text-base hover:text-yellow-500">
+            ABOUT
+          </a>
+          <a href="#" className="md:text-lg text-base hover:text-yellow-500">
+            PARTNERS
+          </a>
+        </div>
 
-const NavRegisterButton = () => {
-  return (
-    <NavLink to={"/events"} className="relative flex items-center justify-center w-[250px] h-[64px]">
-      <svg xmlns="http://www.w3.org/2000/svg" width="250" height="64" viewBox="0 0 250 64" fill="none">
-        <g clipPath="url(#clip0_3013_23)">
-          <rect width="250" height="64" rx="15" fill="#CF2228" />
-          <rect x="6" y="5" width="238" height="53" rx="13.16" fill="#E98A23" stroke="black" strokeWidth="2" />
-        </g>
-        <defs>
-          <clipPath id="clip0_3013_23">
-            <rect width="250" height="64" fill="white" />
-          </clipPath>
-        </defs>
-      </svg>
-      <span className="absolute inset-0 flex items-center justify-center uppercase text-black font-freon text-center text-[1.5rem] font-normal bottom-[-5px]">Register</span>
-    </NavLink>
-  );
-};
-const Navbar = () => {
-  return (
-    <nav className="flex justify-between items-center h-16 text-[#F8E461] relative shadow-sm font-mono uppercase px-[2.25rem] py-[3.25rem]">
-      <NavLogo />
-      {NavLinksLeft.map((link, index) => (
-        <NavButtons key={index} to={link.to} text={link.text} />
-      ))}
-      <NavRegisterButton />
-      {NavLinksRight.map((link, index) => (
-        <NavButtons key={index} to={link.to} text={link.text} />
-      ))}
-      <NavLogo />
-    </nav>
-  );
-};
+        {/* Register Button - Always Centered */}
+        <button className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-xl bg-[#E98A23] px-4 py-2  font-freon text-black transition-colors hover:bg-[#FF6B00]/90 border-4 border-[#CF2228]">
+          REGISTER NOW
+        </button>
 
-export default Navbar;
+        {/* Desktop Navigation Continued */}
+        <div className="hidden items-center space-x-6 text-yellow-400 lg:flex">
+          <a href="#" className="md:text-lg text-base hover:text-yellow-500">
+            EVENTS
+          </a>
+          <a href="#" className="md:text-lg text-base hover:text-yellow-500">
+            TEAM
+          </a>
+          <a href="#" className="md:text-lg text-base hover:text-yellow-500">
+            CONTACT US
+          </a>
+        </div>
+
+        {/* Social Icon */}
+        <div className="flex items-center space-x-4">
+        <div className="h-8 w-8 rounded-full hidden md:block" >
+            <img src="/ureckon.svg"/>
+          </div>
+          {/* Mobile Menu Button */}
+          <button onClick={() => setIsOpen(!isOpen)} className="text-yellow-400 hover:text-yellow-500 lg:hidden">
+            <Menu className="h-6 w-6" />
+          </button>
+        </div>
+
+        {/* Mobile Navigation Drawer */}
+        <div
+          className={`fixed right-0 top-0 h-full w-64 transform bg-[#020B2D] p-6 transition-transform duration-300 ease-in-out ${
+            isOpen ? "translate-x-0" : "translate-x-full"
+          } lg:hidden`}
+        >
+          <div className="flex flex-col space-y-4 text-[#F8E461]">
+            <a href="#" className="md:text-lg text-base hover:text-yellow-500" onClick={() => setIsOpen(false)}>
+              HOME
+            </a>
+            <a href="#" className="md:text-lg text-base hover:text-yellow-500" onClick={() => setIsOpen(false)}>
+              ABOUT
+            </a>
+            <a href="#" className="md:text-lg text-base hover:text-yellow-500" onClick={() => setIsOpen(false)}>
+              PARTNERS
+            </a>
+            <a href="#" className="md:text-lg text-base hover:text-yellow-500" onClick={() => setIsOpen(false)}>
+              EVENTS
+            </a>
+            <a href="#" className="md:text-lg text-base hover:text-yellow-500" onClick={() => setIsOpen(false)}>
+              TEAM
+            </a>
+            <a href="#" className="md:text-lg text-base hover:text-yellow-500" onClick={() => setIsOpen(false)}>
+              CONTACT US
+            </a>
+          </div>
+        </div>
+
+        {/* Overlay */}
+        {isOpen && <div className="fixed inset-0 bg-black bg-opacity-50 lg:hidden" onClick={() => setIsOpen(false)} />}
+      </nav>
+    </header>
+  )
+}
+
