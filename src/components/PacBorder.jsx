@@ -70,7 +70,6 @@ const PacBorderWrapper = ({ children, className = "" }) => {
         function update() {
             ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-           
             ctx.fillStyle = "yellow";
             food.forEach(dot => {
                 ctx.beginPath();
@@ -139,11 +138,12 @@ const PacBorderWrapper = ({ children, className = "" }) => {
             ref={setContainer} 
             className={`relative h-full lg:m-8 m-2 ${className}`}
         >
+            {/* Hide Pac-Man border animation on small screens */}
             <canvas
                 ref={canvasRef}
-                className="absolute inset-0 pointer-events-none"
+                className="absolute inset-0 pointer-events-none hidden lg:block"
             />
-            <div className="relative p-14  z-10">
+            <div className="relative p-14 z-10">
                 {children}
             </div>
         </div>

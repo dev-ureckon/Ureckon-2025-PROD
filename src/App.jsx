@@ -4,7 +4,6 @@ import {
   BrowserRouter,
   Routes,
   Route,
-  Link,
   useLocation,
 } from "react-router-dom";
 import Loader from './components/Loader';
@@ -19,7 +18,6 @@ import Footer from './components/Footer';
 import EventDetails from './pages/Events/EventDetails';
 import EventsPage2 from './pages/Events/Event2/Page';
 import Partners from './pages/Partners/Partners';
-import PacBorderWrapper from './components/PacBorder';
 import TeamsPage from './pages/Teams/Page';
 
 const App = () => {
@@ -39,26 +37,30 @@ const App = () => {
     }, [location.pathname]);
     return children;
   };
+
   return (
     <>
-      {screenLoading ? (<Loader />) : (
+      {screenLoading ? (
+        <Loader />
+      ) : (
         <BrowserRouter>
           <Wrapper>
             <Navbar />
-            {/* <PacBorderWrapper> */}
             <Routes>
-              <Route path='/' element={<Home />} />
-              <Route path='/about-us' element={<AboutPage />} />
-              <Route path='/team2' element={<Team />} />
-              <Route path='/team' element={<TeamPage />} />
-              <Route path='/partners' element={<Partners />} />
-              <Route path='/contact-us' element={<ContactUsPage />} />
-              <Route path='/events' element={<EventPage />}/>
-              <Route path="/event/:eventId" element={<EventDetails />} />
-              <Route path='/events/details' element={<EventsPage2/>} />
-              <Route path='/teams' element={<TeamsPage />} />
+              <Route path="/" element={<Home />} />
+              <Route path="/about-us" element={<AboutPage />} />
+              <Route path="/team2" element={<Team />} />
+              <Route path="/team" element={<TeamPage />} />
+              <Route path="/partners" element={<Partners />} />
+              <Route path="/contact-us" element={<ContactUsPage />} />
+              
+              {/* Events Routing */}
+              <Route path="/events" element={<EventPage />} />
+              <Route path="/events/:category" element={<EventsPage2 />} />
+              <Route path="/events/:category/:eventId" element={<EventDetails />} />
+
+              <Route path="/teams" element={<TeamsPage />} />
             </Routes>
-            {/* </PacBorderWrapper> */}
             <Footer />
           </Wrapper>
         </BrowserRouter>
@@ -67,4 +69,4 @@ const App = () => {
   )
 }
 
-export default App
+export default App;
