@@ -12,7 +12,7 @@ const EventPage = () => {
   };
 
   return (
-    <div className="w-full px-4 sm:px-6 lg:px-12">
+    <div className="w-full px-4 sm:px-6 lg:px-12 min-h-screen items-center justify-center flex flex-col">
       <div className="mt-12">
       <h1 className="text-xl text-center mb-5 lg:mb-12 uppercase lg:text-4xl font-press text-[#B01D15] drop-shadow-[0_0_20px_#B01D15]">
               the official events of ureckon’25 
