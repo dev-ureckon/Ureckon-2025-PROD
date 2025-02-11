@@ -1,0 +1,327 @@
+{
+  "events": [
+    {
+      "name": "Product Game 4.0",
+      "poster": null,
+      "date": "1st - 2nd March 2025",
+      "tagline": "Pixels to Profit- Design that Sells!!",
+      "description": "Revolutionize the world with Product Game 4.0! Tackle society's challenges, turn ideas into game-changing products, and lead the change. Registrations opening soon.",
+      "venue": "Online",
+      "fees": "99 INR / individual",
+      "form": "https://forms.gle/7egJ6qk1BqeqnoGT6",
+      "problem": "https://drive.google.com/file/d/1KbgY0Nsd0_gaPu6dTpQtZzblE6aanl-N/view?usp=drivesdk",
+      "coordinators": [
+        { "name": "Mrinmay Das", "contact": "9836014691", "image": null },
+        {
+          "name": "Swarnavo Mukherjee",
+          "contact": "9903619331",
+          "image": null
+        },
+        { "name": "Indranil Saha", "contact": "9330074221", "image": null }
+      ]
+    },
+    {
+      "name": "Cyber Cipher",
+      "poster": null,
+      "date": "1st - 2nd March 2025",
+      "tagline": "Flags Await. Can You Capture?",
+      "description": "Ready to test your hacking skills? Join URECKON'25's CYBER CIPHER! Tackle cryptographic puzzles and real-world penetration testing. Sharpen your skills and claim the Cyber Cipher Championship! Stay tuned for details.",
+      "venue": "UEM Kolkata Campus",
+      "fees": "129 INR / team",
+      "form": "https://forms.gle/tfRKFAwZgm9cpxdg6",
+      "problem": "https://drive.google.com/file/d/12dBTldyvU8Fe6Wl1i8u3nN44zrm2clOC/view?usp=drivesdk",
+      "coordinators": [
+        {
+          "name": "Arkaprabha Chakraborty",
+          "contact": "6289844601",
+          "image": null
+        },
+        { "name": "Arkapravo Ghosh", "contact": "7003768803", "image": null }
+      ]
+    },
+    {
+      "name": "APPTIFY",
+      "poster": null,
+      "date": "1st and 2nd March 2025",
+      "tagline": "Best App in Sight, Will Win the Fight!",
+      "description": "A competition to test app development skills with innovative solutions.",
+      "venue": "Online",
+      "fees": "129 INR / Team",
+      "form": "https://forms.gle/1ybXqSkVk9bvRuum8",
+      "problem": "https://drive.google.com/file/d/1G_Be9k6jZozlrhH1CfH7NmTfzjsiNZVS/view?usp=drivesdk",
+      "coordinators": [
+        {
+          "name": "Raj Bhattacharyya",
+          "contact": "+91 9073740955",
+          "image": null
+        },
+        { "name": "Nidhi Sikder", "contact": "+91 8910475957", "image": null }
+      ]
+    },
+    {
+      "name": "Code Golf",
+      "poster": null,
+      "date": "1st March 2025",
+      "tagline": "Where Every Byte Counts!",
+      "description": "Think you can solve problems in the fewest characters? URECKON'25 presents CODE GOLF! Sharpen your skills, trim your code, and prove less is more.",
+      "venue": "Online",
+      "fees": "149 INR / team",
+      "form": "https://forms.gle/hKTnNcySevNgWNng7",
+      "problem": "https://drive.google.com/file/d/1VITrYl1F2UffkON7FMS-DWji8kmY2nM5/view?usp=drivesdk",
+      "coordinators": [
+        {
+          "name": "Debanjan Mukherjee",
+          "contact": "7865891741",
+          "image": null
+        },
+        {
+          "name": "Diprajit Chakraborty",
+          "contact": "9875383377",
+          "image": null
+        }
+      ]
+    },
+    {
+      "name": "Code Ranch",
+      "poster": null,
+      "date": "1st March 2025",
+      "tagline": "May the Most Optimized Code Win!",
+      "description": "Race against the clock to solve challenges with speed and precision. Register now and show the world what you've got!",
+      "venue": "Online",
+      "fees": "199 INR / team",
+      "form": "https://forms.gle/VsZJTCvTymBZeey49",
+      "problem": "https://drive.google.com/file/d/1qr7j3Vx_W83pKslxdDYwGo4KoQCDtrx9/view?usp=drivesdk",
+      "coordinators": [
+        { "name": "Prithvi Sen", "contact": "9734466555", "image": null },
+        { "name": "Santadip Rudra", "contact": "7044522841", "image": null }
+      ]
+    },
+    {
+      "name": "Debugger",
+      "poster": null,
+      "date": "1st March 2025",
+      "tagline": "Fix the Snippet",
+      "description": "Can you fix broken code under pressure? Join URECKON'25's DEBUGGER! Outsmart the bugs, fix the errors, and beat the clock. Register now!",
+      "venue": "Online",
+      "fees": "99 INR / individual",
+      "form": "https://forms.gle/Ep5gTaixCmXsqV68A",
+      "problem": "https://drive.google.com/file/d/1FcOVbvtxxXvBGYo-SL9CEHPpmh1hU8S5/view?usp=drivesdk",
+      "coordinators": [
+        { "name": "Debojit Ganguly", "contact": "8777589882", "image": null },
+        { "name": "Rudranil Malik", "contact": "9883210925", "image": null }
+      ]
+    },
+    {
+      "name": "Mindful Machines",
+      "poster": null,
+      "date": "1st - 2nd March 2025",
+      "tagline": "ML Challenge: Data to Destiny",
+      "description": "Ready to push ML boundaries? Mindful Machines at Ureckon'25 challenges you to build the most powerful, high-performing model for real-world problems. Dominate the competition!",
+      "venue": "UEM Kolkata Campus",
+      "fees": "119 INR / team",
+      "form": "https://forms.gle/rkr4HRVFeHhZUvXw9",
+      "problem": "https://drive.google.com/file/d/1NiDaPPCkNbqNfbGgLKnGc3Y9H2dewMKx/view?usp=drivesdk",
+      "coordinators": [
+        { "name": "Anita Mukherjee", "contact": "8250289175", "image": null },
+        {
+          "name": "Debargha Bandyopadhyay",
+          "contact": "8167336506",
+          "image": null
+        },
+        { "name": "Anirban Basak", "contact": "9804516488", "image": null }
+      ]
+    },
+    {
+      "name": "SPYDER",
+      "poster": null,
+      "date": "1st and 2nd March 2025",
+      "tagline": "Build the Web of Innovation!",
+      "description": "A challenge to showcase web design and development skills.",
+      "venue": "UEM Kolkata Campus",
+      "fees": "199 INR / team",
+      "form": "https://forms.gle/4D3CW9HnF7XqGs6K8",
+      "problem": "https://drive.google.com/file/d/1kUi3Cnhbud1tzDExy0V_ZUDBM3IThmVl/view?usp=drivesdk",
+      "coordinators": [
+        {
+          "name": "Sayan Snigdha Pal",
+          "contact": "+91 7551838146",
+          "image": null
+        },
+        { "name": "Supriyo Saha", "contact": "+91 9674790945", "image": null },
+        { "name": "Biswa Gangully", "contact": "+91 6291874264", "image": null }
+      ]
+    },
+
+
+    {
+      "name": "AD MAD",
+      "poster": "",
+      "date": "1st and 2nd March 2025",
+      "tagline": "The Ultimate Marketing",
+      "description": "An advertising competition where students showcase their marketing skills by creating a video ad for a randomly assigned product. The ads are judged based on creativity, content, and execution.",
+      "venue": "UEM Kolkata Campus",
+      "fees": "INR 129 / individual",
+      "form": "https://forms.gle/boVt1KnJFjpeV1BH6",
+      "problem": "https://drive.google.com/file/d/1nOg5QojvxeH56nRMp58-xk9nDMkwjieQ/view?usp=drivesdk",
+      "coordinators": [
+        { "name": "Aunkan Pal", "contact": "+91 9775534889", "image": "" }
+      ]
+    },
+    {
+      "name": "ARE U HOLMES?",
+      "poster": "",
+      "date": "2nd March 2025",
+      "tagline": "Think Fast, Hunt Smart, Win Big!",
+      "description": "A platform where students will showcase their intelligence by solving puzzles and decoding riddles to progress through levels and find a hidden treasure.",
+      "venue": "UEM Kolkata Campus",
+      "fees": "INR 129 / participant",
+      "form": "https://forms.gle/iTgpF6MpHyPTzyQJ",
+      "problem": "https://drive.google.com/file/d/1_jIzNO8JwSbqVA6Kt9sqFv9USGETAoCU/view?usp=drivesdk",
+      "coordinators": [
+        {
+          "name": "Biswayan Chatterjee",
+          "contact": "+91 9073913033",
+          "image": ""
+        },
+        { "name": "Poulami Maity", "contact": "+91 9330261619", "image": "" },
+        { "name": "Mayukh Nath", "contact": "+91 9476457562", "image": "" },
+        { "name": "Utsab Mahato", "contact": "+91 8637399246", "image": "" }
+      ]
+    },
+    {
+      "name": "SELLINGOPEDIA",
+      "poster": "",
+      "date": "1st March 2025",
+      "tagline": "Tick,Talk,Sell!",
+      "description": "A platform for students to showcase their entrepreneurship skills, including marketing, consumer interaction, and sales strategies.",
+      "venue": "UEM Kolkata Campus",
+      "fees": "INR 249 / team",
+      "form": "https://forms.gle/cT8bQSma47rcF5aq6",
+      "problem": "https://drive.google.com/file/d/1-a4tKFseiOM8bTVn5_mjodUGnny0pJmN/view?usp=drivesdk",
+      "coordinators": [
+        { "name": "Sohini Shome", "contact": "+91 7003899475", "image": "" },
+        { "name": "Ankita Deb", "contact": "+91 8537833711", "image": "" }
+      ]
+    },
+    {
+      "name": "MANDI",
+      "poster": "",
+      "date": "2nd March 2025",
+      "tagline": "MandiTake a Look, Make Your Guess!",
+      "description": "A business event testing participants' estimation skills, market awareness, and decision-making abilities.",
+      "venue": "UEM Kolkata Campus",
+      "fees": "129 INR / individual",
+      "form": "https://forms.gle/mScQYcCN9717Nhrg9",
+      "problem": "https://drive.google.com/file/d/1GBcsquA6WGxOiAJiufyYJJ7zam9bnFY6/view?usp=drivesdk",
+      "coordinators": [
+        { "name": "Zinnia Ghosh", "contact": "+91 7044835500", "image": "" }
+      ]
+    },
+
+
+    {
+      "name": "BIOZINFORMATICA",
+      "poster": "",
+      "date": "1st & 2nd March 2025",
+      "tagline": "Bioz InformaticaDecode Biology, Conquer Bioinformatics!",
+      "description": "An inter-college bio quiz event covering everything from basic biology to biotechnology and bioinformatics.",
+      "venue": "UEM Kolkata Campus",
+      "fees": "149 INR / team",
+      "form": "https://forms.gle/CDAAFeWTk2ZA4Yyt8",
+      "problem": "https://drive.google.com/file/d/1qM318vIEkJJ7sOZ9bI-Wta7de8DhG4Gd/view?usp=drive_link",
+      "coordinators": [
+        { "name": "Pousali Saha", "contact": "70851 54794", "image": "" }
+      ]
+    },
+    {
+      "name": "BIOTEXPRESSION",
+      "poster": "",
+      "date": "1st March 2025",
+      "tagline": "BiotexpressionInnovating Bridging Science and Innovation: Unfolding the Wonders of Biotechnology",
+      "description": "A dynamic event for showcasing models, posters, and presentations on various aspects of biotechnology.",
+      "venue": "UEM Kolkata Campus",
+      "fees": "149 INR / team",
+      "form": "https://forms.gle/YAmeRchbAKpFHgn8",
+      "problem": "https://drive.google.com/file/d/1qLjl--1JkRQDwiyYik8vu86j6USYZ0aQ/view?usp=drive_link",
+      "coordinators": [
+        { "name": "Sayantan Biswas", "contact": "9330773760", "image": "" },
+        { "name": "Pousali Saha", "contact": "70851 54794", "image": "" }
+      ]
+    },
+    {
+      "name": "HEALTHY BITES",
+      "poster": "",
+      "date": "2nd March 2025",
+      "tagline": "Healthy BitesTaste the Health, Savor the Win!",
+      "description": "A cooking competition where participants create a nutritious snack, beverage, and dessert.",
+      "venue": "UEM Kolkata Campus",
+      "fees": "129 INR / individual",
+      "form": "https://forms.gle/PjXQw4eGVhVCJRee6",
+      "problem": "https://drive.google.com/file/d/1Xy-3AFHYYGGoRmoMrCBknKPjCYnV9euq/view?usp=drive_link",
+      "coordinators": [
+        { "name": "Sayantan Biswas", "contact": "9330773760", "image": "" }
+      ]
+    },
+
+
+    {
+      "name": "CLUEX",
+      "poster": "",
+      "date": "1st March 2025",
+      "tagline": "Every Clue Counts—Will You Be the One to Solve It?",
+      "description": "The interschool quiz competition of URECKON’25, testing general knowledge and quick thinking.",
+      "venue": "UEM Kolkata Campus",
+      "fees": "FREE",
+      "form": "https://forms.gle/forms.gle/CDAAFeWTk2ZA4Yyt8",
+      "problem": "https://drive.google.com/file/d/1AORt6De0etLmGWlmJYuJ6r_CuiX03g60/view?usp=drive_link",
+      "coordinators": [
+        { "name": "Arunava Das", "contact": "+91 8001386218", "image": "" },
+        { "name": "Mahulee Lahiri", "contact": "+91 9674623159", "image": "" },
+        { "name": "Subhadeep Mondal", "contact": "+91 6291642437", "image": "" }
+      ]
+    },
+    {
+      "name": "STAR SPRINT",
+      "poster": "Quiz that is out of the World !!",
+      "date": "1st and 2nd March 2025",
+      "tagline": "",
+      "description": "An astronomical quiz competition to test knowledge of universal mysteries.",
+      "venue": "UEM Kolkata Campus",
+      "fees": "FREE",
+      "form": "https://forms.gle/forms.gle/CDAAFeWTk2ZA4Yyt8",
+      "problem": "https://drive.google.com/file/d/1cmHrUxSnFlXnUX5jMJNFzO_F5o2_-oXb/view?usp=drive_link",
+      "coordinators": [
+        { "name": "Sneha Roy", "contact": "+91 8910094805", "image": "" },
+        {
+          "name": "Subhoprasad Bhattacharyya",
+          "contact": "+91 6290150486",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "name": "Think Tech",
+      "poster": "",
+      "date": "2nd March 2025",
+      "tagline": "Ctrl+Alt+Quiz to Prove Your Genius",
+      "description": "A quiz blending business and technology knowledge.",
+      "venue": "UEM Kolkata Campus",
+      "fees": "FREE",
+      "form": "https://forms.gle/forms.gle/CDAAFeWTk2ZA4Yyt8",
+      "problem": "https://drive.google.com/file/d/1DMpsUa4L39OerYokNSw0HSnRkHtd4yoW/view?usp=drive_link",
+      "coordinators": [
+        {
+          "name": "Barshan Banerjee",
+          "contact": "+91 8768438506",
+          "image": ""
+        },
+        { "name": "Dipanjan Dhar", "contact": "+91 9903153787", "image": "" },
+        {
+          "name": "Siddhartha Chowdhury",
+          "contact": "+91 7699129791",
+          "image": ""
+        }
+      ]
+    }
+  ]
+}
