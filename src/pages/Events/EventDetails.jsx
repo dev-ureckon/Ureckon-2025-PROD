@@ -2,6 +2,7 @@ import React from "react";
 import SectionContainer from "../../components/SectionContainer"
 import { Link, useParams } from "react-router-dom";
 import { FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import placeholder from "../../assets/placeholder_profile.jpg"
 
 const events = [
   {
@@ -309,9 +310,9 @@ const EventDetails = () => {
   <div className="flex flex-col md:flex-row justify-center items-center gap-6">
     {/* Prize Cards */}
     {[
-      { title: "1ST", subtitle: "NO OF EVENTS" },
-      { title: "2ND", subtitle: "PRIZE POOL" },
-      { title: "3RD", subtitle: "NO OF EVENTS" },
+      { title: "1ST", subtitle: "COMING SOON" },
+      { title: "2ND", subtitle: "COMING SOON" },
+      { title: "3RD", subtitle: "COMING SOON" },
     ].map((prize, index) => (
       <div
         key={index}
@@ -348,8 +349,14 @@ const EventDetails = () => {
         
         {/* Coordinator Image */}
         <div className="w-32 h-32 bg-[#B01D15] rounded-full mx-auto mb-2 overflow-hidden">
-          <img src={coordinator.image} alt={coordinator.name} className="w-full h-full object-cover" />
-        </div>
+  <img
+    src={coordinator.image || placeholder} // Use placeholder if no image
+    alt={coordinator.name || "Coordinator"}
+    className="w-full h-full object-cover"
+    onError={(e) => { e.target.onerror = null; e.target.src = "/placeholder.jpg"; }} // Fallback if image fails to load
+  />
+</div>
+
 
         {/* Name & Contact */}
         <div className="text-xl uppercase text-[#B01D15] drop-shadow-[0_0_20px_#B01D15]">
