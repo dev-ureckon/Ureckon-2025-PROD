@@ -60,7 +60,7 @@ const EventsPage2 = () => {
       { title: "Red Light, Green Light", description: "Strength-based esports game.", venue: "UEMK Campus", image: dummyEvent, actions: ["VIEW"] }
     ],
   
-    biotech: [
+    "bio-tech": [
       { title: "Bioz Informatica", description: "Biotech meets AI.", venue: "UEMK Campus", image: dummyEvent, actions: ["VIEW"] },
       { title: "Healthy Bites", description: "Nutritional science competition.", venue: "UEMK Campus", image: dummyEvent, actions: ["VIEW"] },
       { title: "Biotexpression", description: "Molecular biology experiments.", venue: "UEMK Campus", image: dummyEvent, actions: ["VIEW"] }
