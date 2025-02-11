@@ -1,12 +1,10 @@
 [
-    { "name": "CODING", "route": "/coding" },
-    { "name": "FLAGSHIP", "route": "/flagship" },
-    { "name": "ROBOTICS", "route": "/robotics" },
-    { "name": "QUIZ", "route": "/quiz" },
-    { "name": "GAMING", "route": "/gaming" },
-    { "name": "INITIATIVES", "route": "/initiatives" },
-    { "name": "BIO-TECH", "route": "/bio-tech" },
-    { "name": "BIZ EVENTS", "route": "/biz-events" }
-  
-  ]
-  
+  { "name": "CODING", "route": "/events/coding" },
+  { "name": "FLAGSHIP", "route": "/events/flagship" },
+  { "name": "ROBOTICS", "route": "/events/robotics" },
+  { "name": "QUIZ", "route": "/events/quiz" },
+  { "name": "GAMING", "route": "/events/gaming" },
+  { "name": "INITIATIVES", "route": "/events/initiatives" },
+  { "name": "BIO-TECH", "route": "/events/bio-tech" },
+  { "name": "BIZ EVENTS", "route": "/events/biz-events" }
+]
