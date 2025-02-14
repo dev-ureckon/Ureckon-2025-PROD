@@ -1,7 +1,7 @@
 import React from "react";
 import T from "../../../components/T";
 import { motion } from "framer-motion";
-import events from "../../../lib/events.json";
+import events from "../../../lib/eventroutes.json";
 import { Link } from "react-router-dom";
 import SectionContainer from "../../../components/SectionContainer";
 
@@ -37,7 +37,7 @@ const EventPage = () => {
                     whileHover={hoverAnimation}
                   >
                     <Link
-                      to={`/events/${event.name.toLowerCase()}`}
+                      to={`/events/${event.route.toLowerCase()}`}
                       className="w-full h-full flex justify-center items-center text-xs sm:text-sm md:text-md lg:text-lg"
                     >
                       {event.name}
