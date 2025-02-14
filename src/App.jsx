@@ -18,7 +18,6 @@ import Footer from './components/Footer';
 import EventDetails from './pages/Events/EventDetails';
 import EventsPage2 from './pages/Events/Event2/Page';
 import Partners from './pages/Partners/Partners';
-import TeamsPage from './pages/Teams/Page';
 
 const App = () => {
   const [screenLoading, setScreenLoading] = useState(false);
@@ -49,8 +48,8 @@ const App = () => {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about-us" element={<AboutPage />} />
-              <Route path="/team2" element={<Team />} />
-              <Route path="/team" element={<TeamPage />} />
+              <Route path="/teams/:domain" element={<Team />} />
+              <Route path="/teams" element={<TeamPage />} />
               <Route path="/partners" element={<Partners />} />
               <Route path="/contact-us" element={<ContactUsPage />} />
               
@@ -59,7 +58,6 @@ const App = () => {
               <Route path="/events/:category" element={<EventsPage2 />} />
               <Route path="/events/:category/:eventId" element={<EventDetails />} />
 
-              <Route path="/teams" element={<TeamsPage />} />
             </Routes>
             <Footer />
           </Wrapper>
