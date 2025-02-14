@@ -3,11 +3,20 @@ import SectionContainer from "../../components/SectionContainer"
 import { Link, useParams } from "react-router-dom";
 import { FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import placeholder from "../../assets/placeholder_profile.jpg"
-import eventsData from '../../lib/events_details.json';
+import eventsData from '../../lib/eventdata.json';
 
 const EventDetails = () => {
     const { eventId } = useParams();
-    const event = eventsData.events.find((e) => e.name.toLowerCase().replace(/[\s.]+/g, '-') === eventId);
+    
+    // Find the event in the new structure
+    let event;
+    for (const category in eventsData) {
+        event = eventsData[category].find((e) => 
+            e.name.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '') === eventId
+        );
+
+        if (event) break;
+    }
   
     if (!event) {
       return <div className="text-center text-white">Event not found!</div>;
@@ -25,9 +34,9 @@ const EventDetails = () => {
             name: coord.name,
             mobile: coord.contact,
             image: coord.image,
-            instagram: "#",
-            linkedin: "#",
-            twitter: "#"
+            instagram: coord.instagram || "#",
+            linkedin: coord.linkedin || "#",
+            twitter: coord.x || "#"
         })),
         problemStatementLink: event.problem || "#",
         registerLink: event.form || "#"
@@ -85,11 +94,7 @@ const EventDetails = () => {
                             {/* Image Section */}
                             <div className="relative mx-auto w-full max-w-sm">
                                 <div className="relative w-full h-[280px] lg:h-[380px]">
-                                    <img
-                                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Rectangle%2065-QH9qk4m1nzxH4K5CsMyf7n8IJySbwz.png"
-                                        alt="Red Background"
-                                        className="w-full h-full object-cover"
-                                    />
+                                    <div className="absolute inset-0 bg-[#FF000A]/50 rounded-lg"></div>
                                     {["-top-3 -left-3", "-top-3 -right-3", "-bottom-3 -left-3", "-bottom-3 -right-3"].map((pos, index) => (
                                         <div key={index} className={`absolute ${pos} w-6 h-6 flex items-center justify-center`}>
                                             <span className="text-[#FF0000] text-sm lg:text-xl font-bold leading-none transform translate-x-[2px] translate-y-[2px]">
@@ -98,7 +103,7 @@ const EventDetails = () => {
                                         </div>
                                     ))}
                                     {/* Event Image */}
-                                    <div className="absolute inset-4 md:inset-5">
+                                    <div className="absolute inset-4 md:inset-5 aspect-[4/5]">
                                         <img
                                             src={transformedEvent.eventimage}
                                             alt="Event"
@@ -110,7 +115,7 @@ const EventDetails = () => {
                         </div>
 
                         {/* Date & Time */}
-                        <div className="flex flex-col lg:flex-row items-center justify-center gap-4 mt-6">
+                        <div className="flex flex-col lg:flex-row items-center justify-center gap-4 mt-24">
                             <div className="relative flex flex-col items-center">
                                 <span className="bg-[#B01D15]/50 px-6 py-6 rounded-md text-[#B01D15] tracking-wide mt-2 text-lg sm:text-xl">
                                     {transformedEvent.date}
