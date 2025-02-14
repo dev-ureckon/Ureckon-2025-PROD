@@ -27,7 +27,7 @@ const EventDetails = () => {
         name: event.name,
         description: event.description,
         date: event.date,
-        time: "TBD",
+        // time: "TBD",
         eventimage: event.poster || "https://example.com/default-event.png",
         rules: [], // We'll need to add rules data
         coordinators: event.coordinators.map(coord => ({
@@ -85,7 +85,7 @@ const EventDetails = () => {
                         <h2 className="text-2xl md:text-2xl text-center lg:text-left mb-4 text-[#B01D15] drop-shadow-[0_0_20px_#B01D15] tracking-widest">
                             ABOUT
                         </h2>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-2 items-center">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-2 items-start">
                             {/* Description */}
                             <p className="text-[#C0C0C0] text-center lg:text-left drop-shadow-[0_0_20px_#C0C0C0] text-sm md:text-base leading-loose">
                                 {transformedEvent.description}
@@ -93,7 +93,7 @@ const EventDetails = () => {
 
                             {/* Image Section */}
                             <div className="relative mx-auto w-full max-w-sm">
-                                <div className="relative w-full h-[280px] lg:h-[380px]">
+                                <div className="relative w-full h-[480px]">
                                     <div className="absolute inset-0 bg-[#FF000A]/50 rounded-lg"></div>
                                     {["-top-3 -left-3", "-top-3 -right-3", "-bottom-3 -left-3", "-bottom-3 -right-3"].map((pos, index) => (
                                         <div key={index} className={`absolute ${pos} w-6 h-6 flex items-center justify-center`}>
@@ -121,11 +121,11 @@ const EventDetails = () => {
                                     {transformedEvent.date}
                                 </span>
                             </div>
-                            <div className="relative flex flex-col items-center">
+                            {/* <div className="relative flex flex-col items-center">
                                 <span className="bg-[#B01D15]/50 px-6 py-6 rounded-md text-[#B01D15] tracking-wide mt-2 text-lg sm:text-xl">
                                     {transformedEvent.time}
                                 </span>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
 
