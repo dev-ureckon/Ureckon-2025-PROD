@@ -1,4 +1,4 @@
-import { FaDiscord } from "react-icons/fa";
+import { FaDiscord, FaFacebook, FaWhatsapp } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -118,6 +118,7 @@ export default function Footer() {
             <div className="flex gap-4 mb-6">
               {/* Social Media Icons */}
               <a
+              target="_blank"
                 href="https://www.linkedin.com/company/ureckon/posts/?feedView=all"
                 className="text-purple-500 hover:text-purple-400 transition-colors"
               >
@@ -130,6 +131,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a
+              target="_blank"
                 href="https://www.instagram.com/ureckon.uemk/?hl=en"
                 className="text-purple-500 hover:text-purple-400 transition-colors"
               >
@@ -142,6 +144,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a
+              target="_blank"
                 href="https://x.com/Ureckon_Uemk"
                 className="text-purple-500 hover:text-purple-400 transition-colors"
               >
@@ -155,6 +158,7 @@ export default function Footer() {
               </a>
              
               <a
+              target="_blank"
                 href="https://www.youtube.com/@UreckonUEMKolkata"
                 className="text-purple-500 hover:text-purple-400 transition-colors"
               >
@@ -166,14 +170,28 @@ export default function Footer() {
                   <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
                 </svg>
               </a>
-              <a href="https://discord.gg/Ztyvqyda7n"
+              <a 
+              target="_blank"
+              href="https://discord.gg/Ztyvqyda7n"
               className="text-purple-500 hover:text-purple-400 transition-colors">
               <FaDiscord className="text-2xl"/>
+              </a>
+              <a 
+              target="_blank"
+              href="https://whatsapp.com/channel/0029VaBYereHFxP3CiIpRo1H"
+              className="text-purple-500 hover:text-purple-400 transition-colors">
+              <FaWhatsapp className="text-2xl" />
+              </a>
+              <a 
+              target="_blank"
+              href="https://www.facebook.com/ureckon.uemk/"
+              className="text-purple-500 hover:text-purple-400 transition-colors">
+              <FaFacebook className="text-2xl"/>
               </a>
             </div>
             {/* Contact Us Button */}
             <a
-              href="#"
+              href="/contact-us"
               className="inline-block px-6 py-2   transition-colors rounded-full bg-[#030418] border-[0.688px] border-solid border-white w-fit font-press bg-gradient-to-b from-[#FBD60E] to-[#DD903D] bg-clip-text text-transparent uppercase text-[0.85938rem] font-normal "
             >
               CONTACT US

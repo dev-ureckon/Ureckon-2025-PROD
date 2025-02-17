@@ -35,7 +35,6 @@
           "instagram": "",
           "x": ""
         }
-        
       ]
     },
     {
@@ -53,8 +52,8 @@
           "name": "Anita Mukherjee",
           "contact": "8250289175",
           "image": "/people/anita-mukherjee.webp",
-          "linkedin": "",
-          "instagram": "",
+          "linkedin": "https://www.linkedin.com/in/anita-mukherjee-366250236",
+          "instagram": "https://www.instagram.com/am_bee.vert_",
           "x": ""
         },
         {
@@ -62,7 +61,7 @@
           "contact": "8167336506",
           "image": "/people/debargha-bandyopadhyay.webp",
           "linkedin": "",
-          "instagram": "",
+          "instagram": "https://www.instagram.com/spore_nomore",
           "x": ""
         },
         {
@@ -253,11 +252,10 @@
           "image": "/people/indranil-saha.webp",
           "linkedin": "https://linkedin.com/in/indranil-saha/",
           "instagram": "https://instagram.com/dran_9/",
-          "x": ""
+          "x": "https://x.com/dran_9"
         }
       ]
     }
-    
   ],
   "business": [
     {
@@ -992,7 +990,6 @@
     }
   ],
   "gaming": [
-
     {
       "name": "FC - 25",
       "poster": "/poster/gaming/FC-25.webp",
@@ -1059,8 +1056,7 @@
         }
       ]
     },
-    
-    
+
     {
       "name": "Tug O' War",
       "poster": "/poster/gaming/Tug-o-war.webp",

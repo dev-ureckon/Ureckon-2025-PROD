@@ -4,13 +4,13 @@
   "Faculty": [
     
     {
-      "name": "Sajal Dasgupta",
-      "designation": "Vice Chancellor",
+      "name": "Prof Dr. Sajal Dasgupta",
+      "designation": "Vice-Chancellor",
       "image": "/people/sajal-dasgupta.webp"
       
     },
     {
-      "name": "Satyajit Chakrabarti",
+      "name": "Prof Dr. Satyajit Chakrabarti",
       "designation": "Pro-vice Chancellor",
       "image": "/people/satyajit-chakrabarti.webp"
       
@@ -101,7 +101,7 @@
       "image": "/people/indranil-saha.webp",
       "linkedin": "https://linkedin.com/in/indranil-saha/",
       "instagram": "https://instagram.com/dran_9/",
-      "x": ""
+      "x": "https://x.com/dran_9"
     },
     {
       "name": "Dev Bera",
@@ -123,6 +123,13 @@
       "linkedin": "https://linkedin.com/in/sayan-snigdha-pal",
       "instagram": "https://instagram.com/isayanpal",
       "x": "https://x.com/sayanstwt"
+    },
+    {
+      "name": "Soumarghya Dhara",
+      "image": "/people/soumarghya-dhara.webp",
+      "linkedin": "https://linkedin.com/in/soumarghyadhara",
+      "instagram": "https://instagram.com/Soumarghya.dhara",
+      "x": ""
     },
     {
       "name": "Adrika Mondal",
@@ -242,13 +249,6 @@
       "linkedin": "https://linkedin.com/in/soham-adhikari-a2100221a/",
       "instagram": "https://instagram.com/_soham__adhikari_/",
       "x": "https://x.com/SohamAdhik28783"
-    },
-    {
-      "name": "Soumarghya Dhara",
-      "image": "/people/soumarghya-dhara.webp",
-      "linkedin": "https://linkedin.com/in/soumarghyadhara",
-      "instagram": "https://instagram.com/Soumarghya.dhara",
-      "x": ""
     },
     {
       "name": "Spandan Bhattacharya",
@@ -1013,6 +1013,20 @@
       "linkedin": "https://linkedin.com/in/zinnia-ghosh-373144282",
       "instagram": "https://instagram.com/zinnia_ghosh_",
       "x": ""
+    },
+    {
+      "name":"Debargha Bandyopadhyay",
+      "image":"/people/debargha-bandyopadhyay.webp",
+      "linkedin": "",
+      "instagram":"https://www.instagram.com/spore_nomore",
+      "x":""
+    },
+    {
+      "name": "Anita Mukherjee",
+      "image": "",
+      "linkedin": "https://www.linkedin.com/in/anita-mukherjee-366250236",
+      "instagram": "https://www.instagram.com/am_bee.vert_",
+      "x": ""
     }
   ],
   
@@ -1144,6 +1158,27 @@
   
   "Tech-Team": [
     {
+      "name": "Anita Mukherjee",
+      "image": "/people/anita-mukherjee.webp",
+      "linkedin": "https://www.linkedin.com/in/anita-mukherjee-366250236",
+      "instagram": "https://www.instagram.com/am_bee.vert_",
+      "x": ""
+    },
+    {
+      "name": "Mahulee Lahiri",
+      "image": "/people/mahulee-lahiri.webp",
+      "linkedin": "https://linkedin.com/in/mahulee-lahiri-5998ba28a",
+      "instagram": "https://instagram.com/_mahuleelahiri",
+      "x": ""
+    },
+    {
+      "name": "Anirban Basak",
+      "image": "/people/anirban-basak.webp",
+      "linkedin": "https://linkedin.com/in/anirban-basak-iamanirbanbasak/",
+      "instagram": "https://instagram.com/iamanirbanbasak",
+      "x": ""
+    },
+    {
       "name": "Arkaprabha Chakraborty",
       "image": "/people/arkaprabha-chakraborty.webp",
       "linkedin": "https://linkedin.com/in/arkorty",
@@ -1165,6 +1200,34 @@
       "x": "https://x.com/biswa_2512"
     },
     {
+      "name": "Samadrita Bhattacharya",
+      "image": "/people/samadrita-bhattacharya.webp",
+      "linkedin": "https://linkedin.com/in/samadrita-bhattacharya163/",
+      "instagram": "https://instagram.com/atirdamas/",
+      "x": "https://x.com/Samadrita163"
+    },
+    {
+      "name": "Jaya Ganguly",
+      "image": "/people/jaya-ganguly.webp",
+      "linkedin": "https://linkedin.com/in/jaya-ganguly-3447b8244/",
+      "instagram": "https://instagram.com/jayaganguly969/",
+      "x": ""
+    },
+    {
+      "name": "Trisha Mandal",
+      "image": "/people/trisha-mandal.webp",
+      "linkedin": "https://linkedin.com/in/trishamandal123/",
+      "instagram": "https://instagram.com/me._.trisha_/",
+      "x": ""
+    },
+    {
+      "name": "Sandipan Jha",
+      "image": "/people/sandipan-jha.webp",
+      "linkedin": "https://linkedin.com/in/sandipan-jha-2a8449236",
+      "instagram": "https://instagram.com/sandipan_jha",
+      "x": "https://x.com/JhaSandipan"
+    },
+    {
       "name": "Debanjan Mukherjee",
       "image": "/people/debanjan-mukherjee.webp",
       "linkedin": "https://linkedin.com/in/debanjan-mukherjee-1b8257170",
@@ -1177,34 +1240,6 @@
       "linkedin": "https://linkedin.com/in/dhruba-dutta-banik",
       "instagram": "https://instagram.com/___dhruba_official___",
       "x": "https://x.com/DhrubaDuttaB"
-    },
-    {
-      "name": "Samadrita Bhattacharya",
-      "image": "/people/samadrita-bhattacharya.webp",
-      "linkedin": "https://linkedin.com/in/samadrita-bhattacharya163/",
-      "instagram": "https://instagram.com/atirdamas/",
-      "x": "https://x.com/Samadrita163"
-    },
-    {
-      "name": "Sandipan Jha",
-      "image": "/people/sandipan-jha.webp",
-      "linkedin": "https://linkedin.com/in/sandipan-jha-2a8449236",
-      "instagram": "https://instagram.com/sandipan_jha",
-      "x": "https://x.com/JhaSandipan"
-    },
-    {
-      "name": "Trisha Mandal",
-      "image": "/people/trisha-mandal.webp",
-      "linkedin": "https://linkedin.com/in/trishamandal123/",
-      "instagram": "https://instagram.com/me._.trisha_/",
-      "x": ""
-    },
-    {
-      "name": "Jaya Ganguly",
-      "image": "/people/jaya-ganguly.webp",
-      "linkedin": "https://linkedin.com/in/jaya-ganguly-3447b8244/",
-      "instagram": "https://instagram.com/jayaganguly969/",
-      "x": ""
     }
   ],
   "Deco-Team": [
@@ -1213,6 +1248,13 @@
         "image": "/people/monalisa-maji.webp",
         "linkedin": "https://www.linkedin.com/in/monalisa-maji-8a644b293",
         "instagram": "https://accountscenter.instagram.com/profiles/17841453639700579/",
+        "x": ""
+    },
+    {
+        "name": "Somrik Mondal",
+        "image": "/people/somrik-mondal.webp",
+        "linkedin": "https://www.linkedin.com/in/somrik-mondal-558aa8321",
+        "instagram": "https://www.instagram.com/myself_somrizz05",
         "x": ""
     },
     {
