@@ -127,8 +127,8 @@
           "name": "Nidhi Sikder",
           "contact": "+91 8910475957",
           "image": "/people/nidhi-sikder.webp",
-          "linkedin": "",
-          "instagram": "",
+          "linkedin": "https://www.linkedin.com/in/nidhi-sikder-ba5256250/",
+          "instagram": " https://www.instagram.com/nidhisikder/",
           "x": ""
         }
       ]
@@ -211,7 +211,7 @@
           "x": ""
         },
         {
-          "name": "Rudranil Malik",
+          "name": "Rudranil Mallik",
           "contact": "9883210925",
           "image": "/people/rudranil-malik.webp",
           "linkedin": "https://linkedin.com/in/rudranil-mallik-4065a128a/",
@@ -342,7 +342,7 @@
           "contact": "+91 7003899475",
           "image": "/people/sohini-shome.webp",
           "linkedin": "",
-          "instagram": "",
+          "instagram": "https://www.instagram.com/_food_over_people__?igsh=Z3RpYWR4M3diaTVv",
           "x": ""
         },
         {
@@ -350,7 +350,7 @@
           "contact": "+91 8537833711",
           "image": "/people/ankita-deb.webp",
           "linkedin": "",
-          "instagram": "",
+          "instagram": "https://www.instagram.com/hunty_chip?igsh=OGhwdWptbmJzYXp6",
           "x": ""
         }
       ]
@@ -381,7 +381,7 @@
     {
       "name": "Bioz Informatica",
       "poster": "/poster/bio-tech/bioz-informatica.webp",
-      "date": "1st & 2nd March 2025",
+      "date": "1st March 2025",
       "tagline": "Bioz InformaticaDecode Biology, Conquer Bioinformatics!",
       "description": "An inter-college bio quiz event covering everything from basic biology to bio-technology and bioinformatics.",
       "venue": "UEM Kolkata Campus",
@@ -394,7 +394,7 @@
           "contact": "70851 54794",
           "image": "/people/pousali-saha.webp",
           "linkedin": "",
-          "instagram": "",
+          "instagram": "https://www.instagram.com/__.pousali.__?igsh=bjl4ZTRleXk5MnNv ",
           "x": ""
         }
       ]
@@ -407,7 +407,7 @@
       "description": "A dynamic event for showcasing models, posters, and presentations on various aspects of bio-technology.",
       "venue": "UEM Kolkata Campus",
       "fees": "149 INR / team",
-      "form": "https://forms.gle/YAmeRchbAKpFHgn8",
+      "form": "https://forms.gle/YAmeRchbAKpFHgn86",
       "problem": "https://drive.google.com/file/d/1qLjl--1JkRQDwiyYik8vu86j6USYZ0aQ/view?usp=drive_link",
       "coordinators": [
         {
@@ -466,8 +466,8 @@
           "name": "Arunava Das",
           "contact": "+91 8001386218",
           "image": "/people/arunava-das.webp",
-          "linkedin": "https://linkedin.com/in/arunava-das-b3745a18a/",
-          "instagram": "https://instagram.com/arunava_das23/",
+          "linkedin": "https://www.linkedin.com/in/arunava-das-091303282/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+          "instagram": "https://www.instagram.com/ad_phoenix/",
           "x": ""
         },
         {
@@ -549,7 +549,7 @@
           "contact": "+91 7699129791",
           "image": "/people/siddhartha-chowdhury.webp",
           "linkedin": "",
-          "instagram": "",
+          "instagram": "https://www.instagram.com/siddhartha_chowdhury16?igsh=M2I4NnhhdzRlN2Q2",
           "x": ""
         }
       ]
@@ -827,7 +827,7 @@
           "contact": "+91 8697516900",
           "image": "/people/soumyabrata-roy.webp",
           "linkedin": "",
-          "instagram": "",
+          "instagram": "https://www.instagram.com/_.rickroy317._?igsh=NmVkMXFidmdvZ3Bu",
           "x": ""
         },
         {
@@ -835,7 +835,7 @@
           "contact": "+91 9073513676",
           "image": "/people/ananya-saha.webp",
           "linkedin": "",
-          "instagram": "",
+          "instagram": "https://www.instagram.com/awwnonyya_?igsh=d3FkZWQ1dzdzeGN2",
           "x": ""
         }
       ]
@@ -860,8 +860,8 @@
           "name": "Shreyashi Sen Gupta",
           "contact": "+91 9142106506",
           "image": "/people/shreyashi-sen-gupta.webp",
-          "linkedin": "",
-          "instagram": "",
+          "linkedin": "https://in.linkedin.com/in/shreyashi-sen-gupta-44478328b?utm_source=share&utm_medium=member_mweb&utm_campaign=share_via&utm_content=profile",
+          "instagram": "https://www.instagram.com/__shreyashi__029?igsh=Zm91MXptbjBnMHcx",
           "x": ""
         },
         {
@@ -897,8 +897,8 @@
           "name": "Vedanta Bandyopadhyay",
           "contact": "+91 9038101994",
           "image": "/people/vedanta-bandyopadhyay.webp",
-          "linkedin": "",
-          "instagram": "",
+          "linkedin": "www.linkedin.com/in/pandadesignz",
+          "instagram": "www.instagram.com/panda._.designz",
           "x": ""
         }
       ]
@@ -983,7 +983,7 @@
         {
           "name": "Divyanshi shrivastav",
           "contact": "+91 9065272105",
-          "image": "/people/divyanshi-shrivastav.webp",
+          "image": "/people/divyanshi-srivastava.webp",
           "linkedin": "",
           "instagram": "",
           "x": ""
@@ -994,7 +994,7 @@
   "gaming": [
 
     {
-      "name": "FIFA ‘25",
+      "name": "FC - 25",
       "poster": "/poster/gaming/FC-25.webp",
       "date": "1st - 2nd March 2025",
       "tagline": "It's in the Game",
@@ -1013,8 +1013,8 @@
           "x": ""
         },
         {
-          "name": "Sahil Nandi",
-          "contact": "8101412385",
+          "name": "Abeer Lal Nandi",
+          "contact": "9477228347",
           "image": "/people/sahil-nandi.webp",
           "linkedin": "",
           "instagram": "",
@@ -1033,7 +1033,7 @@
     {
       "name": "Red Light Green Light",
       "poster": "/poster/gaming/red-light-green-light.webp",
-      "date": "1st - 2nd March 2025",
+      "date": "1st March 2025",
       "tagline": "Move wisely, stop quickly, survive longer!",
       "description": "URECKON'25 presents Red Light, Green Light, a competition testing participants' adherence to the classic game's rules within an obstacle course. Teams of two will navigate the course, freezing on 'Red Light' and advancing on 'Green Light.' Movement after 'Red Light' results in elimination. The competition features a slot-based system with qualifying rounds and a final. Winners receive a prize; all participants receive e-certificates.",
       "venue": "UEM Kolkata Campus",
@@ -1064,7 +1064,7 @@
     {
       "name": "Tug O' War",
       "poster": "/poster/gaming/Tug-o-war.webp",
-      "date": "1st - 2nd March 2025",
+      "date": "2nd March 2025",
       "tagline": "Pull Hard, Win Big!",
       "description": "Join the Tug O' War competition at URECKON'25 and showcase your strength and teamwork. Compete with other teams and aim for victory.",
       "venue": "UEM Kolkata Campus",

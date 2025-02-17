@@ -40,9 +40,12 @@ const TeamDetailsPage = () => {
                       alt={member.name}
                       className="w-full object-cover rounded-full mb-4"
                     />
-                    <h3 className="mt-2 text-base sm:text-lg md:text-xl font-semibold text-center font-['Press_Start_2P']">
+                    <h3 className="mt-2 md:text-xl mb-2 text-center font-['Press_Start_2P']">
                       {member.name}
                     </h3>
+                    <p className="text-center texi-xs text-yellow-500 font-['Press_Start_2P']">
+                      {member.designation}{" "}
+                    </p>
                     <div className="social-links flex gap-4 mt-2 justify-center">
                       {member.linkedin && (
                         <a
