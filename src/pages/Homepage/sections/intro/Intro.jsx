@@ -54,17 +54,13 @@ function Intro() {
     "when , where and more": {
       title: "WHEN, WHERE,& MORE",
       firstPara:
-        "Mark your calendars for an extraordinary experience! Ureckon 2025 is set to take place from [insert dates] at the vibrant campus of the University of Engineering and Management, Kolkata. This year, we're expanding our horizons with both physical and virtual events, ensuring global participation and accessibility.",
-      secondPara:
-        "Expect a fusion of cutting-edge technology showcases, thought-provoking panel discussions, hands-on workshops, and exhilarating competitions. From AI and robotics to sustainable tech and entrepreneurship, Ureckon 2025 promises a diverse range of events catering to various interests and expertise levels. Stay tuned for more details on our star-studded guest list, exciting prize pools, and networking opportunities!",
+        "Ureckon’25, the annual techno-management fest of University of Engineering and Management, Kolkata , is back with a retro-themed twist—Blast from the Past! Hosted at University of Engineering and Management, Kolkata from 1st-2nd March, 2025 this edition blends nostalgia with innovation, featuring cutting-edge competitions in robotics, coding, business, and more. Get ready for thrilling physical games like Tug o’ War and Red Light, Green Light, exciting new photography contests, hands-on workshops, and interactive challenges. Whether you're a tech enthusiast, a strategist, or a creative mind, Ureckon’25 promises an unforgettable experience. Mark your calendars and step into a world where the past meets the future!",
       imageSrc: "./Group.png",
     },
     "whats new this year": {
       title: "WHAT'S NEW THIS YEAR ?",
       firstPara:
-        "Ureckon 2025 is set to redefine the tech fest experience with groundbreaking additions! This year, we're introducing a 'Green Tech Challenge,' focusing on sustainable innovations. Participants will have the chance to pitch their eco-friendly tech solutions to industry leaders and potential investors.",
-      secondPara:
-        "We're also launching 'AI for Good' hackathon, where teams will develop AI solutions addressing pressing global issues. Additionally, our new 'Tech Titans' speaker series will feature renowned tech visionaries sharing insights on future trends. Get ready for enhanced virtual reality experiences, a dedicated blockchain and cryptocurrency track, and expanded international collaborations. Ureckon 2025 is not just an event; it's a glimpse into the future of technology and management!",
+        "This year, Ureckon’25 takes a nostalgic turn with an exciting retro theme, blending vintage aesthetics with cutting-edge technology. Get ready for thrilling physical gaming events like Tug o’ War and Red Light, Green Light, inspired by Squid Game, to test your strength and strategy. Adding to the excitement, we introduce new photography events, offering creative challenges for shutterbugs to showcase their skills. With fresh experiences and classic fun, Ureckon’25 promises to be more immersive, competitive, and visually stunning than ever before! Stay tuned for more surprises!",
       imageSrc: "./Group.png",
     },
   };
