@@ -1,0 +1,11 @@
+[
+  { "name": "Faculty Coordinator", "route": "faculty" },
+  { "name": "Convenor", "route": "convenor" },
+  { "name": "Taskforce", "route": "taskforce" },
+  { "name": "Core", "route": "core" },
+  { "name": "Lead", "route": "lead" },
+  { "name": "Tech", "route": "tech-team" },
+  { "name": "Graphics", "route": "graphics" },
+  { "name": "Branding", "route": "branding" },
+  { "name": "Promotion", "route": "promo" }
+]

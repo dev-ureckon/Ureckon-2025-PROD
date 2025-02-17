@@ -1,7 +1,7 @@
 import React from "react";
 import T from "../../../components/T";
 import { motion } from "framer-motion";
-import events from "../../../lib/events.json";
+import events from "../../../constants/eventroutes.json";
 import { Link } from "react-router-dom";
 import SectionContainer from "../../../components/SectionContainer";
 
@@ -14,15 +14,14 @@ const EventPage = () => {
   return (
     <div className="w-full px-4 sm:px-6 lg:px-12 min-h-screen items-center justify-center flex flex-col">
       <div className="mt-12">
-      <h1 className="text-xl text-center mb-5 lg:mb-12 uppercase lg:text-4xl font-press text-[#B01D15] drop-shadow-[0_0_20px_#B01D15]">
-              the official events of ureckon’25 
-            </h1>
+        <h1 className="text-xl text-center mb-5 lg:mb-12 uppercase lg:text-4xl font-press text-[#B01D15] drop-shadow-[0_0_20px_#B01D15]">
+          the official events of ureckon’25
+        </h1>
         <SectionContainer>
           {/* Heading Section */}
           <div className="text-center lg:my-16 my-8 mb-12">
-            
             <p className="text-lg text-center mb-5 lg:mb-12 uppercase lg:text-3xl font-press text-[#e1e1e1] drop-shadow-[0_0_20px_#e1e1e1]">
-            SELECT YOUR CHOICE
+              SELECT YOUR CHOICE
             </p>
           </div>
 
@@ -37,7 +36,7 @@ const EventPage = () => {
                     whileHover={hoverAnimation}
                   >
                     <Link
-                      to={`/events/${event.name.toLowerCase()}`}
+                      to={`/events/${event.route.toLowerCase()}`}
                       className="w-full h-full flex justify-center items-center text-xs sm:text-sm md:text-md lg:text-lg"
                     >
                       {event.name}

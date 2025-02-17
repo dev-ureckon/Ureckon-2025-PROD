@@ -8,6 +8,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "../../../../../components/ui/carousel";
+import { useNavigate } from "react-router";
 
 export default function EventCarousel() {
   const events = [
@@ -21,18 +22,22 @@ export default function EventCarousel() {
     { id: 8, title: "Biz Events" },
   ];
 
+  // Duplicate events for seamless looping
+  const loopedEvents = [...events, ...events];
+
   return (
     <div className="lg:pb-20 w-full mx-auto lg:px-8 ">
       <Carousel
         opts={{
           align: "start",
+          loop: true, // Enables infinite scrolling
         }}
         className="w-full max-w-5xl mx-auto mt-[4rem]"
       >
-        <CarouselContent className="" >
-          {events.map((event) => (
-            <CarouselItem key={event.id} className=" lg:basis-1/3">
-              <Card title={event.title} className=""/>
+        <CarouselContent className="">
+          {loopedEvents.map((event, index) => (
+            <CarouselItem key={index} className="lg:basis-1/3">
+              <Card title={event.title} />
             </CarouselItem>
           ))}
         </CarouselContent>
@@ -44,9 +49,15 @@ export default function EventCarousel() {
 }
 
 const Card = ({ title }) => {
+  const navigate = useNavigate();
   const [isActive, setIsActive] = React.useState(false);
+
   const handleInteraction = (active) => {
     setIsActive(active);
+  };
+
+  const handleClick = () => {
+    navigate(`/events/${title.toLowerCase()}`);
   };
 
   return (
@@ -55,6 +66,7 @@ const Card = ({ title }) => {
       onMouseLeave={() => handleInteraction(false)}
       onTouchStart={() => handleInteraction(true)}
       onTouchEnd={() => handleInteraction(false)}
+      onClick={handleClick}
       className="group/canvas-card flex items-center justify-center mx-auto p-[rem] relative lg:h-[500px] h-[400px] w-full bg-[#ff0000] bg-opacity-15"
     >
       <CornerIcon className="absolute h-6 w-6 -top-1 -left-1 text-[#ff0000]" />
@@ -85,7 +97,7 @@ const Card = ({ title }) => {
 
       <div className="relative p z-20">
         <h2
-          className="opacity-100  group-hover/canvas-card:opacity-100 relative z-10 font-bold group-hover/canvas-card:text-[#ff0000] transition duration-200 text-lg md:text-2xl font-pixel text-center bg-gradient-to-b bg-clip-text text-transparent from-[#FFB74D] to-[#F57C00]
+          className="opacity-100 group-hover/canvas-card:opacity-100 relative z-10 font-bold group-hover/canvas-card:text-[#ff0000] transition duration-200 text-lg md:text-2xl font-pixel text-center bg-gradient-to-b bg-clip-text text-transparent from-[#FFB74D] to-[#F57C00]
              uppercase"
         >
           {title}

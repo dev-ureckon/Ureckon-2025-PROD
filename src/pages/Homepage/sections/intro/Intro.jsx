@@ -1,55 +1,69 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
-import "./intro.css"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "../../../../components/ui/tabs"
-import { Link } from "react-router-dom"
+import { useState, useEffect } from "react";
+import "./intro.css";
+import {
+  Tabs,
+  TabsContent,
+  TabsList,
+  TabsTrigger,
+} from "../../../../components/ui/tabs";
+import { Link } from "react-router-dom";
+import {
+  FaLinkedin,
+  FaInstagram,
+  FaTwitter,
+  FaWhatsapp,
+  FaYoutube,
+  FaFacebook,
+  FaDiscord,
+} from "react-icons/fa";
 
 function Intro() {
-  const [isHovered, setIsHovered] = useState(false)
-  const [currentTab, setCurrentTab] = useState("what is ureckon")
-  const tabs = ["what is ureckon", "when , where and more", "whats new this year"]
+  const [isHovered, setIsHovered] = useState(false);
+  const [currentTab, setCurrentTab] = useState("what is ureckon");
+  const tabs = [
+    "what is ureckon",
+    "when , where and more",
+    "whats new this year",
+  ];
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      const currentIndex = tabs.indexOf(currentTab)
-      const nextIndex = (currentIndex + 1) % tabs.length
-      setCurrentTab(tabs[nextIndex])
-    }, 5000) // Switch every 5 seconds
+      const currentIndex = tabs.indexOf(currentTab);
+      const nextIndex = (currentIndex + 1) % tabs.length;
+      setCurrentTab(tabs[nextIndex]);
+    }, 5000); // Switch every 5 seconds
 
-    return () => clearTimeout(timer)
-  }, [currentTab])
+    return () => clearTimeout(timer);
+  }, [currentTab]);
 
   const handleTabChange = (value) => {
-    setCurrentTab(value)
-  }
+    setCurrentTab(value);
+  };
 
   const tabContent = {
     "what is ureckon": {
       title: "WHO ARE WE ?",
       firstPara:
-        "Welcome to the dynamic realm of Ureckon, the pulsating heartbeat of innovation and creativity! As we gear up for the seventh edition in 2025, Ureckon stands tall as the annual techno-management fest of the University of Engineering and Management, Kolkata. Revealing the foundations of innovation and fostering an inclusive environment of excellence, Ureckon has come to symbolise a celebration of technological innovation and managerial skill.",
+"Step into the time machine and rewind to an era where pixels ruled, neon glowed, and innovation was born in garages, this year’s edition! Welcome to Ureckon'2025, the seventh edition of the ultimate techno-management fest of the University of Engineering and Management, Kolkata—where the past meets the future in a spectacular fusion of retro-tech and modern innovation.",
       secondPara:
-        "This festival breaks down barriers by bringing together enthusiasts, professionals, and students from all walks of life for an intense program that includes workshops, competitions, and interactive sessions. Join us as we explore the seemingly endless possibilities that Ureckon 2024 has to offer as we set off on this voyage of knowledge-sharing and ground-breaking innovations. Come, be a part of the symphony of innovation that defines who we are!",
+        "Brace yourself for an immersive journey through time, featuring classic arcade-style competitions, futuristic innovations with a retro twist, electrifying workshops, and dynamic interactive sessions that bridge the best of both eras.Are you ready to hack the past, decode the present, and build the future? Join us as we celebrate the timeless spirit of invention at Ureckon'2025 – Blast From The Past!",
       imageSrc: "./Group.png",
     },
     "when , where and more": {
       title: "WHEN, WHERE,& MORE",
       firstPara:
-        "Mark your calendars for an extraordinary experience! Ureckon 2025 is set to take place from [insert dates] at the vibrant campus of the University of Engineering and Management, Kolkata. This year, we're expanding our horizons with both physical and virtual events, ensuring global participation and accessibility.",
-      secondPara:
-        "Expect a fusion of cutting-edge technology showcases, thought-provoking panel discussions, hands-on workshops, and exhilarating competitions. From AI and robotics to sustainable tech and entrepreneurship, Ureckon 2025 promises a diverse range of events catering to various interests and expertise levels. Stay tuned for more details on our star-studded guest list, exciting prize pools, and networking opportunities!",
+        "Ureckon’25, the annual techno-management fest of University of Engineering and Management, Kolkata , is back with a retro-themed twist—Blast from the Past! Hosted at University of Engineering and Management, Kolkata from 1st-2nd March, 2025 this edition blends nostalgia with innovation, featuring cutting-edge competitions in robotics, coding, business, and more. Get ready for thrilling physical games like Tug o’ War and Red Light, Green Light, exciting new photography contests, hands-on workshops, and interactive challenges. Whether you're a tech enthusiast, a strategist, or a creative mind, Ureckon’25 promises an unforgettable experience. Mark your calendars and step into a world where the past meets the future!",
       imageSrc: "./Group.png",
     },
     "whats new this year": {
       title: "WHAT'S NEW THIS YEAR ?",
       firstPara:
-        "Ureckon 2025 is set to redefine the tech fest experience with groundbreaking additions! This year, we're introducing a 'Green Tech Challenge,' focusing on sustainable innovations. Participants will have the chance to pitch their eco-friendly tech solutions to industry leaders and potential investors.",
-      secondPara:
-        "We're also launching 'AI for Good' hackathon, where teams will develop AI solutions addressing pressing global issues. Additionally, our new 'Tech Titans' speaker series will feature renowned tech visionaries sharing insights on future trends. Get ready for enhanced virtual reality experiences, a dedicated blockchain and cryptocurrency track, and expanded international collaborations. Ureckon 2025 is not just an event; it's a glimpse into the future of technology and management!",
+        "This year, Ureckon’25 takes a nostalgic turn with an exciting retro theme, blending vintage aesthetics with cutting-edge technology. Get ready for thrilling physical gaming events like Tug o’ War and Red Light, Green Light, inspired by Squid Game, to test your strength and strategy. Adding to the excitement, we introduce new photography events, offering creative challenges for shutterbugs to showcase their skills. With fresh experiences and classic fun, Ureckon’25 promises to be more immersive, competitive, and visually stunning than ever before! Stay tuned for more surprises!",
       imageSrc: "./Group.png",
     },
-  }
+  };
 
   return (
     <section>
@@ -67,86 +81,94 @@ function Intro() {
           />
         </h1>
       </div>
-    <section className="min-h-screen flex items-center justify-center mx-auto  md:p-10">
-
-      <div className="container  mx-auto rounded-[54.35px] md:px-8 lg:p-6 introBox relative lg:h-[800px] h-[100%]  w-[500px] lg:w-[90vw] border-[#3f3b4f] border">
-        <Tabs defaultValue="what is ureckon" value={currentTab} onValueChange={handleTabChange}>
-          <TabsList className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 bg-transparent gap-5 sm:gap-[4rem] md:gap-[3rem] lg:gap-[8rem] font-pixel absolute top-1 max-lg:w-full">
-            <TabsTrigger
-              className="text-xs sm:text-[0.7rem] md:text-[9px] lg:text-[12px] xl:text-[0.9rem] tab1 relative md:right-5"
-              value="what is ureckon"
-            >
-              WHAT IS URECKON ?
-            </TabsTrigger>
-            <TabsTrigger
-              className="text-xs sm:text-[0.7rem] md:text-[9px] lg:text-[12px] xl:text-[0.9rem] relative md:right-[2rem] right-0"
-              value="when , where and more"
-            >
-              WHEN, WHERE,& MORE
-            </TabsTrigger>
-            <TabsTrigger
-              className="text-[10px]  md:text-[9px] lg:text-[12px] xl:text-[0.9rem] items-center tab relative md:right-[3rem] lg:right-0 sm:px-[6.5rem]"
-              value="whats new this year"
-            >
-              WHAT'S NEW THIS YEAR ?
-            </TabsTrigger>
-          </TabsList>
-          {tabs.map((tab) => (
-            <TabsContent key={tab} value={tab}>
-              <TabContent
-                title={tabContent[tab].title}
-                firstPara={tabContent[tab].firstPara}
-                secondPara={tabContent[tab].secondPara}
-                imageSrc={tabContent[tab].imageSrc}
-              />
-            </TabsContent>
-          ))}
-        </Tabs>
-      </div>
+      <section className="min-h-screen flex items-center justify-center mx-auto  md:p-10">
+        <div className="container  mx-auto rounded-[54.35px] md:px-8 lg:p-6 introBox relative lg:h-[800px] h-[100%]  w-[500px] lg:w-[90vw] border-[#3f3b4f] border">
+          <Tabs
+            defaultValue="what is ureckon"
+            value={currentTab}
+            onValueChange={handleTabChange}
+          >
+            <TabsList className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 bg-transparent gap-5 sm:gap-[4rem] md:gap-[3rem] lg:gap-[8rem] font-pixel absolute top-1 max-lg:w-full">
+              <TabsTrigger
+                className="text-xs sm:text-[0.7rem] md:text-[9px] lg:text-[12px] xl:text-[0.9rem] tab1 relative md:right-5"
+                value="what is ureckon"
+              >
+                WHAT IS URECKON ?
+              </TabsTrigger>
+              <TabsTrigger
+                className="text-xs sm:text-[0.7rem] md:text-[9px] lg:text-[12px] xl:text-[0.9rem] relative md:right-[2rem] right-0 rounded-xl"
+                value="when , where and more"
+              >
+                WHEN, WHERE,& MORE
+              </TabsTrigger>
+              <TabsTrigger
+                className="text-[10px]  md:text-[9px] lg:text-[12px] xl:text-[0.9rem] items-center tab relative md:right-[3rem] lg:right-0 sm:px-[6.5rem]"
+                value="whats new this year"
+              >
+                WHAT'S NEW THIS YEAR ?
+              </TabsTrigger>
+            </TabsList>
+            {tabs.map((tab) => (
+              <TabsContent key={tab} value={tab}>
+                <TabContent
+                  title={tabContent[tab].title}
+                  firstPara={tabContent[tab].firstPara}
+                  secondPara={tabContent[tab].secondPara}
+                  imageSrc={tabContent[tab].imageSrc}
+                />
+              </TabsContent>
+            ))}
+          </Tabs>
+        </div>
+      </section>
     </section>
-    </section>
-  )
+  );
 }
 
 function TabContent({ title, firstPara, secondPara, imageSrc }) {
   const links = [
     {
       id: 1,
-      icon: "./socials/LinkedIn.svg",
+      icon: <FaLinkedin />,
       href: "https://www.linkedin.com/company/ureckon/posts/?feedView=all",
     },
     {
       id: 2,
-      icon: "./socials/Instagram.svg",
+      icon: <FaInstagram />,
       href: "https://www.instagram.com/ureckon.uemk/?hl=en",
     },
     {
       id: 3,
-      icon: "./socials/X.svg",
+      icon: <FaTwitter />,
       href: "https://x.com/Ureckon_Uemk",
     },
     {
       id: 4,
-      icon: "./socials/WhatsApp.svg",
+      icon: <FaWhatsapp />,
       href: "https://whatsapp.com/channel/0029VaBYereHFxP3CiIpRo1H",
     },
     {
       id: 5,
-      icon: "./socials/YouTube.svg",
+      icon: <FaYoutube />,
       href: "https://www.youtube.com/@UreckonUEMKolkata",
     },
     {
       id: 6,
-      icon: "./socials/Facebook.svg",
+      icon: <FaFacebook />,
       href: "https://www.facebook.com/ureckon.uemk/",
     },
+    {
+      id: 7,
+      icon: <FaDiscord />,
+      href: "https://discord.gg/Ztyvqyda7n",
+    },
+  ];
 
-  ]
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-[20rem] p-3 sm:p-4 md:p-5 max-lg:mt-4">
       <div className="flex justify-center md:justify-start">
         <img
-          src={imageSrc || "/placeholder.svg"}
+          src={'/gallery/ureckon3.webp'}
           alt={title}
           className="relative lg:left-[5rem] max-lg:hidden lg:h-[467.42px] lg:top-[6rem]"
         />
@@ -156,9 +178,13 @@ function TabContent({ title, firstPara, secondPara, imageSrc }) {
           {title}
         </h1>
         <div className="flex flex-col mx-auto gap-5 md:gap-10 mt-4 md:mt-[5rem] font-pixel md:right-[24rem] relative lg:right-0">
-          <p className="text-[10px] sm:text-[11px] md:text-[12px] text-[#C0C0C0] text-wrap w-full">{firstPara}</p>
-          <p className="text-[10px] sm:text-[11px] md:text-[12px] text-[#C0C0C0] text-wrap w-full">{secondPara}</p>
-          <div className="flex items-center  justify-center gap-4 mx-auto flex-wrap mt-4 md:mt-0">
+          <p className="text-[10px] sm:text-[11px] md:text-[12px] text-[#C0C0C0] text-wrap w-full">
+            {firstPara}
+          </p>
+          <p className="text-[10px] sm:text-[11px] md:text-[12px] text-[#C0C0C0] text-wrap w-full">
+            {secondPara}
+          </p>
+          <div className="flex items-center justify-center gap-4 mx-auto flex-wrap mt-4 md:mt-0">
             {links.map((item) => (
               <Link to={item.href} key={item.id}>
                 <button
@@ -167,7 +193,9 @@ function TabContent({ title, firstPara, secondPara, imageSrc }) {
                     background: "linear-gradient(to bottom, #3C1E82, #371C77)",
                   }}
                 >
-                  <img src={item.icon || "/placeholder.svg"} className="h-[64px] w-[64px]" alt={`${item.id} icon`} />
+                  <div className="text-black text-2xl hover:text-white">
+                    {item.icon}
+                  </div>
                 </button>
               </Link>
             ))}
@@ -175,7 +203,7 @@ function TabContent({ title, firstPara, secondPara, imageSrc }) {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Intro
+export default Intro;

@@ -1,65 +1,101 @@
 import { TextAnimate } from "../../../components/ui/text-animate"
 import { PlusIcon } from "lucide-react"
 import { useState, useEffect } from "react"
-
+import { GoTriangleRight } from "react-icons/go";
+import { GoTriangleLeft } from "react-icons/go";
 function Gallery() {
   const images = {
     ROBOTICS: [
-      { src: "/robotics1.jpg", alt: "Robotics 1" },
-      { src: "/robotics2.jpg", alt: "Robotics 2" },
-      { src: "/robotics3.jpg", alt: "Robotics 3" },
+      { src: "/gallery/robotics1.webp", alt: "Robotics 1" },
+      { src: "/gallery/robotics2.webp", alt: "Robotics 2" },
+      { src: "/gallery/robotics3.webp", alt: "Robotics 3" },
+      { src: "/gallery/robotics4.webp", alt: "Robotics 4" },
+      { src: "/gallery/robotics5.webp", alt: "Robotics 5" },
+      { src: "/gallery/robotics6.webp", alt: "Robotics 6" },
     ],
     QUIZ: [
-      { src: "/quiz1.jpg", alt: "Quiz 1" },
-      { src: "/quiz2.jpg", alt: "Quiz 2" },
+      { src: "/gallery/quiz1.webp", alt: "Quiz 1" },
+      { src: "/gallery/quiz2.webp", alt: "Quiz 2" },
+      { src: "/gallery/quiz3.webp", alt: "Quiz 3" },
+      { src: "/gallery/quiz4.webp", alt: "Quiz 4" },
+      { src: "/gallery/quiz5.webp", alt: "Quiz 5" },
     ],
     CODING: [
-      { src: "/coding1.jpg", alt: "Coding 1" },
-      { src: "/coding2.jpg", alt: "Coding 3" },
-      { src: "/coding3.jpg", alt: "Coding 3" },
+      { src: "/gallery/coding1.webp", alt: "Coding 1" },
+      { src: "/gallery/coding2.webp", alt: "Coding 3" },
+      { src: "/gallery/coding3.webp", alt: "Coding 3" },
+      { src: "/gallery/coding4.webp", alt: "Coding 4" },
+      { src: "/gallery/coding5.webp", alt: "Coding 5" },
     ],
     GAMING: [
-      { src: "/gaming1.jpg", alt: "Gaming 1" },
-      { src: "/gaming2.jpg", alt: "Gaming 2" },
+      { src: "/gallery/gaming1.webp", alt: "Gaming 1" },
+      { src: "/gallery/gaming2.webp", alt: "Gaming 2" },
+      { src: "/gallery/gaming3.webp", alt: "Gaming 3" },
+      { src: "/gallery/gaming4.webp", alt: "Gaming 4" },
+      { src: "/gallery/gaming5.webp", alt: "Gaming 5" },
     ],
     FLAGSHIP: [
-      { src: "/flagship1.jpg", alt: "Flagship 1" },
-      { src: "/flagship2.jpg", alt: "Flagship 2" },
-      { src: "/flagship3.jpg", alt: "Flagship 3" },
+      { src: "/gallery/flagship1.webp", alt: "Flagship 1" },
+      { src: "/gallery/flagship2.webp", alt: "Flagship 2" },
+      { src: "/gallery/flagship3.webp", alt: "Flagship 3" },
+      { src: "/gallery/flagship4.webp", alt: "Flagship 4" },
     ],
     INITIATIVES: [
-      { src: "/initiatives1.jpg", alt: "Initiatives 1" },
-      { src: "/initiatives2.jpg", alt: "Initiatives 2" },
+      { src: "/gallery/initiatives1.webp", alt: "Initiatives 1" },
+      { src: "/gallery/initiatives2.webp", alt: "Initiatives 2" },
+      { src: "/gallery/initiatives3.webp", alt: "Initiatives 3" },
+      { src: "/gallery/initiatives4.webp", alt: "Initiatives 4" },
+      { src: "/gallery/initiatives5.webp", alt: "Initiatives 5" },
     ],
     "BIO-TECH": [
-      { src: "/biotech1.jpg", alt: "Bio-Tech 1" },
-      { src: "/biotech2.jpg", alt: "Bio-Tech 2" },
-      { src: "/biotech3.jpg", alt: "Bio-Tech 3" },
+      { src: "/gallery/biotech1.webp", alt: "Bio-Tech 1" },
+      { src: "/gallery/biotech2.webp", alt: "Bio-Tech 2" },
+      { src: "/gallery/biotech3.webp", alt: "Bio-Tech 3" },
+      { src: "/gallery/biotech4.webp", alt: "Bio-Tech 4" },
+      { src: "/gallery/biotech5.webp", alt: "Bio-Tech 5" },
     ],
     "BIZ EVENTS": [
-      { src: "/bizevents1.jpg", alt: "Biz Events 1" },
-      { src: "/bizevents2.jpg", alt: "Biz Events 2" },
+      { src: "/gallery/business1.webp", alt: "Biz Events 1" },
+      { src: "/gallery/business2.webp", alt: "Biz Events 2" },
+      { src: "/gallery/business3.webp", alt: "Biz Events 3" },
+      { src: "/gallery/business4.webp", alt: "Biz Events 4" },
     ],
   }
 
   const [currentSlide, setCurrentSlide] = useState(0)
-  const [selectedCategory, setSelectedCategory] = useState(null)
+  const [selectedCategory, setSelectedCategory] = useState("ROBOTICS");
+  const [fade, setFade] = useState(false);
 
   useEffect(() => {
-    setCurrentSlide(0)
-  }, []) //Removed selectedCategory from dependency array
+    setCurrentSlide(0);
+  }, [selectedCategory]);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextSlide();
+    }, 3000);
 
+    return () => clearInterval(interval);
+  }, [currentSlide, selectedCategory]);
   const nextSlide = () => {
     if (selectedCategory) {
-      setCurrentSlide((prev) => (prev === images[selectedCategory].length - 1 ? 0 : prev + 1))
+      setFade(true);
+      setTimeout(() => {
+        setCurrentSlide((prev) => (prev === images[selectedCategory].length - 1 ? 0 : prev + 1));
+        setFade(false);
+      }, 300);
     }
-  }
+    }
+  
 
   const prevSlide = () => {
     if (selectedCategory) {
-      setCurrentSlide((prev) => (prev === 0 ? images[selectedCategory].length - 1 : prev - 1))
+      setFade(true);
+      setTimeout(() => {
+        setCurrentSlide((prev) => (prev === 0 ? images[selectedCategory].length - 1 : prev - 1));
+        setFade(false);
+      }, 300);
     }
-  }
+  };
 
   const categories = [
     { name: "ROBOTICS", color: "bg-red-800/50" },
@@ -96,13 +132,26 @@ function Gallery() {
 
       <div>
       <div className="relative max-w-4xl mx-auto">
-  {["-top-3 -left-3", "-top-3 -right-3", "-bottom-3 -left-3", "-bottom-3 -right-3"].map((pos, index) => (
-    <div key={index} className={`absolute ${pos} w-6 h-6 flex items-center justify-center`}>
-      <span className="text-red-600 text-2xl lg:text-4xl font-light leading-none transform translate-x-[2px] translate-y-[2px]">
-        +
-      </span>
-    </div>
-  ))}
+      <div className="absolute -top-3 -left-3 w-6 h-6 flex items-center justify-center">
+                <span className="text-[#FF0000] text-2xl sm:text-3xl font-bold leading-none translate-y-[-2px]">
+                  +
+                </span>
+              </div>
+              <div className="absolute -top-3 -right-3 w-6 h-6 flex items-center justify-center">
+                <span className="text-[#FF0000] text-2xl sm:text-3xl font-bold leading-none translate-y-[-2px]">
+                  +
+                </span>
+              </div>
+              <div className="absolute bottom-3 -left-3 w-6 h-6 flex items-center justify-center">
+                <span className="text-[#FF0000] text-2xl sm:text-3xl font-bold leading-none translate-y-[-2px]">
+                  +
+                </span>
+              </div>
+              <div className="absolute bottom-3 -right-3 w-6 h-6 flex items-center justify-center">
+                <span className="text-[#FF0000] text-2xl sm:text-3xl font-bold leading-none translate-y-[-2px]">
+                  +
+                </span>
+              </div>
 
   <div className="aspect-[16/9] border-[12px] border-red-800/50">
     {selectedCategory ? (
@@ -121,15 +170,15 @@ function Gallery() {
       <>
         <button
           onClick={prevSlide}
-          className="absolute left-0 top-1/2 -translate-y-1/2 lg:-translate-x-12 -translate-x-6 text-[#A81218] lg:text-4xl text-2xl"
+          className="absolute left-0 top-1/2 -translate-y-1/2 lg:-translate-x-12 -translate-x-6 text-[#A81218] "
         >
-          ◀
+          <GoTriangleLeft className="text-4xl md:text-6xl"/>
         </button>
         <button
           onClick={nextSlide}
-          className="absolute right-0 top-1/2 -translate-y-1/2 lg:translate-x-12 translate-x-6 text-[#A81218] lg:text-4xl text-2xl"
+          className="absolute right-0 top-1/2 -translate-y-1/2 lg:translate-x-12 translate-x-6 text-[#A81218] "
         >
-          ▶
+         <GoTriangleRight className="text-4xl  md:text-6xl "/>
         </button>
       </>
     )}

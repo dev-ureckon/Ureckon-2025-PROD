@@ -10,9 +10,9 @@ import PacBorderWrapper from "../../components/PacBorder";
 
 const Home = () => {
   return (
-    
-    <main className=" bg-[url('./bg.png')] bg-[#020c1c] bg-center overflow-hidden">
+    <main className="overflow-hidden">
       {/* <PacBorderWrapper> */}
+
       <section className="mx-2 flex flex-col text-white">
         <Hero />
         <Intro />
@@ -21,9 +21,9 @@ const Home = () => {
         <Statistics />
         <Faq />
       </section>
+
       {/* </PacBorderWrapper> */}
     </main>
-     
   );
 };
 

@@ -1,6 +1,5 @@
 import React from "react";
-import Team2Nav from "./Team2Pages/Team2Nav";
-import Teampage from "./Team2page2/TeamPage";
+import Teampage from "./Team2page2/TeamDetailsPage";
 
 const Team = () => {
     return (

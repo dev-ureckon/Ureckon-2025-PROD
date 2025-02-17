@@ -25,7 +25,8 @@ function Faq() {
                 Who can participate?
               </AccordionTrigger>
               <AccordionContent className="text-left text-xs lg:text-base">
-                Anyone interested in innovation, competitions, and networking can participate!
+              Ureckon is open to students from various educational institutions, professionals, and technology enthusiasts. The festival encourages participation from diverse backgrounds, fostering a collaborative and inclusive environment.
+
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2" className="bg-[#030418] p-4">
@@ -33,7 +34,7 @@ function Faq() {
                 How can I register for Ureckon events?
               </AccordionTrigger>
               <AccordionContent className="text-left text-xs lg:text-base">
-                You can register via our official website. Check the events page for details.
+              Registration details and procedures for Ureckon events will be available on the official website. Participants can find information about the registration process, deadlines, and any fees associated with specific events.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3" className="bg-[#030418]  p-4">
@@ -41,7 +42,30 @@ function Faq() {
                 Can I attend Ureckon if I'm not participating in any events?
               </AccordionTrigger>
               <AccordionContent className="text-left text-xs lg:text-base">
-                Yes! You can enjoy workshops, exhibitions, and various activities.
+              Absolutely! Ureckon is not only for participants but also welcomes attendees who wish to witness the exciting competitions, attend workshops, and be part of the vibrant atmosphere. There may be open sessions and activities for non-participants to engage with during the fest.
+
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-4" className="bg-[#030418]  p-4">
+              <AccordionTrigger className="text-left text-xs lg:text-xl">
+              Can I register for multiple events?
+
+              </AccordionTrigger>
+              <AccordionContent className="text-left text-xs lg:text-base">
+              Yes! Participants can register for multiple events as long as the schedules do not overlap.
+
+
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-5" className="bg-[#030418]  p-4">
+              <AccordionTrigger className="text-left text-xs lg:text-xl">
+              How do I know the rules for each event?
+
+              </AccordionTrigger>
+              <AccordionContent className="text-left text-xs lg:text-base">
+              Each event has its dedicated page on the website where you can find details like rules, judging criteria, and prizes.
+
+
               </AccordionContent>
             </AccordionItem>
           </Accordion>

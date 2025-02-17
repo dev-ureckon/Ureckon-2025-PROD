@@ -4,14 +4,14 @@ import { useState, useRef } from "react";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
-  const audioRef = useRef(null);
+ 
 
   const navLinks = [
     { name: "Home", link: "/" },
     { name: "About", link: "/about-us" },
     { name: "Partners", link: "/partners" },
     { name: "Events", link: "/events" },
-    // { name: "Team", link: "/team" },
+    { name: "Team", link: "/teams" },
     { name: "Contact Us", link: "/contact-us" },
   ];
 
@@ -31,14 +31,16 @@ export default function Navbar() {
       <nav className="container mx-auto flex h-14 items-center justify-between px-4">
         {/* Logo */}
 
+        <a href="/">
         <div
           className="h-8 w-8 rounded-full cursor-pointer transition-transform duration-300 hover:scale-110"
-          onClick={toggleMusic}
+         
         >
           <img src="/ureckon.svg" alt="Logo" />
         </div>
+        </a>
 
-        <audio ref={audioRef} src="/pac.mp3" />
+       
 
         {/* Desktop Navigation */}
         <div className="hidden items-center space-x-16 text-[#F8E461] lg:flex">
@@ -46,7 +48,7 @@ export default function Navbar() {
             <a
               key={name}
               href={link}
-              className="md:text-xl text-base font-press hover:text-yellow-500"
+              className="md:text-xl text-base font-press hover:text-red-500"
             >
               {name.toUpperCase()}
             </a>
@@ -66,7 +68,7 @@ export default function Navbar() {
             <a
               key={name}
               href={link}
-              className="md:text-xl text-base font-press hover:text-yellow-500"
+              className="md:text-xl text-base font-press hover:text-red-500"
             >
               {name.toUpperCase()}
             </a>
@@ -97,7 +99,7 @@ export default function Navbar() {
           {/* Close Button */}
           <button
             onClick={() => setIsOpen(false)}
-            className="absolute top-4 right-4 text-yellow-400 hover:text-yellow-500"
+            className="absolute top-4 right-4 text-yellow-400 hover:text-red-500"
           >
             <X className="h-6 w-6" />
           </button>
@@ -107,7 +109,7 @@ export default function Navbar() {
               <a
                 key={name}
                 href={link}
-                className="md:text-lg text-base font-press hover:text-yellow-500"
+                className="md:text-lg text-base font-press hover:text-red-500"
                 onClick={() => setIsOpen(false)}
               >
                 {name.toUpperCase()}

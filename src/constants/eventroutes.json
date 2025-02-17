@@ -1,0 +1,10 @@
+[
+  { "name": "CODING", "route": "coding" },
+  { "name": "FLAGSHIP", "route": "flagship" },
+  { "name": "ROBOTICS", "route": "robotics" },
+  { "name": "QUIZ", "route": "quiz" },
+  { "name": "GAMING", "route": "gaming" },
+  { "name": "INITIATIVES", "route": "initiatives" },
+  { "name": "BIO-TECH", "route": "bio-tech" },
+  { "name": "BIZ EVENTS", "route": "business" }
+]
