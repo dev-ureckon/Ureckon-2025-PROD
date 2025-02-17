@@ -1,7 +1,8 @@
 import { TextAnimate } from "../../../components/ui/text-animate"
 import { PlusIcon } from "lucide-react"
 import { useState, useEffect } from "react"
-
+import { GoTriangleRight } from "react-icons/go";
+import { GoTriangleLeft } from "react-icons/go";
 function Gallery() {
   const images = {
     ROBOTICS: [
@@ -62,23 +63,39 @@ function Gallery() {
   }
 
   const [currentSlide, setCurrentSlide] = useState(0)
-  const [selectedCategory, setSelectedCategory] = useState(null)
+  const [selectedCategory, setSelectedCategory] = useState("ROBOTICS");
+  const [fade, setFade] = useState(false);
 
   useEffect(() => {
-    setCurrentSlide(0)
-  }, []) //Removed selectedCategory from dependency array
+    setCurrentSlide(0);
+  }, [selectedCategory]);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextSlide();
+    }, 3000);
 
+    return () => clearInterval(interval);
+  }, [currentSlide, selectedCategory]);
   const nextSlide = () => {
     if (selectedCategory) {
-      setCurrentSlide((prev) => (prev === images[selectedCategory].length - 1 ? 0 : prev + 1))
+      setFade(true);
+      setTimeout(() => {
+        setCurrentSlide((prev) => (prev === images[selectedCategory].length - 1 ? 0 : prev + 1));
+        setFade(false);
+      }, 300);
     }
-  }
+    }
+  
 
   const prevSlide = () => {
     if (selectedCategory) {
-      setCurrentSlide((prev) => (prev === 0 ? images[selectedCategory].length - 1 : prev - 1))
+      setFade(true);
+      setTimeout(() => {
+        setCurrentSlide((prev) => (prev === 0 ? images[selectedCategory].length - 1 : prev - 1));
+        setFade(false);
+      }, 300);
     }
-  }
+  };
 
   const categories = [
     { name: "ROBOTICS", color: "bg-red-800/50" },
@@ -115,13 +132,26 @@ function Gallery() {
 
       <div>
       <div className="relative max-w-4xl mx-auto">
-  {["-top-3 -left-3", "-top-3 -right-3", "-bottom-3 -left-3", "-bottom-3 -right-3"].map((pos, index) => (
-    <div key={index} className={`absolute ${pos} w-6 h-6 flex items-center justify-center`}>
-      <span className="text-red-600 text-2xl lg:text-4xl font-light leading-none transform translate-x-[2px] translate-y-[2px]">
-        +
-      </span>
-    </div>
-  ))}
+      <div className="absolute -top-3 -left-3 w-6 h-6 flex items-center justify-center">
+                <span className="text-[#FF0000] text-2xl sm:text-3xl font-bold leading-none translate-y-[-2px]">
+                  +
+                </span>
+              </div>
+              <div className="absolute -top-3 -right-3 w-6 h-6 flex items-center justify-center">
+                <span className="text-[#FF0000] text-2xl sm:text-3xl font-bold leading-none translate-y-[-2px]">
+                  +
+                </span>
+              </div>
+              <div className="absolute -bottom-3 -left-3 w-6 h-6 flex items-center justify-center">
+                <span className="text-[#FF0000] text-2xl sm:text-3xl font-bold leading-none translate-y-[-2px]">
+                  +
+                </span>
+              </div>
+              <div className="absolute -bottom-3 -right-3 w-6 h-6 flex items-center justify-center">
+                <span className="text-[#FF0000] text-2xl sm:text-3xl font-bold leading-none translate-y-[-2px]">
+                  +
+                </span>
+              </div>
 
   <div className="aspect-[16/9] border-[12px] border-red-800/50">
     {selectedCategory ? (
@@ -140,15 +170,15 @@ function Gallery() {
       <>
         <button
           onClick={prevSlide}
-          className="absolute left-0 top-1/2 -translate-y-1/2 lg:-translate-x-12 -translate-x-6 text-[#A81218] lg:text-4xl text-2xl"
+          className="absolute left-0 top-1/2 -translate-y-1/2 lg:-translate-x-12 -translate-x-6 text-[#A81218] "
         >
-          ◀
+          <GoTriangleLeft className="text-4xl md:text-6xl"/>
         </button>
         <button
           onClick={nextSlide}
-          className="absolute right-0 top-1/2 -translate-y-1/2 lg:translate-x-12 translate-x-6 text-[#A81218] lg:text-4xl text-2xl"
+          className="absolute right-0 top-1/2 -translate-y-1/2 lg:translate-x-12 translate-x-6 text-[#A81218] "
         >
-          ▶
+         <GoTriangleRight className="text-4xl  md:text-6xl "/>
         </button>
       </>
     )}

@@ -8,6 +8,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "../../../../../components/ui/carousel";
+import { useNavigate } from "react-router";
 
 export default function EventCarousel() {
   const events = [
@@ -44,17 +45,21 @@ export default function EventCarousel() {
 }
 
 const Card = ({ title }) => {
+  const navigate = useNavigate()
   const [isActive, setIsActive] = React.useState(false);
   const handleInteraction = (active) => {
     setIsActive(active);
   };
-
+  const handleClick = () => {
+    navigate(`/events/${title.toLowerCase()}`);
+  };
   return (
     <div
       onMouseEnter={() => handleInteraction(true)}
       onMouseLeave={() => handleInteraction(false)}
       onTouchStart={() => handleInteraction(true)}
       onTouchEnd={() => handleInteraction(false)}
+      onClick={handleClick}
       className="group/canvas-card flex items-center justify-center mx-auto p-[rem] relative lg:h-[500px] h-[400px] w-full bg-[#ff0000] bg-opacity-15"
     >
       <CornerIcon className="absolute h-6 w-6 -top-1 -left-1 text-[#ff0000]" />
