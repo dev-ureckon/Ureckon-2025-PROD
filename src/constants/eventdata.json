@@ -1043,15 +1043,15 @@
           "contact": "8334023665",
           "image": "/people/abhirup-das.webp",
           "linkedin": "",
-          "instagram": "",
+          "instagram": "https://www.instagram.com/___abhirup_1102___/?igsh=MXA1YWxxaDY5djg5Mg%3D%3D#",
           "x": ""
         },
         {
           "name": "Trisha Mandal",
           "contact": "8670881002",
           "image": "/people/trisha-mandal.webp",
-          "linkedin": "",
-          "instagram": "",
+          "linkedin": "https://linkedin.com/in/trishamandal123/",
+          "instagram": "https://instagram.com/me._.trisha_/",
           "x": ""
         }
       ]
@@ -1069,11 +1069,19 @@
       "problem": "https://docs.google.com/document/d/1PChZl57jhlH4QeQMTyJvKVOBjHCOKa0liXNqXDPb2iM/view",
       "coordinators": [
         {
+          "name": "Abhirup Das",
+          "contact": "8334023665",
+          "image": "/people/abhirup-das.webp",
+          "linkedin": "",
+          "instagram": "https://www.instagram.com/___abhirup_1102___/?igsh=MXA1YWxxaDY5djg5Mg%3D%3D#",
+          "x": ""
+        },
+        {
           "name": "Trisha Mandal",
           "contact": "8670881002",
           "image": "/people/trisha-mandal.webp",
-          "linkedin": "",
-          "instagram": "",
+          "linkedin": "https://linkedin.com/in/trishamandal123/",
+          "instagram": "https://instagram.com/me._.trisha_/",
           "x": ""
         }
       ]
