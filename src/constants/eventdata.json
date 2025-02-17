@@ -14,10 +14,18 @@
         {
           "name": "Sayan Snigdha Pal",
           "contact": "+91 7551838146",
-          "image": "/people/sayan-snigdha-pal.webp",
+          "image": "/people/ssp.webp",
           "linkedin": "https://linkedin.com/in/sayan-snigdha-pal",
           "instagram": "https://instagram.com/isayanpal",
           "x": "https://x.com/sayanstwt"
+        },
+        {
+          "name": "Biswa Gangully",
+          "contact": "+91 6291874264",
+          "image": "/people/biswa-ganguly.webp",
+          "linkedin": "https://www.linkedin.com/in/biswa-ganguly-32564a28a",
+          "instagram": "https://www.instagram.com/___.b.i.s.w.a.___?igsh=MWl4cGxqY2UxN2thcQ==",
+          "x": "https://x.com/biswa_2512"
         },
         {
           "name": "Supriyo Saha",
@@ -26,15 +34,8 @@
           "linkedin": "",
           "instagram": "",
           "x": ""
-        },
-        {
-          "name": "Biswa Gangully",
-          "contact": "+91 6291874264",
-          "image": "/people/biswa-ganguly.webp",
-          "linkedin": "",
-          "instagram": "",
-          "x": ""
         }
+        
       ]
     },
     {
@@ -458,7 +459,7 @@
       "description": "The interschool quiz competition of URECKON’25, testing general knowledge and quick thinking.",
       "venue": "UEM Kolkata Campus",
       "fees": "FREE",
-      "form": "https://forms.gle/forms.gle/CDAAFeWTk2ZA4Yyt8",
+      "form": "https://forms.gle/6pQazTdafUny7Vh5A",
       "problem": "https://drive.google.com/file/d/1AORt6De0etLmGWlmJYuJ6r_CuiX03g60/view?usp=drive_link",
       "coordinators": [
         {
@@ -473,8 +474,8 @@
           "name": "Mahulee Lahiri",
           "contact": "+91 9674623159",
           "image": "/people/mahulee-lahiri.webp",
-          "linkedin": "",
-          "instagram": "",
+          "linkedin": "https://www.linkedin.com/in/mahulee-lahiri-5998ba28a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+          "instagram": "https://www.instagram.com/_mahuleelahiri?igsh=MWJ5cXcxdG9hdDdsdg%3D%3D&utm_source=qr",
           "x": ""
         },
         {
@@ -495,7 +496,7 @@
       "description": "An astronomical quiz competition to test knowledge of universal mysteries.",
       "venue": "UEM Kolkata Campus",
       "fees": "FREE",
-      "form": "https://forms.gle/forms.gle/CDAAFeWTk2ZA4Yyt8",
+      "form": "https://forms.gle/inNvPrtWFEcSLJxw7",
       "problem": "https://drive.google.com/file/d/1cmHrUxSnFlXnUX5jMJNFzO_F5o2_-oXb/view?usp=drive_link",
       "coordinators": [
         {
@@ -524,7 +525,7 @@
       "description": "A quiz blending business and technology knowledge.",
       "venue": "UEM Kolkata Campus",
       "fees": "FREE",
-      "form": "https://forms.gle/forms.gle/CDAAFeWTk2ZA4Yyt8",
+      "form": "https://forms.gle/NZ1NV2Tv8qzCJV8m8",
       "problem": "https://drive.google.com/file/d/1DMpsUa4L39OerYokNSw0HSnRkHtd4yoW/view?usp=drive_link",
       "coordinators": [
         {
@@ -565,7 +566,7 @@
       "venue": "UEM Kolkata Campus",
       "fees": "499 INR",
       "form": "https://forms.gle/a5Tx5o1qa52RDqSv9",
-      "problem": "https://drive.google.com/file/d/robo-dangal/view",
+      "problem": "https://drive.google.com/file/d/1VOayY5hTXPFEgaFXxDo1l3DONxXZIMVK/view?usp=drive_link",
       "coordinators": [
         {
           "name": "Amitabh Daripa",
@@ -594,7 +595,7 @@
       "venue": "UEM Kolkata Campus",
       "fees": "299 INR",
       "form": "https://forms.gle/rMoDeh4SGqfXn1389",
-      "problem": "https://drive.google.com/file/d/robo-sumo/view",
+      "problem": "https://drive.google.com/file/d/1DJSw4v6Jiqh5Z_WHkYv4uQs-YlfJY-GD/view?usp=drive_link",
       "coordinators": [
         {
           "name": "Anushka Adak",
@@ -639,7 +640,7 @@
       "venue": "UEM Kolkata Campus",
       "fees": "299 INR",
       "form": "https://forms.gle/XDEvBhYoS77YyeUw5",
-      "problem": "https://drive.google.com/file/d/need-for-torque/view",
+      "problem": "https://drive.google.com/file/d/1GTNXerb97P0Dj5vXC_qKstOj6VSZPfkJ/view?usp=drive_link",
       "coordinators": [
         {
           "name": "Ankush Dutta",
@@ -685,7 +686,7 @@
       "venue": "UEM Kolkata Campus",
       "fees": "299 INR",
       "form": "https://forms.gle/MYA9ndz8f2z7NAzP7",
-      "problem": "https://drive.google.com/file/d/robo-league/view",
+      "problem": "https://drive.google.com/file/d/1dFt7W-1rs8b1J0vXl_dqOnSyxtD9JhUD/view?usp=drive_link",
       "coordinators": [
         {
           "name": "Hitesh Kumar Roy",
@@ -730,7 +731,7 @@
       "venue": "UEM Kolkata Campus",
       "fees": "299 INR",
       "form": "https://forms.gle/d5FefPyLvT4BhisJ6",
-      "problem": "https://drive.google.com/file/d/dirrecion/view",
+      "problem": "https://drive.google.com/file/d/14AKh-5l0i66AgbPQqqpxfnpDB4t7IDrg/view?usp=drive_link",
       "coordinators": [
         {
           "name": "Shubhodip Pal",
@@ -759,7 +760,7 @@
       "venue": "UEM Kolkata Campus",
       "fees": "149 INR / team",
       "form": "https://forms.gle/8FyDdAjfSbfDSyMVA",
-      "problem": "https://drive.google.com/file/d/robo-gt/view",
+      "problem": "https://drive.google.com/file/d/1f2_XK_h2HOKCFyuIVLV_9AnfsZ6YH4wn/view?usp=drive_link",
       "coordinators": [
         {
           "name": "Shubhrangshu Ghosh",
