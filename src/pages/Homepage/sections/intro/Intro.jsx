@@ -28,9 +28,9 @@ function Intro() {
     "what is ureckon": {
       title: "WHO ARE WE ?",
       firstPara:
-        "Welcome to the dynamic realm of Ureckon, the pulsating heartbeat of innovation and creativity! As we gear up for the seventh edition in 2025, Ureckon stands tall as the annual techno-management fest of the University of Engineering and Management, Kolkata. Revealing the foundations of innovation and fostering an inclusive environment of excellence, Ureckon has come to symbolise a celebration of technological innovation and managerial skill.",
+"Step into the time machine and rewind to an era where pixels ruled, neon glowed, and innovation was born in garages, this year’s edition! Welcome to Ureckon'2025, the seventh edition of the ultimate techno-management fest of the University of Engineering and Management, Kolkata—where the past meets the future in a spectacular fusion of retro-tech and modern innovation.",
       secondPara:
-        "This festival breaks down barriers by bringing together enthusiasts, professionals, and students from all walks of life for an intense program that includes workshops, competitions, and interactive sessions. Join us as we explore the seemingly endless possibilities that Ureckon 2024 has to offer as we set off on this voyage of knowledge-sharing and ground-breaking innovations. Come, be a part of the symphony of innovation that defines who we are!",
+        "Brace yourself for an immersive journey through time, featuring classic arcade-style competitions, futuristic innovations with a retro twist, electrifying workshops, and dynamic interactive sessions that bridge the best of both eras.Are you ready to hack the past, decode the present, and build the future? Join us as we celebrate the timeless spirit of invention at Ureckon'2025 – Blast From The Past!",
       imageSrc: "./Group.png",
     },
     "when , where and more": {
@@ -146,7 +146,7 @@ function TabContent({ title, firstPara, secondPara, imageSrc }) {
     <div className="grid grid-cols-1 md:grid-cols-2 gap-[20rem] p-3 sm:p-4 md:p-5 max-lg:mt-4">
       <div className="flex justify-center md:justify-start">
         <img
-          src={imageSrc || "/placeholder.svg"}
+          src={'/gallery/ureckon3.webp'}
           alt={title}
           className="relative lg:left-[5rem] max-lg:hidden lg:h-[467.42px] lg:top-[6rem]"
         />

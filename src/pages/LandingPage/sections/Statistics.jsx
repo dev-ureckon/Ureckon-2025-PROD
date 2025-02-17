@@ -4,9 +4,9 @@ import CountUp from "react-countup";
 
 function Statistics() {
   const rowOne = [
-    { title: "NO OF EVENTS", value: 10 },
-    { title: "PRIZE POOL", value: 20 }, 
-    { title: "NO OF EVENTS", value: 10 },
+    { title: "NO OF EVENTS", value: 40 },
+    { title: "PRIZE POOL", value: 300000 }, 
+    { title: "No of Workshops", value: 10 },
   ];
 
   const rowTwo = [
@@ -14,9 +14,9 @@ function Statistics() {
   ];
 
   const rowThree = [
-    { title: "NO OF EVENTS", value: "10" },
-    { title: "PRIZE POOL", value: "20" },
-    { title: "NO OF EVENTS", value: "10" },
+    { title: "Social Media Impressions", value: 500000 },
+    { title: "Guest speaker", value: 20 },
+    { title: "Projected Footfall", value: 15000 },
   ];
 
   return (
@@ -42,7 +42,7 @@ function Statistics() {
                     {stat.title}
                   </p>
                   <p className="text-center font-press text-lg lg:text-2xl font-semibold text-red-700 statistics-text-shadow">
-                    <CountUp start={0} end={stat.value} duration={2} delay={2.5} />
+                    <CountUp start={0} end={stat.value} duration={2} delay={2.5} />+
                   </p>
                 </div>
               </CardItem>
@@ -87,7 +87,7 @@ function Statistics() {
                     {stat.title}
                   </p>
                   <p className="text-center font-press text-lg lg:text-2xl font-semibold text-red-700 statistics-text-shadow">
-                    <CountUp start={0} end={stat.value} duration={2} delay={2.5} />
+                    <CountUp start={0} end={stat.value} duration={2} delay={2.5} />+
                   </p>
                 </div>
               </CardItem>

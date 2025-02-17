@@ -101,14 +101,11 @@ const Hero = () => {
           {/* Content with enhanced glow effect using Tailwind */}
           <div className="text-balance text-gray-300 font-mono leading-relaxed text-sm sm:text-base md:text-lg space-y-4 max-w-4xl mx-auto px-2 sm:px-4">
             <p className="text-sm md:text-2xl  text-gray-200 drop-shadow-[0_0_8px_rgba(255,255,255,0.8)] shadow-white">
-              Ureckon, the annual techno-management fest of the University of
-              Engineering and Management (UEM), Kolkata, is back with its 7th
-              edition! A confluence of innovation, technology, and creativity.
-              We offer thrilling competitions, interactive workshops, inspiring
-              talks, and business extravaganzas. With participants from across
-              the country, it's a platform to showcase talent, foster learning,
-              and build connections. Join us and be part of this unforgettable
-              journey of excellence and discovery.
+            Ureckon, the annual techno-management fest of the University of Engineering and Management (UEM), Kolkata, is back with its 7th edition on 1st and 2nd March 2025! 
+            A confluence of innovation, technology, and creativity, Ureckon offers thrilling competitions, interactive workshops, inspiring talks, and business extravaganzas. 
+            With participants from across the country, it’s a platform to showcase talent, foster learning, and build connections. 
+            Join us and be part of this unforgettable journey of excellence and discovery!
+
             </p>
           </div>
 
