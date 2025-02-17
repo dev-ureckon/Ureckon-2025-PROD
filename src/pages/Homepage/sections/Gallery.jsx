@@ -142,12 +142,12 @@ function Gallery() {
                   +
                 </span>
               </div>
-              <div className="absolute -bottom-3 -left-3 w-6 h-6 flex items-center justify-center">
+              <div className="absolute bottom-3 -left-3 w-6 h-6 flex items-center justify-center">
                 <span className="text-[#FF0000] text-2xl sm:text-3xl font-bold leading-none translate-y-[-2px]">
                   +
                 </span>
               </div>
-              <div className="absolute -bottom-3 -right-3 w-6 h-6 flex items-center justify-center">
+              <div className="absolute bottom-3 -right-3 w-6 h-6 flex items-center justify-center">
                 <span className="text-[#FF0000] text-2xl sm:text-3xl font-bold leading-none translate-y-[-2px]">
                   +
                 </span>

@@ -36,10 +36,20 @@
       "instagram": "https://www.instagram.com/arkadeep.lyf"
     },
     {
+      "name": "Sk Md. Afsaruddin",
+      "image": "/people/mk.webp"
+    },
+    {
       "name": "Sanjona Bhattacharjee",
       "image":"/people/sanojna-b.webp",
       "linkedin": "https://www.linkedin.com/in/sanjona-bhattacharjee-62b30321b",
       "instagram": "https://www.instagram.com/san.bxby"
+    },
+    {
+      "name": "Surjo Mitra",
+      "image": "/people/surjo.webp",
+      "linkedin": "https://www.linkedin.com/in/surjo-mitra-029208249",
+      "instagram": "https://www.instagram.com/_surjooo.m"
     },
     {
       "name": "Avigyan Das",
@@ -47,13 +57,8 @@
       "linkedin": "https://www.linkedin.com/in/avigyandas/",
       "instagram": "https://www.instagram.com/kapav.raw/"
 
-    },
-    {
-      "name": "Surjo Mitra",
-      "image": "/people/surjo.webp",
-      "linkedin": "https://www.linkedin.com/in/surjo-mitra-029208249",
-      "instagram": "https://www.instagram.com/_surjooo.m"
     }
+    
   ],
   "Taskforce": [
     {
@@ -256,6 +261,13 @@
   ],
   "Graphics": [
     {
+      "name": "Shalini Shree",
+      "image": "/people/shalini-shree.webp",
+      "linkedin": "https://linkedin.com/in/shalini-shree-a025b3272",
+      "instagram": "https://instagram.com/shalinipriv",
+      "x": ""
+    },
+    {
       "name": "Anoushka Deb",
       "image": "/people/anoushka-deb.webp",
       "linkedin": "",
@@ -270,18 +282,18 @@
       "x": ""
     },
     {
-      "name": "Atreyee Chakraborty",
-      "image": "/people/atreyee-chakraborty.webp",
-      "linkedin": "https://linkedin.com/in/atreyee-chakraborty-635474283",
-      "instagram": "https://instagram.com/moth_smoke_._",
-      "x": ""
-    },
-    {
       "name": "Bireshwar Kundu",
       "image": "/people/bireshwar-kundu.webp",
       "linkedin": "https://linkedin.com/in/bireshwarkundu/",
       "instagram": "https://instagram.com/_shotx_",
       "x": "https://x.com/bireshwarkundu2"
+    },
+    {
+      "name": "Atreyee Chakraborty",
+      "image": "/people/atreyee-chakraborty.webp",
+      "linkedin": "https://linkedin.com/in/atreyee-chakraborty-635474283",
+      "instagram": "https://instagram.com/moth_smoke_._",
+      "x": ""
     },
     {
       "name": "Hrisikesh Pan",
@@ -304,13 +316,7 @@
       "instagram": "https://instagram.com/preetiii_227/",
       "x": ""
     },
-    {
-      "name": "Shalini Shree",
-      "image": "/people/shalini-shree.webp",
-      "linkedin": "https://linkedin.com/in/shalini-shree-a025b3272",
-      "instagram": "https://instagram.com/shalinipriv",
-      "x": ""
-    },
+    
     {
       "name": "Subhamita Adhikari",
       "image": "/people/subhamita-adhikari.webp",
@@ -970,6 +976,13 @@
       "x": "https://x.com/sohailraja77"
     },
     {
+      "name": "Saptarshi Ghosh",
+      "image": "/people/saptarshi-ghosh.webp",
+      "linkedin": "https://linkedin.com/in/saptarshi-ghosh-rana",
+      "instagram": "https://instagram.com/unpopular_chobiwala/",
+      "x": ""
+    },
+    {
       "name": "Devraj Chowdhury",
       "image": "/people/devraj-chowdhury.webp",
       "linkedin": "",
@@ -990,13 +1003,7 @@
       "instagram": "https://instagram.com/rohitnesson",
       "x": "https://x.com/ItsRohitness"
     },
-    {
-      "name": "Saptarshi Ghosh",
-      "image": "/people/saptarshi-ghosh.webp",
-      "linkedin": "https://linkedin.com/in/saptarshi-ghosh-rana",
-      "instagram": "https://instagram.com/unpopular_chobiwala/",
-      "x": ""
-    },
+    
     {
       "name": "Sucharita Jalui",
       "image": "/people/sucharita-jalui.webp",
