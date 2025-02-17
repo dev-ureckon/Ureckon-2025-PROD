@@ -18,6 +18,7 @@ import Footer from './components/Footer';
 import EventDetails from './pages/Events/EventDetails';
 import EventsPage2 from './pages/Events/Event2/Page';
 import Partners from './pages/Partners/Partners';
+import BackgroundParticles from './components/BackgroundParticles';
 
 const App = () => {
   const [screenLoading, setScreenLoading] = useState(false);
@@ -44,6 +45,7 @@ const App = () => {
       ) : (
         <BrowserRouter>
           <Wrapper>
+            <BackgroundParticles>
             <Navbar />
             <Routes>
               <Route path="/" element={<Home />} />
@@ -60,6 +62,7 @@ const App = () => {
 
             </Routes>
             <Footer />
+            </BackgroundParticles>
           </Wrapper>
         </BrowserRouter>
       )}

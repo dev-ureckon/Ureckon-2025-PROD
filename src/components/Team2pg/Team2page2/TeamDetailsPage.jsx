@@ -16,7 +16,7 @@ const TeamDetailsPage = () => {
     );
 
   return (
-    <div className="bg-[url('/bg.png')] bg-[#020c1c] bg-center bg-cover">
+    <div>
       <SectionContainer>
         <div className="text-white p-4 min-h-screen max-w-4xl mx-auto flex flex-col">
           <h1 className="mt-12 text-xl sm:text-2xl md:text-3xl p-2.5 text-red-700 text-shadow-red mb-5 uppercase text-center font-['Press_Start_2P']">

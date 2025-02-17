@@ -1,5 +1,9 @@
 import React from "react";
-import { CardBody, CardContainer, CardItem } from "../../../components/ui/3d-card";
+import {
+  CardBody,
+  CardContainer,
+  CardItem,
+} from "../../../components/ui/3d-card";
 import CountUp from "react-countup";
 
 function Statistics() {
@@ -9,9 +13,7 @@ function Statistics() {
     { title: "No of Workshops", value: 10 },
   ];
 
-  const rowTwo = [
-    { title: "DISRUPT AND INNOVATE" },
-  ];
+  const rowTwo = [{ title: "DISRUPT AND INNOVATE" }];
 
   const rowThree = [
     { title: "Social Media Impressions", value: 500000 },
@@ -20,24 +22,26 @@ function Statistics() {
   ];
 
   return (
-    <section className="">
+    <section className="w-full">
       <div className="w-full">
-  <h1 className="font-press text-2xl w-full lg:text-6xl uppercase lg:pb-8 leading-[102px] text-center gradient-text drop-shadow-[0_0_10px_rgba(235,169,42,0.8)]">
-    Statistics
-  </h1>
-</div>
-
+        <h1 className="font-press text-2xl w-full lg:text-6xl uppercase lg:pb-8 leading-[102px] text-center gradient-text drop-shadow-[0_0_10px_rgba(235,169,42,0.8)]">
+          Statistics
+        </h1>
+      </div>
 
       {/* row one */}
-      <div className="row-one flex flex-col  justify-center items-center gap-4 m-4 p-4 lg:flex-row">
+      <div className="row-one flex flex-col justify-center items-center gap-4 m-4 p-4 lg:flex-row">
         {rowOne.map((stat, index) => (
           <CardContainer
             key={index}
-            className="inter-var w-[200px] sm:w-[250px] md:w-[300px] lg:w-[350px]"
+            className="inter-var w-full max-w-[90%] sm:max-w-[250px] md:max-w-[300px] lg:max-w-[350px]"
           >
             <CardBody className="bg-transparent relative group/card w-full rounded-xl flex justify-center items-center m-0 p-0">
-              <CardItem translateZ="50" className="text-xl lg:text-xl font-bold text-neutral-600 dark:text-white">
-                <div className="bg-[rgba(320,0,10,0.15)] rounded-xl flex flex-col justify-evenly items-center w-full min-h-[150px] sm:h-[180px] lg:h-[150px] lg:min-w-[325px] md:min-w-[300px] p-4">
+              <CardItem
+                translateZ="50"
+                className="text-xl lg:text-xl font-bold text-neutral-600 dark:text-white"
+              >
+                <div className="bg-[rgba(320,0,10,0.15)] rounded-xl flex flex-col justify-evenly items-center w-full min-h-[150px] sm:h-[180px] lg:h-[150px] p-4">
                   <p className="text-center font-press text-lg lg:text-2xl font-semibold text-red-700 statistics-text-shadow">
                     {stat.title}
                   </p>
@@ -52,15 +56,18 @@ function Statistics() {
       </div>
 
       {/* row two */}
-      <div className="row-two flex  justify-center items-center gap-4 m-4 p-4 w-full md:m-0 md:p-0 sm:m-0 sm:p-0">
+      <div className="row-two flex justify-center items-center gap-4 m-4 p-4 w-full md:m-0 md:p-0 sm:m-0 sm:p-0">
         {rowTwo.map((stat, index) => (
           <div
             key={index}
-            className="w-[350px] sm:w-[250px] md:w-[300px]  lg:w-full lg:max-w-[70%] min-w-[200px] relative right-4 md:right-0"
+            className="w-full max-w-[90%] sm:max-w-[250px] md:max-w-[300px] lg:max-w-[55%] min-w-[200px] relative right-4 md:right-0"
           >
             <CardContainer className="inter-var" perspective="2000px">
               <CardBody className="bg-transparent relative group/card w-full rounded-xl flex justify-center items-center m-0 p-0">
-                <CardItem translateZ="50" className="text-xl lg:text-xl font-bold text-neutral-600 dark:text-white w-full">
+                <CardItem
+                  translateZ="50"
+                  className="text-xl lg:text-xl font-bold text-neutral-600 dark:text-white w-full"
+                >
                   <div className="bg-[rgba(320,0,10,0.15)] rounded-xl flex flex-col justify-evenly items-center w-full min-h-[150px] sm:h-[180px] lg:h-[150px] p-4">
                     <p className="text-center font-press text-lg lg:text-2xl font-semibold text-red-700 statistics-text-shadow">
                       {stat.title}
@@ -74,15 +81,18 @@ function Statistics() {
       </div>
 
       {/* row three */}
-      <div className="row-three flex flex-col  justify-center items-center gap-4 m-4 p-4 lg:flex-row">
+      <div className="row-three flex flex-col justify-center items-center gap-4 m-4 p-4 lg:flex-row">
         {rowThree.map((stat, index) => (
           <CardContainer
             key={index}
-            className="inter-var w-[200px] sm:w-[250px] md:w-[300px] lg:w-[350px]"
+            className="inter-var w-full max-w-[90%] sm:max-w-[250px] md:max-w-[300px] lg:max-w-[350px]"
           >
             <CardBody className="bg-transparent relative group/card w-full rounded-xl flex justify-center items-center m-0 p-0">
-              <CardItem translateZ="50" className="text-xl lg:text-xl font-bold text-neutral-600 dark:text-white">
-                <div className="bg-[rgba(320,0,10,0.15)] rounded-xl flex flex-col justify-evenly items-center w-full min-h-[150px] sm:h-[180px] lg:h-[150px] lg:min-w-[325px] md:min-w-[300px] p-4">
+              <CardItem
+                translateZ="50"
+                className="text-xl lg:text-xl font-bold text-neutral-600 dark:text-white"
+              >
+                <div className="bg-[rgba(320,0,10,0.15)] rounded-xl flex flex-col justify-evenly items-center w-full min-h-[150px] sm:h-[180px] lg:h-[150px] p-4">
                   <p className="text-center font-press text-lg lg:text-2xl font-semibold text-red-700 statistics-text-shadow">
                     {stat.title}
                   </p>

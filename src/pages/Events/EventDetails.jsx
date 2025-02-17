@@ -46,20 +46,6 @@ const EventDetails = () => {
   return (
     <section>
       <div className="bg-cover bg-center min-h-screen p-6 font-mono">
-        <div className="fixed inset-0 overflow-hidden z-[-1]">
-          {[...Array(50)].map((_, i) => (
-            <div
-              key={i}
-              className="absolute w-1 h-1 bg-white rounded-full animate-pulse"
-              style={{
-                top: `${Math.random() * 100}%`,
-                left: `${Math.random() * 100}%`,
-                animationDelay: `${Math.random() * 2}s`,
-              }}
-            />
-          ))}
-        </div>
-
         <div className="max-w-7xl mx-auto">
           {/* Title */}
           <h1 className="text-4xl text-center md:text-6xl mb-5 lg:mb-12 lg:text-6xl font-press text-orange-500 text-glow-orange">

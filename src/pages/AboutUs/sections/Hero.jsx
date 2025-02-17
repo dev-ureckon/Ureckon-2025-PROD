@@ -6,20 +6,6 @@ const Hero = () => {
   return (
     <SectionContainer>
       <div className="min-h-screen relative max-w-full p-4 ">
-        {/* Stars background effect */}
-        <div className="absolute inset-0 overflow-hidden">
-          {[...Array(50)].map((_, i) => (
-            <div
-              key={i}
-              className="absolute w-1 h-1 bg-white rounded-full animate-pulse"
-              style={{
-                top: `${Math.random() * 100}%`,
-                left: `${Math.random() * 100}%`,
-                animationDelay: `${Math.random() * 2}s`,
-              }}
-            />
-          ))}
-        </div>
 
         {/* Main content */}
         <div className="relative z-10 w-full max-w-full mx-auto">
