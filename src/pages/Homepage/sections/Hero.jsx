@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import bg from "../../../assets/hero.gif";
 
 const Hero = () => {
@@ -8,6 +9,9 @@ const Hero = () => {
     minutes: 0,
     seconds: 0,
   });
+
+  const navigate = useNavigate();
+  const [clickCount, setClickCount] = useState(0);
 
   useEffect(() => {
     const targetDate = new Date("2025-03-01T00:00:00").getTime();
@@ -35,6 +39,16 @@ const Hero = () => {
     return () => clearInterval(countdown);
   }, []);
 
+  const handleHeaderClick = () => {
+    setClickCount((prevCount) => {
+      const newCount = prevCount + 1;
+      if (newCount === 7) {
+        navigate("/easter");
+      }
+      return newCount;
+    });
+  };
+
   return (
     <section>
       {/* gif */}
@@ -43,7 +57,10 @@ const Hero = () => {
         style={{ backgroundImage: `url(${bg})` }}
       >
         <div className="text-center bg-black lg:p-4 p-4">
-          <h1 className="text-4xl md:text-6xl lg:text-8xl font-press text-[#7AD0E5] drop-shadow-[0_0_20px_#7AD0E5]">
+          <h1
+            className="text-4xl md:text-6xl lg:text-8xl font-press text-[#7AD0E5] drop-shadow-[0_0_20px_#7AD0E5]"
+            onClick={handleHeaderClick}
+          >
             URECKON
           </h1>
           <p className="my-4 bg-gradient-to-b from-[#FBD60E] to-[#DD903D] bg-clip-text text-transparent font-press lg:text-5xl text-2xl tracking-wider">
@@ -71,7 +88,10 @@ const Hero = () => {
       {/* mobile */}
       <section className="lg:hidden  flex flex-col items-center justify-center min--screen">
         <div className="text-center  p-4">
-          <h1 className="text-4xl md:text-6xl font-press text-[#7AD0E5] drop-shadow-[0_0_20px_#7AD0E5]">
+          <h1
+            className="text-4xl md:text-6xl font-press text-[#7AD0E5] drop-shadow-[0_0_20px_#7AD0E5]"
+            onClick={handleHeaderClick}
+          >
             URECKON
           </h1>
           <p className="my-4 bg-gradient-to-b from-[#FBD60E] to-[#DD903D] bg-clip-text text-transparent font-press lg:text-5xl text-2xl tracking-wider">
