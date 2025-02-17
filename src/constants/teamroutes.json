@@ -1,9 +1,13 @@
 [
-    { "name": "Branding", "route": "branding" },
-    { "name": "Core", "route": "core" },
-    { "name": "Lead", "route": "lead" },
-    { "name": "Graphics", "route": "graphics" },
-    { "name": "Promo", "route": "promo" },
-    { "name": "Taskforce", "route": "taskforce" },
-    { "name": "Tech-Team", "route": "tech-team" }
+  { "name": "Faculty Coordinator", "route": "faculty" },
+  { "name": "Convenor", "route": "convenor" },
+  { "name": "Taskforce", "route": "taskforce" },
+  { "name": "Core", "route": "core" },
+  { "name": "Lead", "route": "lead" },
+  { "name": "Tech", "route": "tech-team" },
+  { "name": "Graphics", "route": "graphics" },
+  { "name": "Branding", "route": "branding" },
+  { "name": "Promotion", "route": "promo" },
+  { "name": "Decoration", "route": "deco" }
+ 
 ]

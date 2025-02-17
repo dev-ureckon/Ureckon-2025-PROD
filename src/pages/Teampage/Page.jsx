@@ -21,7 +21,7 @@ const TeamPage = () => {
 };
 
 const Header = () => (
-  <div className="text-xl text-center mt-32 mb-5 lg:mb-12 uppercase lg:text-4xl font-press text-[#B01D15] drop-shadow-[0_0_20px_#B01D15]">
+  <div className="text-base text-center  mb-5 lg:mb-12 uppercase lg:text-4xl font-press text-[#B01D15] drop-shadow-[0_0_20px_#B01D15]">
     THE OFFICIAL TEAM OF URECKON'25
   </div>
 );
@@ -34,7 +34,7 @@ const CenterSection = ({ domains }) => (
     <div className="grid grid-cols-1 gap-6 sm:grid-cols-3 mx-4">
       {domains.map((domain, idx) => (
         <Link key={idx} to={`/teams/${domain.route}`} className="w-full">
-          <button className="bg-red-950 hover:bg-red-950/90 text-white md:py-8 py-4 px-6 font-bold tracking-wide w-full min-w-[150px]">
+          <button className="bg-red-950 hover:bg-red-950/90 text-white md:py-6 py-1 px-6 font-bold tracking-wide w-full min-w-[150px] text-sm">
             {domain.name}
           </button>
         </Link>

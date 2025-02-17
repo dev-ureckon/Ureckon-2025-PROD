@@ -16,6 +16,7 @@ import {
   FaWhatsapp,
   FaYoutube,
   FaFacebook,
+  FaDiscord,
 } from "react-icons/fa";
 
 function Intro() {
@@ -159,6 +160,11 @@ function TabContent({ title, firstPara, secondPara, imageSrc }) {
       id: 6,
       icon: <FaFacebook />,
       href: "https://www.facebook.com/ureckon.uemk/",
+    },
+    {
+      id: 7,
+      icon: <FaDiscord />,
+      href: "https://discord.gg/Ztyvqyda7n",
     },
   ];
 

@@ -4,7 +4,7 @@ import { useState, useRef } from "react";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
-  const audioRef = useRef(null);
+ 
 
   const navLinks = [
     { name: "Home", link: "/" },
@@ -31,14 +31,16 @@ export default function Navbar() {
       <nav className="container mx-auto flex h-14 items-center justify-between px-4">
         {/* Logo */}
 
+        <a href="/">
         <div
           className="h-8 w-8 rounded-full cursor-pointer transition-transform duration-300 hover:scale-110"
-          onClick={toggleMusic}
+         
         >
           <img src="/ureckon.svg" alt="Logo" />
         </div>
+        </a>
 
-        <audio ref={audioRef} src="/pac.mp3" />
+       
 
         {/* Desktop Navigation */}
         <div className="hidden items-center space-x-16 text-[#F8E461] lg:flex">

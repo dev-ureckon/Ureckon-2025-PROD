@@ -39,7 +39,7 @@ const Hero = () => {
     <section>
       {/* gif */}
       <section
-        className="hidden relative mt-0 w-full h-[100vh] lg:flex flex-col items-center justify-center bg-contain bg-no-repeat bg-center p-6 md:p-12 lg:p-20 overflow-hidden bg-opacity-50"
+        className="hidden  relative  w-full h-[90vh] lg:flex flex-col items-center justify-center bg-cover bg-center p-6 md:p-12 lg:p-20 overflow-hidden"
         style={{ backgroundImage: `url(${bg})` }}
       >
         <div className="text-center lg:p-4 p-4">
