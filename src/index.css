@@ -26,6 +26,58 @@
   .text-shadow-red {
     text-shadow: 0 0 8px rgba(255, 0, 0, 0.8), 0 0 16px rgba(255, 0, 0, 0.6);
   }
+
+  .text-orange-500 {
+    color: #FF5733;
+  }
+  
+  .text-yellow-500 {
+    color: #FFEB3B;
+  }
+  
+  .text-blue-500 {
+    color: #33A1FF;
+  }
+  
+  .text-pink-500 {
+    color: #FF33A1;
+  }
+  
+  .text-red-700 {
+    color: #B01D15;
+  }
+  
+  .text-gray-400 {
+    color: #C0C0C0;
+  }
+  
+  .drop-shadow-orange-500 {
+    filter: drop-shadow(0 0 20px #FF5733);
+  }
+  
+  .drop-shadow-yellow-500 {
+    filter: drop-shadow(0 0 20px #FFEB3B);
+  }
+  
+  .drop-shadow-blue-500 {
+    filter: drop-shadow(0 0 20px #33A1FF);
+  }
+  
+  .drop-shadow-pink-500 {
+    filter: drop-shadow(0 0 20px #FF33A1);
+  }
+  
+  .drop-shadow-red-700 {
+    filter: drop-shadow(0 0 15px #B01D15);
+  }
+  
+  .drop-shadow-gray-400 {
+    filter: drop-shadow(0 0 20px #C0C0C0);
+  }
+  
+  .drop-shadow-white {
+    filter: drop-shadow(0 0 20px #FFFFFF);
+  }
 }
 
 @layer components {
@@ -35,6 +87,26 @@
 
   .text-glow-red {
     @apply text-shadow-red;
+  }
+
+  .text-glow-orange {
+    @apply drop-shadow-orange-500;
+  }
+
+  .text-glow-yellow {
+    @apply drop-shadow-yellow-500;
+  }
+
+  .text-glow-blue {
+    @apply drop-shadow-blue-500;
+  }
+
+  .text-glow-pink {
+    @apply drop-shadow-pink-500;
+  }
+
+  .text-glow-gray {
+    @apply drop-shadow-gray-400;
   }
 }
 
