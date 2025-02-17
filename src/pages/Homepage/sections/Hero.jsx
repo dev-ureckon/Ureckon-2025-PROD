@@ -10,7 +10,7 @@ const Hero = () => {
   });
 
   useEffect(() => {
-    const targetDate = new Date("2025-02-31T00:00:00").getTime();
+    const targetDate = new Date("2025-03-01T00:00:00").getTime();
 
     const countdown = setInterval(() => {
       const now = new Date().getTime();
@@ -39,10 +39,10 @@ const Hero = () => {
     <section>
       {/* gif */}
       <section
-        className="hidden  relative  w-full h-[90vh] lg:flex flex-col items-center justify-center bg-cover bg-center p-6 md:p-12 lg:p-20 overflow-hidden"
+        className="hidden  relative   w-full h-[90vh] lg:flex flex-col items-center justify-center bg-cover bg-center p-6 md:p-12 lg:p-20 overflow-hidden"
         style={{ backgroundImage: `url(${bg})` }}
       >
-        <div className="text-center lg:p-4 p-4">
+        <div className="text-center bg-black lg:p-4 p-4">
           <h1 className="text-4xl md:text-6xl lg:text-8xl font-press text-[#7AD0E5] drop-shadow-[0_0_20px_#7AD0E5]">
             URECKON
           </h1>
@@ -69,8 +69,8 @@ const Hero = () => {
         </div>
       </section>
       {/* mobile */}
-      <section className="lg:hidden flex flex-col items-center justify-center min--screen">
-        <div className="text-center p-4">
+      <section className="lg:hidden  flex flex-col items-center justify-center min--screen">
+        <div className="text-center  p-4">
           <h1 className="text-4xl md:text-6xl font-press text-[#7AD0E5] drop-shadow-[0_0_20px_#7AD0E5]">
             URECKON
           </h1>

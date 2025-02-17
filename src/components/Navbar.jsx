@@ -48,7 +48,7 @@ export default function Navbar() {
             <a
               key={name}
               href={link}
-              className="md:text-xl text-base font-press hover:text-yellow-500"
+              className="md:text-xl text-base font-press hover:text-red-500"
             >
               {name.toUpperCase()}
             </a>
@@ -68,7 +68,7 @@ export default function Navbar() {
             <a
               key={name}
               href={link}
-              className="md:text-xl text-base font-press hover:text-yellow-500"
+              className="md:text-xl text-base font-press hover:text-red-500"
             >
               {name.toUpperCase()}
             </a>
@@ -99,7 +99,7 @@ export default function Navbar() {
           {/* Close Button */}
           <button
             onClick={() => setIsOpen(false)}
-            className="absolute top-4 right-4 text-yellow-400 hover:text-yellow-500"
+            className="absolute top-4 right-4 text-yellow-400 hover:text-red-500"
           >
             <X className="h-6 w-6" />
           </button>
@@ -109,7 +109,7 @@ export default function Navbar() {
               <a
                 key={name}
                 href={link}
-                className="md:text-lg text-base font-press hover:text-yellow-500"
+                className="md:text-lg text-base font-press hover:text-red-500"
                 onClick={() => setIsOpen(false)}
               >
                 {name.toUpperCase()}

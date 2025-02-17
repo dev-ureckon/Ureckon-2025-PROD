@@ -7,7 +7,5 @@
   { "name": "Tech", "route": "tech-team" },
   { "name": "Graphics", "route": "graphics" },
   { "name": "Branding", "route": "branding" },
-  { "name": "Promotion", "route": "promo" },
-  { "name": "Decoration", "route": "deco" }
- 
+  { "name": "Promotion", "route": "promo" }
 ]

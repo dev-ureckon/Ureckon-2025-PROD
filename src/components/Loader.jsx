@@ -56,13 +56,13 @@ const Loader = () => {
         <div className="flex flex-col gap-5 mb-[5rem]">
           <img src={u7} className="mx-auto h-[225px]" alt="Frame 25" />
 
-          <h1
+          {/* <h1
             ref={textRef}
             className="font-pixel text-[#C0C0C0] text-sm max-w-5xl md:text-[20.82px] drop-shadow-[0_0_10px_#fff] mx-auto text-center"
           >
             CLICK ANYWHERE TO START
-          </h1>
-          <div className="flex mt-[3rem] items-center gap-12 px-6">
+          </h1> */}
+          {/* <div className="flex mt-[3rem] items-center gap-12 px-6">
             {isDesktop ? (
               <div className="flex items-center md:relative mx-auto">
                 <div className="flex items-center gap-1 md:relative md:left-20">
@@ -87,7 +87,7 @@ const Loader = () => {
             <h1 className="font-pixel text-[#C0C0C0] text-opacity-[60%] drop-shadow-[0_0_10px_#fff]  w-full text-[8px] md:text-[15.33px] relative md:right-16 right-[3rem]">
               to turn the music on
             </h1>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

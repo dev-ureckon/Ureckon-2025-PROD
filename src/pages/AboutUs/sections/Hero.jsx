@@ -1,5 +1,5 @@
 import React from "react";
-import aboutImg from "../../../assets/about.png";
+import aboutImg from "/gallery/ureckon3.webp";
 import SectionContainer from "../../../components/SectionContainer";
 
 const Hero = () => {
