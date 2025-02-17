@@ -1,7 +1,7 @@
 import React from "react";
 import T from "../../../components/T";
 import { motion } from "framer-motion";
-import events from "../../../lib/eventroutes.json";
+import events from "../../../constants/eventroutes.json";
 import { Link } from "react-router-dom";
 import SectionContainer from "../../../components/SectionContainer";
 

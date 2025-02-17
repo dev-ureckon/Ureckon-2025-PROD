@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
-import teamData from "../../../lib/teamdata.json";
+import teamData from "../../../constants/teamdata.json";
 import SectionContainer from "../../SectionContainer";
 
 const TeamDetailsPage = () => {

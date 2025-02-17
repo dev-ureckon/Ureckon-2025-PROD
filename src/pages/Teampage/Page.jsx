@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import teamsData from "../../lib/teamroutes.json";
+import teamsData from "../../constants/teamroutes.json";
 import { Link } from "react-router";
 import SectionContainer from "../../components/SectionContainer";
 

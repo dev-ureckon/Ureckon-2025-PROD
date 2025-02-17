@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
 import SectionContainer from "../../../components/SectionContainer";
-import eventsData from "../../../lib/eventdata.json";
+import eventsData from "../../../constants/eventdata.json";
 
 const EventsPage2 = () => {
   const { category } = useParams(); // Get category from URL

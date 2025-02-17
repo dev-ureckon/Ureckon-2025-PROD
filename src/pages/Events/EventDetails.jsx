@@ -2,7 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import { FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import placeholder from "../../assets/placeholder_profile.jpg";
-import eventsData from "../../lib/eventdata.json";
+import eventsData from "../../constants/eventdata.json";
 
 const EventDetails = () => {
   const { eventId } = useParams();
