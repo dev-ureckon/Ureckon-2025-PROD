@@ -14,7 +14,8 @@ const EventDetails = () => {
         e.name
           .toLowerCase()
           .replace(/\s+/g, "-")
-          .replace(/[^a-z0-9-]/g, "") === eventId
+          .replace(/[^a-z0-9-]/g, "")
+          .replace(/['’,]/g, "") === eventId
     );
 
     if (event) break;

@@ -632,17 +632,28 @@
       "name": "Robo Dangal",
       "poster": "/poster/robotics/robo-dangal.webp",
       "date": "1st - 2nd March 2025",
-      "tagline": "Ultimate bot wrestling showdown.",
+      "tagline": "Where Steel Clashes, and Sparks Fly!",
       "description": "Compete in the ultimate bot wrestling showdown and prove your robot's strength.",
       "venue": "UEM Kolkata Campus",
-      "fees": "FREE",
-      "form": "https://forms.gle/robo-dangal",
+      "fees": "499 INR",
+      "form": "https://forms.gle/a5Tx5o1qa52RDqSv9",
       "problem": "https://drive.google.com/file/d/robo-dangal/view",
       "coordinators": [
         {
-          "name": "Coordinator Name",
-          "contact": "1234567890",
-          "image": "/people/coordinator-name.webp"
+          "name": "Amitabh Daripa",
+          "contact": "8116262946",
+          "image": "/people/amitabh-daripa.webp",
+          "linkedin": "",
+          "instagram": "",
+          "x": ""
+        },
+        {
+          "name": "Shubhrangshu Ghosh",
+          "contact": "9593031530",
+          "image": "/people/shubhrangshu-ghosh.webp",
+          "linkedin": "",
+          "instagram": "",
+          "x": ""
         }
       ]
     },
@@ -650,17 +661,44 @@
       "name": "Robo Sumo",
       "poster": "/poster/robotics/robo-sumo.webp",
       "date": "1st - 2nd March 2025",
-      "tagline": "Sumo wrestling with autonomous robots.",
+      "tagline": "Where Robots Wrestle for Glory!",
       "description": "Build and compete with autonomous robots in a sumo wrestling match.",
       "venue": "UEM Kolkata Campus",
-      "fees": "FREE",
-      "form": "https://forms.gle/robo-sumo",
+      "fees": "299 INR",
+      "form": "https://forms.gle/rMoDeh4SGqfXn1389",
       "problem": "https://drive.google.com/file/d/robo-sumo/view",
       "coordinators": [
         {
-          "name": "Coordinator Name",
-          "contact": "1234567890",
-          "image": "/people/coordinator-name.webp"
+          "name": "Anushka Adak",
+          "contact": "7278319869",
+          "image": "/people/anushka-adak.webp",
+          "linkedin": "",
+          "instagram": "",
+          "x": ""
+        },
+        {
+          "name": "Gourab Mondal",
+          "contact": "7478872814",
+          "image": "/people/gourab-mondal.webp",
+          "linkedin": "",
+          "instagram": "",
+          "x": ""
+        },
+        {
+          "name": "Saptajyoti Bhowmik",
+          "contact": "8787856958",
+          "image": "/people/saptajyoti-bhowmik.webp",
+          "linkedin": "https://www.linkedin.com/in/saptajyoti-bhowmik-31ab08292",
+          "instagram": "https://www.instagram.com/saptajyotib",
+          "x": "https://x.com/saptajyoti2004"
+        },
+        {
+          "name": "Tapajyoti Chakraborty",
+          "contact": "6909040304",
+          "image": "/people/tapajyoti-chakraborty.webp",
+          "linkedin": "https://www.linkedin.com/in/tapajyoti-chakraborty",
+          "instagram": "https://www.instagram.com/the_spacetime_shadow",
+          "x": ""
         }
       ]
     },
@@ -668,17 +706,45 @@
       "name": "Need for Torque",
       "poster": "/poster/robotics/need-for-torque.webp",
       "date": "1st - 2nd March 2025",
-      "tagline": "Robotic drag race competition.",
+      "tagline": "Feel the Speed, Own the Lead!",
       "description": "Compete in a high-speed robotic drag race and prove your robot's speed.",
       "venue": "UEM Kolkata Campus",
-      "fees": "FREE",
-      "form": "https://forms.gle/need-for-torque",
+      "fees": "299 INR",
+      "form": "https://forms.gle/XDEvBhYoS77YyeUw5",
       "problem": "https://drive.google.com/file/d/need-for-torque/view",
       "coordinators": [
         {
-          "name": "Coordinator Name",
-          "contact": "1234567890",
-          "image": "/people/coordinator-name.webp"
+          "name": "Ankush Dutta",
+          "contact": "8391903846",
+          "email": "ankushdutta180603@gmail.com",
+          "image": "/people/ankush-dutta.webp",
+          "linkedin": "",
+          "instagram": "",
+          "x": ""
+        },
+        {
+          "name": "Aratrika Shome",
+          "contact": "9804805240",
+          "image": "/people/aratrika-shome.webp",
+          "linkedin": "https://www.linkedin.com/in/aratrika-shome-ba25ba267",
+          "instagram": "https://www.instagram.com/__aratrikaa",
+          "x": ""
+        },
+        {
+          "name": "Hitesh Mukherjee",
+          "contact": "6291605058",
+          "image": "/people/hitesh-mukherjee.webp",
+          "linkedin": "https://www.linkedin.com/in/hitesh-mukherjee-cse",
+          "instagram": "",
+          "x": ""
+        },
+        {
+          "name": "Nilanjan Pal",
+          "contact": "6009144120",
+          "image": "/people/nilanjan-pal.webp",
+          "linkedin": "",
+          "instagram": "",
+          "x": ""
         }
       ]
     },
@@ -686,17 +752,44 @@
       "name": "Robo League",
       "poster": "/poster/robotics/robo-league.webp",
       "date": "1st - 2nd March 2025",
-      "tagline": "Robotic soccer league.",
+      "tagline": "Lead the Line, Set the Pace.",
       "description": "Compete in a robotic soccer league and showcase your robot's agility and skills.",
       "venue": "UEM Kolkata Campus",
-      "fees": "FREE",
-      "form": "https://forms.gle/robo-league",
+      "fees": "299 INR",
+      "form": "https://forms.gle/MYA9ndz8f2z7NAzP7",
       "problem": "https://drive.google.com/file/d/robo-league/view",
       "coordinators": [
         {
-          "name": "Coordinator Name",
-          "contact": "1234567890",
-          "image": "/people/coordinator-name.webp"
+          "name": "Hitesh Kumar Roy",
+          "contact": "8100128658",
+          "image": "/people/hitesh-kumar-roy.webp",
+          "linkedin": "https://www.linkedin.com/in/hitesh-kumar-roy-248624307",
+          "instagram": "https://www.instagram.com/hitweshh",
+          "x": ""
+        },
+        {
+          "name": "Souvik Dey",
+          "contact": "8084703634",
+          "image": "/people/souvik-dey.webp",
+          "linkedin": "",
+          "instagram": "https://www.instagram.com/__yoursaneee__",
+          "x": ""
+        },
+        {
+          "name": "Upahar Jana",
+          "contact": "9733586923",
+          "image": "/people/upahar-jana.webp",
+          "linkedin": "https://www.linkedin.com/in/upaharjana",
+          "instagram": "https://www.instagram.com/up_rupam_keshav",
+          "x": ""
+        },
+        {
+          "name": "Adrija Mukherjee",
+          "contact": "9903224200",
+          "image": "/people/adrija-mukherjee.webp",
+          "linkedin": "",
+          "instagram": "https://www.instagram.com/_._aaadrijaaa_._",
+          "x": "https://x.com/aadrija"
         }
       ]
     },
@@ -707,14 +800,25 @@
       "tagline": "Line-following robot challenge.",
       "description": "Build a line-following robot and compete in this challenging event.",
       "venue": "UEM Kolkata Campus",
-      "fees": "FREE",
-      "form": "https://forms.gle/dirrecion",
+      "fees": "299 INR",
+      "form": "https://forms.gle/d5FefPyLvT4BhisJ6",
       "problem": "https://drive.google.com/file/d/dirrecion/view",
       "coordinators": [
         {
-          "name": "Coordinator Name",
-          "contact": "1234567890",
-          "image": "/people/coordinator-name.webp"
+          "name": "Shubhodip Pal",
+          "contact": "9163971594",
+          "image": "/people/shubhodip-pal.webp",
+          "linkedin": "https://www.linkedin.com/in/shubhodip",
+          "instagram": "https://www.instagram.com/its_ur_shubhodip003",
+          "x": ""
+        },
+        {
+          "name": "Pritha Paul",
+          "contact": "7439217314",
+          "image": "/people/pritha-paul.webp",
+          "linkedin": "https://www.linkedin.com/in/pritha-paul-2b672321a",
+          "instagram": "https://www.instagram.com/sunsetandvines",
+          "x": ""
         }
       ]
     },
@@ -722,17 +826,28 @@
       "name": "Robo GT",
       "poster": "/poster/robotics/robo-gt.webp",
       "date": "1st - 2nd March 2025",
-      "tagline": "Racing competition for AI-driven robots.",
+      "tagline": "Race the Future..!",
       "description": "Compete in a racing competition for AI-driven robots and showcase your robot's speed and intelligence.",
       "venue": "UEM Kolkata Campus",
-      "fees": "FREE",
-      "form": "https://forms.gle/robo-gt",
+      "fees": "149 INR / team",
+      "form": "https://forms.gle/8FyDdAjfSbfDSyMVA",
       "problem": "https://drive.google.com/file/d/robo-gt/view",
       "coordinators": [
         {
-          "name": "Coordinator Name",
-          "contact": "1234567890",
-          "image": "/people/coordinator-name.webp"
+          "name": "Shubhrangshu Ghosh",
+          "contact": "9593031530",
+          "image": "/people/shubhrangshu-ghosh.webp",
+          "linkedin": "",
+          "instagram": "",
+          "x": ""
+        },
+        {
+          "name": "Rajdeep Mondal",
+          "contact": "9163285863",
+          "image": "/people/rajdeep-mondal.webp",
+          "linkedin": "",
+          "instagram": "",
+          "x": ""
         }
       ]
     }
@@ -940,6 +1055,206 @@
           "name": "Divyanshi shrivastav",
           "contact": "+91 9065272105",
           "image": "/people/divyanshi-shrivastav.webp",
+          "linkedin": "",
+          "instagram": "",
+          "x": ""
+        }
+      ]
+    }
+  ],
+  "gaming": [
+    {
+      "name": "BGMI",
+      "poster": "/poster/gaming/bgmi.webp",
+      "date": "1st - 2nd March 2025",
+      "tagline": "PLAN it, SLAM it, Noobs - Can't stand out on it!!",
+      "description": "Ureckon'25 is hosting a Battlegrounds Mobile India (BGMI) tournament at UEM, Kolkata on March 1st and 2nd, 2025. This tournament is a squad-based (TPP) competition using the BGIS 2025 ranking mechanism. Participants must adhere to specific rules regarding team composition, allowed devices, and in-game conduct. Limited registrations are available on a first-come, first-served basis, subject to payment verification. The event features league stage matches and playoffs/finals, each with distinct loot settings. A detailed point system determines rankings, including placement and kill points, with tie-breakers in place. All participants are expected to comply with the Ureckon'25 code of conduct.",
+      "venue": "UEM Kolkata Campus",
+      "fees": "299 INR / team",
+      "form": "https://forms.gle/2Sv5MVAcQhJ6uF737",
+      "problem": "https://drive.google.com/file/d/1XvG7ldllekXzi_WnZ9i0cqEDDr8SwchI/view",
+      "coordinators": [
+        {
+          "name": "Sankhajyoti Shit",
+          "contact": "+91 8918540830",
+          "image": "/people/sankhajyoti-shit.webp",
+          "linkedin": "",
+          "instagram": "https://www.instagram.com/ig__goku07",
+          "x": ""
+        },
+        {
+          "name": "Soumik Maity",
+          "contact": "+91 9681931113",
+          "image": "/people/soumik-maity.webp",
+          "linkedin": "https://www.linkedin.com/in/soumik585647",
+          "instagram": "https://www.instagram.com/its_soumik02",
+          "x": "https://x.com/Soumik65"
+        },
+        {
+          "name": "Subhradeep Paul",
+          "contact": "+91 9830453727",
+          "image": "/people/subhradeep-paul.webp",
+          "linkedin": "",
+          "instagram": "https://www.instagram.com/_subhradeep__paul",
+          "x": ""
+        },
+        {
+          "name": "Arijit Dutta",
+          "contact": "+91 8777693763",
+          "image": "/people/arijit-dutta.webp",
+          "linkedin": "https://www.linkedin.com/in/arijit-dutta-a95695337",
+          "instagram": "https://www.instagram.com/_specter09_",
+          "x": ""
+        },
+        {
+          "name": "Abhinandan Das",
+          "contact": "+91 9830513712",
+          "image": "/people/abhinandan-das.webp",
+          "linkedin": "",
+          "instagram": "https://www.instagram.com/_._kingdas21_._",
+          "x": "https://x.com/kingdas21"
+        }
+      ]
+    },
+    {
+      "name": "FIFA ‘25",
+      "poster": "/poster/gaming/fifa-25.webp",
+      "date": "1st - 2nd March 2025",
+      "tagline": "It's in the Game",
+      "description": "FIFA '25 is a featured event within URECKON '25, the annual techno-management festival hosted by the University of Engineering and Management (UEM), Kolkata. This competition offers a platform for players to demonstrate their skills in a 1v1, knockout-style tournament format. The event will be held on PlayStation and PC (Backup) platforms over the course of two days, specifically March 1st and 2nd, 2025. Participants will compete against one another, progressing through the tournament bracket until a single winner is determined and crowned the FIFA '25 champion.",
+      "venue": "UEM Kolkata Campus",
+      "fees": "149 INR / individual",
+      "form": "https://forms.gle/iTigs4WgdEb1qmUd9",
+      "problem": "https://drive.google.com/file/d/1Gg2kGxH-A8XIbSAypjb_ql3-IDzHZrAm/view",
+      "coordinators": [
+        {
+          "name": "Debankita Poddar",
+          "contact": "9831538825",
+          "image": "/people/debankita-poddar.webp",
+          "linkedin": "https://www.linkedin.com/in/debankita-poddar-769ab4288",
+          "instagram": "https://www.instagram.com/debankiie_10",
+          "x": ""
+        },
+        {
+          "name": "Sahil Nandi",
+          "contact": "8101412385",
+          "image": "/people/sahil-nandi.webp",
+          "linkedin": "",
+          "instagram": "",
+          "x": ""
+        },
+        {
+          "name": "Yubaraj Barua",
+          "contact": "6291459761",
+          "image": "/people/yubaraj-barua.webp",
+          "linkedin": "",
+          "instagram": "https://www.instagram.com/sleep_yuvi",
+          "x": ""
+        }
+      ]
+    },
+    {
+      "name": "Red Light Green Light",
+      "poster": "/poster/gaming/red-light-green-light.webp",
+      "date": "1st - 2nd March 2025",
+      "tagline": "Move wisely, stop quickly, survive longer!",
+      "description": "URECKON'25 presents Red Light, Green Light, a competition testing participants' adherence to the classic game's rules within an obstacle course. Teams of two will navigate the course, freezing on 'Red Light' and advancing on 'Green Light.' Movement after 'Red Light' results in elimination. The competition features a slot-based system with qualifying rounds and a final. Winners receive a prize; all participants receive e-certificates.",
+      "venue": "UEM Kolkata Campus",
+      "fees": "99 INR / team",
+      "form": "https://forms.gle/AwosWBEEJDBPkwR38",
+      "problem": "https://docs.google.com/document/d/1Q4grG5y0q_014FeZvlUy7V4RBMpQjtDSzwKCbnH377Q/view",
+      "coordinators": [
+        {
+          "name": "Abhirup Das",
+          "contact": "8334023665",
+          "image": "/people/abhirup-das.webp",
+          "linkedin": "",
+          "instagram": "",
+          "x": ""
+        },
+        {
+          "name": "Trisha Mandal",
+          "contact": "8670881002",
+          "image": "/people/trisha-mandal.webp",
+          "linkedin": "",
+          "instagram": "",
+          "x": ""
+        }
+      ]
+    },
+    {
+      "name": "Valorant",
+      "poster": "/poster/gaming/valorant.webp",
+      "date": "1st - 2nd March 2025",
+      "tagline": "Clutch or Lose — You decide",
+      "description": "Join the Valorant tournament at URECKON'25 and showcase your skills in this popular tactical shooter game. Compete with other teams and aim for victory.",
+      "venue": "UEM Kolkata Campus",
+      "fees": "1499 INR / team",
+      "form": "https://forms.gle/XQtzkRpjjo9ZmduHA",
+      "problem": "https://drive.google.com/file/d/1TCPlEqMtgS7iHwk5sU7MthOkxXB2mgK8/view",
+      "coordinators": [
+        {
+          "name": "Ankit Mukherjee",
+          "contact": "6290460172",
+          "image": "/people/ankit-mukherjee.webp",
+          "linkedin": "",
+          "instagram": "",
+          "x": ""
+        },
+        {
+          "name": "Supriyo Kumar Aich",
+          "contact": "9800960692",
+          "image": "/people/supriyo-kumar-aich.webp",
+          "linkedin": "",
+          "instagram": "",
+          "x": ""
+        },
+        {
+          "name": "Soham Dey",
+          "contact": "9163705677",
+          "image": "/people/soham-dey.webp",
+          "linkedin": "",
+          "instagram": "",
+          "x": ""
+        }
+      ]
+    },
+    {
+      "name": "E-Football",
+      "poster": "/poster/gaming/e-football.webp",
+      "date": "1st - 2nd March 2025",
+      "tagline": "Where Legends Rise and Champions Compete!",
+      "description": "Compete in the E-Football tournament at URECKON'25 and prove your skills in this hybrid event. Rise to the challenge and become a champion.",
+      "venue": "Hybrid",
+      "fees": "79 INR / individual",
+      "form": "https://forms.gle/ST2pMe2kepJqaegs8",
+      "problem": "",
+      "coordinators": [
+        {
+          "name": "Koustav Das",
+          "contact": "9123924644",
+          "image": "/people/koustav-das.webp",
+          "linkedin": "",
+          "instagram": "",
+          "x": ""
+        }
+      ]
+    },
+    {
+      "name": "Tug O' War",
+      "poster": "/poster/gaming/tug-o-war.webp",
+      "date": "1st - 2nd March 2025",
+      "tagline": "Pull Hard, Win Big!",
+      "description": "Join the Tug O' War competition at URECKON'25 and showcase your strength and teamwork. Compete with other teams and aim for victory.",
+      "venue": "UEM Kolkata Campus",
+      "fees": "99/- per team",
+      "form": "https://forms.gle/qmr7GNXLgyp5CCLz7",
+      "problem": "https://docs.google.com/document/d/1PChZl57jhlH4QeQMTyJvKVOBjHCOKa0liXNqXDPb2iM/view",
+      "coordinators": [
+        {
+          "name": "Trisha Mandal",
+          "contact": "8670881002",
+          "image": "/people/trisha-mandal.webp",
           "linkedin": "",
           "instagram": "",
           "x": ""
