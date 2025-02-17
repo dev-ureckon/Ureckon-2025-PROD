@@ -19,6 +19,7 @@ import EventDetails from './pages/Events/EventDetails';
 import EventsPage2 from './pages/Events/Event2/Page';
 import Partners from './pages/Partners/Partners';
 import TeamsPage from './pages/Teams/Page';
+import TeamPage2 from './pages/Teampage/TeamPage2/TeamPage2';
 
 const App = () => {
   const [screenLoading, setScreenLoading] = useState(false);
@@ -59,7 +60,8 @@ const App = () => {
               <Route path="/events/:category" element={<EventsPage2 />} />
               <Route path="/events/:category/:eventId" element={<EventDetails />} />
 
-              <Route path="/teams" element={<TeamsPage />} />
+              {/* <Route path="/teams" element={<TeamsPage />} />
+              <Route path="/teams/:role" element={<TeamPage2 />} /> */}
             </Routes>
             <Footer />
           </Wrapper>
