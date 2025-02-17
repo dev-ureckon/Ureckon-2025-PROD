@@ -14,12 +14,12 @@ const EventsPage2 = () => {
       <SectionContainer>
         <Link
           to="/events"
-          className="w-full py-2 sm:py-3 lg:py-4 px-3 sm:px-4 lg:px-6 relative block"
+          className="w-[300px] py-2 sm:py-3 lg:py-4 px-3 sm:px-4 lg:px-6 relative block"
         >
           <h1 className="font-['Press_Start_2P'] text-[12px] sm:text-[20px] lg:text-[24px] leading-[24px] sm:leading-[32px] lg:leading-[44px] font-normal text-white">
             &lt;&lt; BACK
           </h1>
-          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-black/10 to-black/30"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-transparent"></div>
         </Link>
 
         {events.map((event, index) => (
@@ -48,7 +48,7 @@ const EventsPage2 = () => {
                   <img
                     src={event.poster}
                     alt={event.name}
-                    className="w-full h-full object-cover rounded"
+                    className="w-full h-full object-contain rounded"
                   />
                 </div>
 

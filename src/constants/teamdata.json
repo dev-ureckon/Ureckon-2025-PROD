@@ -2,42 +2,77 @@
 
 
   "Faculty": [
+    
     {
-      "name": "Zico Chakraborty",
-      "image": "/people/zico-chakraborty.webp"
+      "name": "Prof Dr. Sajal Dasgupta",
+      "designation": "Vice-Chancellor",
+      "image": "/people/sajal-dasgupta.webp"
+      
+    },
+    {
+      "name": "Prof Dr. Satyajit Chakrabarti",
+      "designation": "Pro-vice Chancellor",
+      "image": "/people/satyajit-chakrabarti.webp"
       
     },
     {
       "name": "Prof Dr. Sukalyan Goswami",
+      "designation": "Registrar",
       "image": "/people/sukalyan-goswami.webp"
     },
     {
-      "name": "Prof Dr. Sudipta Sahana",
-      "image": "/people/sudipta-sahana.webp"
-    },
-    {
-      "name": "Prof Dr. Susmita Mukherjee",
-      "image": "/people/susmita-mukherjee.webp"
-    },
-    {
       "name": "Prof Dr. Rajiv Ganguly",
+      "designation": "Dean (Science)",
       "image": "/people/rajiv-ganguly.webp"
     },
+    
+    {
+      "name": "Prof Dr. Susmita Mukherjee",
+      "designation": "Dean of Alumni Relations",
+      "image": "/people/susmita-mukherjee.webp"
+    },
+    
+    
+    {
+      "name": "Prof Dr. Sudipta Sahana",
+      "designation": "Head Of Department",
+      "image": "/people/sudipta-sahana.webp"
+    },
+    
     {
       "name": "Prof Dr. Chiradeep Mukherjee",
-      "image": ""
+      "designation": "Associate Professor",
+      "image": "/people/chirodeep-mukherjee.webp"
+    },
+    {
+      "name": "Prof Dr. Sanjoy Gupta",
+      "designation": "Deputy Director of Corporate Relations",
+      "image": "/people/sanjoy-gupta.webp"
+    },
+    {
+      "name": "Zico Chakraborty",
+      "designation": "Corporate Relations Executive",
+      "image": "/people/zico-chakraborty.webp"
     }
+    
   ],
+  "Fest-Advisor":[{
+    "name": "Subhas Karal",
+    "image": "/people/subhas-karal.webp"
+    
+  }],
   "Convenor": [
     {
       "name": "Arkadeep Sen",
-      "image": "/people/arkadeep.webp",
+      "image": "/people/arkadeep-sen.webp",
       "linkedin": "https://www.linkedin.com/in/arkadeep-sen-745b98255",
       "instagram": "https://www.instagram.com/arkadeep.lyf"
     },
     {
       "name": "Sk Md. Afsaruddin",
-      "image": "/people/mk.webp"
+      "image": "/people/mk.webp",
+      "linkedin": "https://www.linkedin.com/in/sk-md-afsaruddin-40a87a228",
+      "instagram": "https://www.instagram.com/johnbellwoods?igsh=MTY4Mmg2cWhra3N0cA=="
     },
     {
       "name": "Sanjona Bhattacharjee",
@@ -66,7 +101,7 @@
       "image": "/people/indranil-saha.webp",
       "linkedin": "https://linkedin.com/in/indranil-saha/",
       "instagram": "https://instagram.com/dran_9/",
-      "x": ""
+      "x": "https://x.com/dran_9"
     },
     {
       "name": "Dev Bera",
@@ -88,6 +123,13 @@
       "linkedin": "https://linkedin.com/in/sayan-snigdha-pal",
       "instagram": "https://instagram.com/isayanpal",
       "x": "https://x.com/sayanstwt"
+    },
+    {
+      "name": "Soumarghya Dhara",
+      "image": "/people/soumarghya-dhara.webp",
+      "linkedin": "https://linkedin.com/in/soumarghyadhara",
+      "instagram": "https://instagram.com/Soumarghya.dhara",
+      "x": ""
     },
     {
       "name": "Adrika Mondal",
@@ -209,15 +251,15 @@
       "x": "https://x.com/SohamAdhik28783"
     },
     {
-      "name": "Soumarghya Dhara",
-      "image": "/people/soumarghya-dhara.webp",
-      "linkedin": "https://linkedin.com/in/soumarghyadhara",
-      "instagram": "https://instagram.com/Soumarghya.dhara",
+      "name": "Spandan Bhattacharya",
+      "image": "/people/spandan-bhattacharya.webp",
+      "linkedin": "https://www.linkedin.com/in/spandanbhattacharya?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "instagram": "https://www.instagram.com/span.dann?igsh=MTEycW9meXR3aW9sbQ==",
       "x": ""
     },
     {
-      "name": "Spandan Bhattacharya",
-      "image": "/people/spandan-bhattacharya.webp",
+      "name": "Argha Ghosh",
+      "image": "/people/argha-ghosh.webp",
       "linkedin": "",
       "instagram": "",
       "x": ""
@@ -337,6 +379,13 @@
       "linkedin": "https://linkedin.com/in/trinankur-roy-0b790b338",
       "instagram": "https://instagram.com/_trinankur_",
       "x": "https://x.com/RoyTrinankur"
+    },
+    {
+      "name": "Tirthadeep Kapat",
+      "image": "/people/tirthadeep-kapat.webp",
+      "linkedin": "https://www.linkedin.com/in/tirthadeep-kapat-41a583324/",
+      "instagram": "https://www.instagram.com/tdkapat/",
+      "x": "https://x.com/KapatTirth9173"
     }
   ],
   "Branding": [
@@ -964,6 +1013,20 @@
       "linkedin": "https://linkedin.com/in/zinnia-ghosh-373144282",
       "instagram": "https://instagram.com/zinnia_ghosh_",
       "x": ""
+    },
+    {
+      "name":"Debargha Bandyopadhyay",
+      "image":"/people/debargha-bandyopadhyay.webp",
+      "linkedin": "",
+      "instagram":"https://www.instagram.com/spore_nomore",
+      "x":""
+    },
+    {
+      "name": "Anita Mukherjee",
+      "image": "",
+      "linkedin": "https://www.linkedin.com/in/anita-mukherjee-366250236",
+      "instagram": "https://www.instagram.com/am_bee.vert_",
+      "x": ""
     }
   ],
   
@@ -1062,13 +1125,7 @@
       "instagram": "https://instagram.com/mir__azz09",
       "x": "https://x.com/MirAzz09"
     },
-    {
-      "name": "Ranjini Majumder",
-      "image": "/people/ranjini-majumder.webp",
-      "linkedin": "https://linkedin.com/in/ranjini-majumder-6a1b2134a",
-      "instagram": "https://instagram.com/mishuk36_",
-      "x": ""
-    },
+  
     {
       "name": "Sourasanta Dutta",
       "image": "/people/sourasanta-dutta.webp",
@@ -1077,22 +1134,50 @@
       "x": ""
     },
     {
-      "name": "Srijita ghosh",
+      "name": "Srijita Ghosh",
       "image": "/people/srijita-ghosh.webp",
       "linkedin": "",
       "instagram": "https://instagram.com/fairyqueen950",
       "x": ""
     },
     {
-      "name": "Swastika Kundu",
-      "image": "/people/swastika-kundu.webp",
-      "linkedin": "https://linkedin.com/in/swastika-kundu-b94342317",
-      "instagram": "https://instagram.com/_.swastika.kundu._",
-      "x": "https://x.com/KunduSwastika11"
-    }
+      "name": "Arkajyoti Mondal",
+      "image": "/people/arkajyoti-mondal.webp",
+      "linkedin": "",
+      "instagram": "https://www.instagram.com/sixtynineyearold?igsh=MWJuYThjbnhocWplNA%3D%3D&utm_source=qr",
+      "x": ""
+    },
+    {
+      "name": "Saptarshi Mandal",
+      "linkedin": "https://www.linkedin.com/in/saptarshi-mandal-391551265",
+      "image": "/people/saptarshi-mandal.webp",
+      "instagram": "https://www.instagram.com/just_gogol",
+      "x": ""
+      }
   ],
   
   "Tech-Team": [
+    {
+      "name": "Anita Mukherjee",
+      "image": "/people/anita-mukherjee.webp",
+      "linkedin": "https://www.linkedin.com/in/anita-mukherjee-366250236",
+      "instagram": "https://www.instagram.com/am_bee.vert_",
+      "x": ""
+    },
+    {
+      "name": "Mahulee Lahiri",
+      "image": "/people/mahulee-lahiri.webp",
+      "linkedin": "https://linkedin.com/in/mahulee-lahiri-5998ba28a",
+      "instagram": "https://instagram.com/_mahuleelahiri",
+      "x": ""
+    },
+    {
+      "name": "Anirban Basak",
+      "image": "/people/anirban-basak.webp",
+      "linkedin": "https://linkedin.com/in/anirban-basak-iamanirbanbasak/",
+      "instagram": "https://instagram.com/iamanirbanbasak",
+      "x": ""
+    },
     {
       "name": "Arkaprabha Chakraborty",
       "image": "/people/arkaprabha-chakraborty.webp",
@@ -1112,7 +1197,35 @@
       "image": "/people/biswa-ganguly.webp",
       "linkedin": "https://linkedin.com/in/biswa-ganguly-32564a28a/",
       "instagram": "https://instagram.com/___.b.i.s.w.a.___/  na",
+      "x": "https://x.com/biswa_2512"
+    },
+    {
+      "name": "Samadrita Bhattacharya",
+      "image": "/people/samadrita-bhattacharya.webp",
+      "linkedin": "https://linkedin.com/in/samadrita-bhattacharya163/",
+      "instagram": "https://instagram.com/atirdamas/",
+      "x": "https://x.com/Samadrita163"
+    },
+    {
+      "name": "Jaya Ganguly",
+      "image": "/people/jaya-ganguly.webp",
+      "linkedin": "https://linkedin.com/in/jaya-ganguly-3447b8244/",
+      "instagram": "https://instagram.com/jayaganguly969/",
       "x": ""
+    },
+    {
+      "name": "Trisha Mandal",
+      "image": "/people/trisha-mandal.webp",
+      "linkedin": "https://linkedin.com/in/trishamandal123/",
+      "instagram": "https://instagram.com/me._.trisha_/",
+      "x": ""
+    },
+    {
+      "name": "Sandipan Jha",
+      "image": "/people/sandipan-jha.webp",
+      "linkedin": "https://linkedin.com/in/sandipan-jha-2a8449236",
+      "instagram": "https://instagram.com/sandipan_jha",
+      "x": "https://x.com/JhaSandipan"
     },
     {
       "name": "Debanjan Mukherjee",
@@ -1127,41 +1240,100 @@
       "linkedin": "https://linkedin.com/in/dhruba-dutta-banik",
       "instagram": "https://instagram.com/___dhruba_official___",
       "x": "https://x.com/DhrubaDuttaB"
-    },
-    {
-      "name": "Samadrita Bhattacharya",
-      "image": "/people/samadrita-bhattacharya.webp",
-      "linkedin": "https://linkedin.com/in/samadrita-bhattacharya163/",
-      "instagram": "https://instagram.com/atirdamas/",
-      "x": "https://x.com/Samadrita163"
-    },
-    {
-      "name": "Sandipan Jha",
-      "image": "/people/sandipan-jha.webp",
-      "linkedin": "https://linkedin.com/in/sandipan-jha-2a8449236",
-      "instagram": "https://instagram.com/sandipan_jha",
-      "x": "https://x.com/JhaSandipan"
-    },
-    {
-      "name": "Souvik Ghosh",
-      "image": "/people/souvik-ghosh.webp",
-      "linkedin": "https://linkedin.com/in/souvik-ghosh-94374928a",
-      "instagram": "",
-      "x": ""
-    },
-    {
-      "name": "Trisha Mandal",
-      "image": "/people/trisha-mandal.webp",
-      "linkedin": "https://linkedin.com/in/trishamandal123/",
-      "instagram": "https://instagram.com/me._.trisha_/",
-      "x": ""
-    },
-    {
-      "name": "Jaya Ganguly",
-      "image": "/people/jaya-ganguly.webp",
-      "linkedin": "https://linkedin.com/in/jaya-ganguly-3447b8244/",
-      "instagram": "https://instagram.com/jayaganguly969/",
-      "x": ""
     }
-  ]
+  ],
+  "Deco-Team": [
+    {
+        "name": "Monalisa Maji",
+        "image": "/people/monalisa-maji.webp",
+        "linkedin": "https://www.linkedin.com/in/monalisa-maji-8a644b293",
+        "instagram": "https://accountscenter.instagram.com/profiles/17841453639700579/",
+        "x": ""
+    },
+    {
+        "name": "Somrik Mondal",
+        "image": "/people/somrik-mondal.webp",
+        "linkedin": "https://www.linkedin.com/in/somrik-mondal-558aa8321",
+        "instagram": "https://www.instagram.com/myself_somrizz05",
+        "x": ""
+    },
+    {
+        "name": "Shreya Dey",
+        "image": "/people/shreya-dey.webp",
+        "linkedin": "https://www.linkedin.com/in/shreyadey04",
+        "instagram": "https://www.instagram.com/dey_shreya2004",
+        "x": ""
+    },
+    {
+        "name": "Sandip Saha",
+        "image": "/people/sandip-saha.webp",
+        "linkedin": "https://www.linkedin.com/in/sandip-saha-87174628a",
+        "instagram": "https://www.instagram.com/venomoussweets2.9__",
+        "x": "https://x.com/2SanDip9"
+    },
+    {
+        "name": "Sneha Roy",
+        "image": "/people/sneha-roy.webp",
+        "linkedin": "https://www.linkedin.com/in/sneha-roy-7227b4257",
+        "instagram": "https://www.instagram.com/_.wheres_my_plumeria._",
+        "x": ""
+    },
+    {
+        "name": "Pritha Dalui",
+        "image": "/people/pritha-dalui.webp",
+        "linkedin": "https://www.linkedin.com/in/pritha-dalui-83a86b294",
+        "instagram": "https://www.instagram.com/pritha_0.006",
+        "x": ""
+    },
+    {
+        "name": "Sayantanee Sinha",
+        "image": "/people/sayantanee-sinha.webp",
+        "linkedin": "",
+        "instagram": "https://www.instagram.com/sayantaneeeee",
+        "x": ""
+    },
+    {
+        "name": "Subrata Kundu",
+        "image": "/people/subrata-kundu.webp",
+        "linkedin": "https://www.linkedin.com/in/subrata-kundu-283a6a286",
+        "instagram": "https://www.instagram.com/subratakundu_art",
+        "x": ""
+    },
+    {
+        "name": "Sreja Metya",
+        "image": "/people/sreja-metya.webp",
+        "linkedin": "https://www.linkedin.com/in/sreja-metya-41967328a",
+        "instagram": "https://www.instagram.com/sreja_metya",
+        "x": ""
+    },
+    {
+        "name": "Pousali Saha",
+        "image": "/people/pousali-saha.webp",
+        "linkedin": "https://www.linkedin.com/in/pousali-saha-104029217",
+        "instagram": "https://www.instagram.com/__.pousali.__",
+        "x": ""
+    },
+    {
+        "name": "Samadrito Samanta",
+        "image": "/people/samadrito-samanta.webp",
+        "linkedin": "https://www.linkedin.com/in/samadrito-samanta-860aa1292",
+        "instagram": "https://www.instagram.com/why.notsam_",
+        "x": ""
+    },
+    {
+        "name": "Samadrita Hazra",
+        "image": "/people/samadrita-hazra.webp",
+        "linkedin": "https://www.linkedin.com/in/samadrita-hazra-39b452294",
+        "instagram": "https://www.instagram.com/_samadrita_",
+        "x": ""
+    },
+    {
+        "name": "Sneha Bhattacharjee",
+        "image": "/people/sneha-bhattacharjee.webp",
+        "linkedin": "https://www.linkedin.com/in/sneha-bhattacharjee-21122231a",
+        "instagram": "https://www.instagram.com/sneha_bhattacharyya_",
+        "x": ""
+    }
+]
+
 }

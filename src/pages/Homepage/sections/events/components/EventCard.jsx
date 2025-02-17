@@ -36,8 +36,8 @@ export default function EventCarousel() {
       >
         <CarouselContent className="">
           {loopedEvents.map((event, index) => (
-            <CarouselItem key={index} className="lg:basis-1/3">
-              <Card title={event.title} />
+            <CarouselItem key={index} className="lg:basis-1/3 cursor-pointer">
+              <Card title={event.title}/>
             </CarouselItem>
           ))}
         </CarouselContent>

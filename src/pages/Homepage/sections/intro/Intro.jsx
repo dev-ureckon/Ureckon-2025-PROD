@@ -33,7 +33,7 @@ function Intro() {
       const currentIndex = tabs.indexOf(currentTab);
       const nextIndex = (currentIndex + 1) % tabs.length;
       setCurrentTab(tabs[nextIndex]);
-    }, 5000); // Switch every 5 seconds
+    }, 10000); // Switch every 5 seconds
 
     return () => clearTimeout(timer);
   }, [currentTab]);
@@ -186,7 +186,7 @@ function TabContent({ title, firstPara, secondPara, imageSrc }) {
           </p>
           <div className="flex items-center justify-center gap-4 mx-auto flex-wrap mt-4 md:mt-0">
             {links.map((item) => (
-              <Link to={item.href} key={item.id}>
+              <Link to={item.href} key={item.id} target="_blank">
                 <button
                   className="rounded-full px-2 py-1 h-[54px] w-[54px] flex items-center justify-center hover:scale-110 transition-all duration-300 drop-shadow-[0_0_4px_#000000]"
                   style={{

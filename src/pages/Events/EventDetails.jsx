@@ -85,7 +85,7 @@ const EventDetails = () => {
 
               {/* Image Section */}
               <div className="relative mx-auto w-full max-w-sm">
-                <div className="relative w-full h-[480px]">
+                <div className="relative w-full h-[400px] md:h-[480px]">
                   <div className="absolute inset-0 bg-[#FF000A]/50 rounded-lg"></div>
                   {[
                     "-top-3 -left-3",
