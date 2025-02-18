@@ -29,6 +29,7 @@ const EventDetails = () => {
     name: event.name,
     description: event.description,
     date: event.date,
+    venue: event.venue,
     eventimage: event.poster || "https://example.com/default-event.png",
     rules: [],
     coordinators: event.coordinators.map((coord) => ({
@@ -116,12 +117,16 @@ const EventDetails = () => {
 
             {/* Date & Time */}
             <div className="flex flex-col lg:flex-row items-center justify-center gap-4 mt-24">
-              <div className="relative flex flex-col items-center">
-                <span className="bg-[#B01D15]/50 px-6 py-6 rounded-md text-[#B01D15] text-center tracking-wide mt-2 text-lg sm:text-xl">
-                  {transformedEvent.date}
-                </span>
-              </div>
-            </div>
+  <div className="flex flex-col sm:flex-row items-center gap-x-4">
+    <span className="bg-[#B01D15]/50 px-6 py-6 rounded-md text-[#B01D15] text-center tracking-wide mt-2 text-lg sm:text-xl">
+      {transformedEvent.date}
+    </span>
+    <span className="bg-[#B01D15]/50 px-6 py-6 rounded-md text-[#B01D15] text-center tracking-wide mt-2 text-lg sm:text-xl">
+      {transformedEvent.venue}
+    </span>
+  </div>
+</div>
+
           </div>
 
           {/* Rules Section */}

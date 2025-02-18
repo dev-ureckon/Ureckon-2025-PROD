@@ -287,7 +287,7 @@
       "description": "A platform where students will showcase their intelligence by solving puzzles and decoding riddles to progress through levels and find a hidden treasure.",
       "venue": "UEM Kolkata Campus",
       "fees": "INR 129 / participant",
-      "form": "https://forms.gle/iTgpF6MpHyPTzyQJ",
+      "form": "https://forms.gle/iTgpF6MpHyPTzyQJ6",
       "problem": "https://drive.google.com/file/d/1_jIzNO8JwSbqVA6Kt9sqFv9USGETAoCU/view",
       "coordinators": [
         {
@@ -480,8 +480,8 @@
           "name": "Subhadeep Mondal",
           "contact": "+91 6291642437",
           "image": "/people/subhadeep-mondal.webp",
-          "linkedin": "",
-          "instagram": "",
+          "linkedin": "https://www.linkedin.com/in/subhadeep-mondal-ba64ba279?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+          "instagram": "https://www.instagram.com/introverdude?igsh=MXFxdTJrbmdlNnMwMg==",
           "x": ""
         }
       ]
@@ -531,7 +531,7 @@
           "contact": "+91 8768438506",
           "image": "/people/barshan-banerjee.webp",
           "linkedin": "https://www.linkedin.com/in/barshanbanerjee",
-          "instagram": "https://www.instagram.com/__photon_in_a_double _slit__",
+          "instagram": "https://www.instagram.com/__photon_in_a_double_slit__/",
           "x": ""
         },
         {
@@ -758,7 +758,7 @@
       "venue": "UEM Kolkata Campus",
       "fees": "149 INR / team",
       "form": "https://forms.gle/8FyDdAjfSbfDSyMVA",
-      "problem": "https://drive.google.com/file/d/1f2_XK_h2HOKCFyuIVLV_9AnfsZ6YH4wn/view?usp=drive_link",
+      "problem": "https://drive.google.com/file/d/11VK3qOY-sQWNGI2o_0TORKM2nsEjLfwi/view?usp=drivesdk",
       "coordinators": [
         {
           "name": "Shubhrangshu Ghosh",
@@ -906,7 +906,7 @@
       "poster": "/poster/initiatives/frames-of-expression.webp",
       "date": "2nd March 2025",
       "tagline": "Beyond the lens, Tale unfold",
-      "description": "Showcase your color grading and editing skills in this exciting challenge.",
+      "description": "SStep into the past with Frames of Expression, a unique narrative photography event celebrating Retro Times! Capture vintage aesthetics, timeless emotions, and bygone eras through your lens and words. Unleash your creativity and transport us to nostalgia-filled stories! 📸✨",
       "venue": "UEM Kolkata Campus",
       "fees": "149 INR / team",
       "form": "https://forms.gle/uz5nMaQjSFpHvE7G6",
@@ -935,7 +935,7 @@
       "poster": "/poster/initiatives/frame-flick.webp",
       "date": "2nd March 2025",
       "tagline": "Flick, Frame, Craft",
-      "description": "Showcase your color grading and editing skills in this exciting challenge.",
+      "description": "Frame Flick is an exciting celebration of visual storytelling, where filmmakers and enthusiasts gather to explore the art of cinematography. The event features screenings of exceptional films, discussions with industry professionals, and hands-on workshops. Participants dive into the latest techniques, trends, and innovations, offering a platform to showcase creativity and inspire the next generation of filmmakers.",
       "venue": "UEM Kolkata Campus",
       "fees": "299 INR / individual",
       "form": "https://forms.gle/Q77UHyP8CcyjYeCQ8",
@@ -964,7 +964,7 @@
       "poster": "/poster/initiatives/cosmic-capture.webp",
       "date": "2nd March 2025",
       "tagline": "Framing the Universe, One Star at a Time!",
-      "description": "Showcase your color grading and editing skills in this exciting challenge.",
+      "description": "Cosmic Capture is a stellar event where space enthusiasts showcase astrophotography, digital art, and cosmic creativity. Join us for thrilling challenges, interactive sessions, and exciting prizes as we explore the universe’s beauty together. Unleash your imagination beyond the stars!",
       "venue": "UEM Kolkata Campus",
       "fees": "399 INR / team",
       "form": "https://forms.gle/WpA8Zn4xTGg7WDs99",
@@ -1028,7 +1028,118 @@
       ]
     },
     {
-      "name": "Red Light Green Light",
+      "name": "E-Football",
+      "poster": "/poster/gaming/e-football.webp",
+      "date": "25th Feb - 1st March 2025",
+      "tagline": "Where Legends Rise and Champions Compete!",
+      "description": "Compete in the E-Football tournament at URECKON'25 and prove your skills in this hybrid event. Rise to the challenge and become a champion.",
+      "venue": "Hybrid",
+      "fees": "79 INR / individual",
+      "form": "https://forms.gle/ST2pMe2kepJqaegs8",
+      "problem": "https://drive.google.com/file/d/14345HWzXjoyL74Xc56h8ydxJ_K8CkCkP/view?usp=drivesdk",
+      "coordinators": [
+        {
+          "name": "Koustav Das",
+          "contact": "9123924644",
+          "image": "/people/koustav-das.webp",
+          "linkedin": "https://www.linkedin.com/in/koustav-das-037ba22a1",
+          "instagram": "https://www.instagram.com/_.koustav_das._/",
+          "x": ""
+        }
+      ]
+    },
+    {
+      "name": "Operation Overload 4.0",
+      "poster": "/poster/gaming/valorant.webp",
+      "date": "1st - 2nd March 2025",
+      "tagline": "Clutch or Lose — You decide",
+      "description": "Join the Valorant tournament at URECKON'25 and showcase your skills in this popular tactical shooter game. Compete with other teams and aim for victory.",
+      "venue": "UEM Kolkata Campus",
+      "fees": "1499 INR / team",
+      "form": "https://forms.gle/XQtzkRpjjo9ZmduHA",
+      "problem": "https://drive.google.com/file/d/1TCPlEqMtgS7iHwk5sU7MthOkxXB2mgK8/view",
+      "coordinators": [
+        {
+          "name": "Ankit Mukherjee",
+          "contact": "6290460172",
+          "image": "/people/ankit-mukherjee.webp",
+          "linkedin": "https://www.linkedin.com/in/ankitmukherjee2004",
+          "instagram": "https://www.instagram.com/ankit_mukherjee_2004_",
+          "x": ""
+        },
+        {
+          "name": "Supriyo Kumar Aich",
+          "contact": "9800960692",
+          "image": "/people/supriyo-kumar-aich.webp",
+          "linkedin": "https://www.linkedin.com/in/supr1yo",
+          "instagram": "https://instagram.com/sxpriyo",
+          "x": "https://x.com/sxpriyo"
+        },
+        {
+          "name": "Soham Dey",
+          "contact": "9163705677",
+          "image": "/people/soham-dey.webp",
+          "linkedin": "https://www.linkedin.com/in/soham-dey-777675239",
+          "instagram": "https://www.instagram.com/shane_0008/",
+          "x": "https://x.com/ShaneGaming18"
+        }
+      ]
+    },
+    {
+      "name": "BGMI",
+      "poster": "/poster/gaming/bgmi.webp",
+      "date": "1st - 2nd March 2025",
+      "tagline": "PLAN it, SLAM it, Noobs - Can't stand out on it!!",
+      "description": "Ureckon'25 is hosting a Battlegrounds Mobile India (BGMI) tournament at UEM, Kolkata on March 1st and 2nd, 2025. This tournament is a squad-based (TPP) competition using the BGIS 2025 ranking mechanism. Participants must adhere to specific rules regarding team composition, allowed devices, and in-game conduct. Limited registrations are available on a first-come, first-served basis, subject to payment verification. The event features league stage matches and playoffs/finals, each with distinct loot settings. A detailed point system determines rankings, including placement and kill points, with tie-breakers in place. All participants are expected to comply with the Ureckon'25 code of conduct.",
+      "venue": "UEM Kolkata Campus",
+      "fees": "299 INR / team",
+      "form": "https://forms.gle/2Sv5MVAcQhJ6uF737",
+      "problem": "https://drive.google.com/file/d/1XvG7ldllekXzi_WnZ9i0cqEDDr8SwchI/view",
+      "coordinators": [
+        {
+          "name": "Sankhajyoti Shit",
+          "contact": "+91 8918540830",
+          "image": "/people/sankhajyoti-shit.webp",
+          "linkedin": "",
+          "instagram": "https://www.instagram.com/ig__goku07",
+          "x": ""
+        },
+        {
+          "name": "Soumik Maity",
+          "contact": "+91 9681931113",
+          "image": "/people/soumik-maity.webp",
+          "linkedin": "https://www.linkedin.com/in/soumik585647",
+          "instagram": "https://www.instagram.com/its_soumik02",
+          "x": "https://x.com/Soumik65"
+        },
+        {
+          "name": "Subhradeep Paul",
+          "contact": "+91 9830453727",
+          "image": "/people/subhradeep-paul.webp",
+          "linkedin": "",
+          "instagram": "https://www.instagram.com/_subhradeep__paul",
+          "x": ""
+        },
+        {
+          "name": "Arijit Dutta",
+          "contact": "+91 8777693763",
+          "image": "/people/arijit-dutta.webp",
+          "linkedin": "https://www.linkedin.com/in/arijit-dutta-a95695337",
+          "instagram": "https://www.instagram.com/_specter09_",
+          "x": ""
+        },
+        {
+          "name": "Abhinandan Das",
+          "contact": "+91 9830513712",
+          "image": "/people/abhinandan-das.webp",
+          "linkedin": "",
+          "instagram": "https://www.instagram.com/_._kingdas21_._/",
+          "x": "https://x.com/kingdas21"
+        }
+      ]
+    },
+    {
+      "name": "Red Light, Green Light",
       "poster": "/poster/gaming/red-light-green-light.webp",
       "date": "1st March 2025",
       "tagline": "Move wisely, stop quickly, survive longer!",
