@@ -4,43 +4,48 @@
   "Faculty": [
     
     {
-      "name": "Prof Dr. Sajal Dasgupta",
+      "name": "Prof. Dr. Sajal Dasgupta",
       "designation": "Vice-Chancellor",
       "image": "/people/sajal-dasgupta.webp"
       
     },
     {
-      "name": "Prof Dr. Satyajit Chakrabarti",
+      "name": "Prof. Dr. Satyajit Chakrabarti",
       "designation": "Pro-vice Chancellor",
       "image": "/people/satyajit-chakrabarti.webp"
       
     },
     {
-      "name": "Prof Dr. Sukalyan Goswami",
+      "name": "Prof. Dr. Sukalyan Goswami",
       "designation": "Registrar",
       "image": "/people/sukalyan-goswami.webp"
     },
     {
-      "name": "Prof Dr. Rajiv Ganguly",
+      "name": "Prof. Dr. Rajiv Ganguly",
       "designation": "Dean (Science)",
       "image": "/people/rajiv-ganguly.webp"
     },
     
     {
-      "name": "Prof Dr. Susmita Mukherjee",
+      "name": "Prof. Dr. Susmita Mukherjee",
       "designation": "Dean of Alumni Relations",
       "image": "/people/susmita-mukherjee.webp"
     },
     
     
     {
-      "name": "Prof Dr. Sudipta Sahana",
+      "name": "Prof. Dr. Sudipta Sahana",
       "designation": "Head Of Department",
       "image": "/people/sudipta-sahana.webp"
     },
+    {
+      "name": "Prof. Dr. Anirban Das",
+      "designation": "Vice President of Innovation Council UEMK",
+      "image": "/people/anirban-das.webp"
+    },
     
     {
-      "name": "Prof Dr. Chiradeep Mukherjee",
+      "name": "Prof. Dr. Chiradeep Mukherjee",
       "designation": "Associate Professor",
       "image": "/people/chirodeep-mukherjee.webp"
     },
@@ -416,7 +421,47 @@
       "linkedin": "https://linkedin.com/in/snehesh-gupta-5245a128a",
       "instagram": "https://instagram.com/sneheshgupta",
       "x": ""
-    }
+    },
+
+{
+  "name": "Adrija Sarkar",
+  "image": "/people/adrija-sarkar.webp",
+  "linkedin": "https://www.linkedin.com/in/adrija-sarkar-918215320/",
+  "instagram": "https://www.instagram.com/adrijasarkarr/",
+  "x": ""
+},
+
+{
+  "name": "Subhadeep Dolai",
+  "image": "/people/subhadeep-dolai.webp",
+  "linkedin": "",
+  "instagram": "",
+  "x": ""
+},
+
+{
+  "name": "Monit Bhattacharya",
+  "image": "/people/monit-bhattacharya.webp",
+  "linkedin": "https://www.linkedin.com/in/monit-bhattacharjee-0602a1318/",
+  "instagram": "https://www.instagram.com/monitbhattacharjee/",
+  "x": ""
+},
+
+{
+  "name": "Sutavra Mitra",
+  "image": "/people/sutavra-mitra.webp",
+  "linkedin": "https://www.linkedin.com/in/sutavrariomitra6/",
+  "instagram": "https://www.instagram.com/sutavrario.0",
+  "x": ""
+},
+
+{
+  "name": "Soham Mukherjee",
+  "image": "/people/soham-mukherjee.webp",
+  "linkedin": "",
+  "instagram": "https://www.instagram.com/havok.sm_911",
+  "x": ""
+}
   ],
   "Coordinator": [
     {
@@ -1340,7 +1385,22 @@
         "linkedin": "https://www.linkedin.com/in/sneha-bhattacharjee-21122231a",
         "instagram": "https://www.instagram.com/sneha_bhattacharyya_",
         "x": ""
-    }
+    },
+    {
+      "name": "Rishika Yadav",
+      "image": "/people/rishika-yadav.webp",
+      "linkedin": "https://www.linkedin.com/in/rishika-yadav-819011282/",
+      "instagram": "https://www.instagram.com/rishika.yadav.960/",
+      "x": ""
+ },
+
+{
+      "name" : "Swastika Ghosh",
+      "image": "/people/swastika-ghosh.webp",
+      "linkedIn" : "https://www.linkedin.com/in/swastika-ghosh-741a6128a/",
+      "instagram": "https://www.instagram.com/okayyswas_/",
+      "x": "https://x.com/idkswasss"
+}
 ]
 
 }
