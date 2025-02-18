@@ -19,6 +19,7 @@ import EventDetails from './pages/Events/EventDetails';
 import EventsPage2 from './pages/Events/Event2/Page';
 import Partners from './pages/Partners/Partners';
 import BackgroundParticles from './components/BackgroundParticles';
+import Maze from './pages/Maze/Page';
 
 const App = () => {
   const [screenLoading, setScreenLoading] = useState(false);
@@ -59,6 +60,8 @@ const App = () => {
               <Route path="/events" element={<EventPage />} />
               <Route path="/events/:category" element={<EventsPage2 />} />
               <Route path="/events/:category/:eventId" element={<EventDetails />} />
+
+              <Route path="/easter" element={<Maze />} />
 
             </Routes>
             <Footer />
