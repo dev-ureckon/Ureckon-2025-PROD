@@ -56,10 +56,9 @@ const Hero = () => {
         className="hidden  relative   w-full h-[90vh] lg:flex flex-col items-center justify-center bg-cover bg-center p-6 md:p-12 lg:p-20 overflow-hidden"
         style={{ backgroundImage: `url(${bg})` }}
       >
-        <div className="text-center bg-black lg:p-4 p-4">
+        <div className="text-center cursor-pointer bg-black lg:p-4 p-4" onClick={handleHeaderClick}>
           <h1
             className="text-4xl md:text-6xl lg:text-8xl font-press text-[#7AD0E5] drop-shadow-[0_0_20px_#7AD0E5]"
-            onClick={handleHeaderClick}
           >
             URECKON
           </h1>
@@ -87,10 +86,9 @@ const Hero = () => {
       </section>
       {/* mobile */}
       <section className="lg:hidden  flex flex-col items-center justify-center min--screen">
-        <div className="text-center  p-4">
+        <div className="text-center cursor-pointer p-4" onClick={handleHeaderClick}>
           <h1
             className="text-4xl md:text-6xl font-press text-[#7AD0E5] drop-shadow-[0_0_20px_#7AD0E5]"
-            onClick={handleHeaderClick}
           >
             URECKON
           </h1>
