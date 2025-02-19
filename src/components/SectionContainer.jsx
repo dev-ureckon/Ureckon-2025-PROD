@@ -7,7 +7,7 @@ import strawberry from "../assets/SectionContainer/strawberry.svg";
 const vectorArray = [pacman, ghost, cherry, strawberry];
 
 const VerticalLine = ({ height }) => {
-  return <div className="w-12 lg:w-12 rounded-3xl border-4 border-blue-500 bg-transparent shadow-md" style={{ height }} />;
+  return <div className="w-12 lg:w-10 rounded-[18px] border-4 border-[#232397] bg-transparent shadow-md" style={{ height }} />;
 };
 
 const SectionContainer = ({ height = "25rem", children }) => {
