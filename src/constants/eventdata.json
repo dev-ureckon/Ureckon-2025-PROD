@@ -1,4 +1,106 @@
 {
+  "flagship": [
+    {
+      "name": "Ureckon Innovation Challenge (UIC)",
+      "poster": "/poster/flagship/ureckon-innovation-challenge.webp",
+      "date": "1st - 2nd March 2025",
+      "tagline": "Showcase groundbreaking innovations.",
+      "description": "Present your innovative solutions to real-world problems and compete for the top spot.",
+      "venue": "UEM Kolkata Campus",
+      "fees": "FREE",
+      "form": "https://forms.gle/vwY77RJJ84CmLnTPA",
+      "problem": "https://drive.google.com/file/d/1AeNLXu-HrQgdBBXwGUKxqdz8vwQcK7W9/view?usp=drive_link",
+      "coordinators": [
+          {
+            "name": "Pratyay Chatterjee",
+            "contact": "8918389523",
+            "linkedin": "https://www.linkedin.com/in/pratyaychatterjee/",
+            "instagram": "https://www.instagram.com/_pr4tyay/" ,
+            "image": "/people/pratyay-chatterjee.webp"
+          },
+          {
+            "name": "Rajdeep Banerjee",
+            "contact": "8617479106",
+            "linkedin": "https://www.linkedin.com/in/BanerjeeRajdeep",
+            "instagram": "https://www.instagram.com/user_r.banerjee?igsh=MW14aG8yYmc1Y2RucQ== " ,
+            "image": "/people/rajdeep-banerjee.webp"
+          }
+      ]
+    },
+    {
+      "name": "Tech Expo",
+      "poster": "/poster/flagship/tech-expo.webp",
+      "date": "2nd March 2025",
+      "tagline": "An exhibition of the latest tech advancements.",
+      "description": "Explore the latest technological innovations and advancements in various fields.",
+      "venue": "UEM Kolkata Campus",
+      "fees": "FREE",
+      "form": "https://forms.gle/hAPhzKfFoanWGQ6n7",
+      "problem": "https://drive.google.com/file/d/1R6M_kDOHrL1adGTLufDofuivXZADTQUF/view?usp=drive_link",
+      "coordinators": [
+        {
+          "name": "Pratyay Chatterjee",
+          "contact": "8918389523",
+          "linkedin": "https://www.linkedin.com/in/pratyaychatterjee/",
+          "instagram": "https://www.instagram.com/_pr4tyay/" ,
+          "image": "/people/pratyay-chatterjee.webp"
+        },
+        {
+          "name": "Rajdeep Banerjee",
+          "contact": "8617479106",
+          "linkedin": "https://www.linkedin.com/in/BanerjeeRajdeep",
+          "instagram": "https://www.instagram.com/user_r.banerjee?igsh=MW14aG8yYmc1Y2RucQ== " ,
+          "image": "/people/rajdeep-banerjee.webp"
+        }
+      ]
+    },
+    {
+      "name": "Ureckon International Coding Challenge (UICC)",
+      "poster": "/poster/flagship/uicc.webp",
+      "date": "2nd March 2025",
+      "tagline": "International-level coding contest.",
+      "description": "Compete with the best coders from around the world in this prestigious coding challenge.",
+      "venue": "UEM Kolkata Campus",
+      "fees": "FREE",
+      "form": "https://forms.gle/2nJY5W2rAxnuL53F8",
+      "problem": "https://drive.google.com/file/d/1CFgKhu1uPJgdaCIQgSNLzRDimLVYkT1b/view?usp=sharing",
+      "coordinators": [
+        {
+          "name": "Stuti Sinha",
+          "contact": "7001610982",
+          "linkedin": "https://www.linkedin.com/in/stuti-sinha-230ab1263/",
+          "instagram": "https://www.instagram.com/rainbownailsc/",
+          "image": "/people/stuti-sinha.webp"
+        },
+        {
+          "name": "Sandipan Jha",
+          "contact": "6290717872",
+          "linkedin": "https://www.linkedin.com/in/sandipan-jha-2a8449236",
+          "instagram": "https://www.instagram.com/sandipan_jha/",
+          "image": "/people/sandipan-jha.webp"
+        }
+      ]
+    },
+    {
+      "name": "Ureck-A-Thon",
+      "poster": "/poster/flagship/ureck-a-thon.webp",
+      "date": "1st - 2nd March 2025",
+      "tagline": "A 36-hour hackathon challenge.",
+      "description": "Join the ultimate hackathon and build innovative solutions in just 36 hours.",
+      "venue": "UEM Kolkata Campus",
+      "fees": "FREE",
+      "form": "https://forms.gle/ureck-a-thon",
+      "problem": "https://drive.google.com/file/d/ureck-a-thon/view",
+      "coordinators": [
+        {
+          "name": "Coordinator Name",
+          "contact": "1234567890", 
+        
+          "image": "/people/coordinator-name.webp"
+        }
+      ]
+    }
+  ],
   "coding": [
     {
       "name": "Spyder",
@@ -1125,7 +1227,7 @@
           "contact": "+91 8777693763",
           "image": "/people/arijit-dutta.webp",
           "linkedin": "https://www.linkedin.com/in/arijit-dutta-a95695337",
-          "instagram": "https://www.instagram.com/_specter09_",
+          "instagram": "https://www.instagram.com/_vortex09_/",
           "x": ""
         },
         {

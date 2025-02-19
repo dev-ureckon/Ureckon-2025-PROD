@@ -54,10 +54,21 @@ export default function Footer() {
             </h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="hover:text-[#00a2ff] transition-colors">
-                  COMING SOON
+                <a href="/partners" className="hover:text-[#00a2ff] transition-colors">
+                  Edugraph
                 </a>
               </li>
+              <li>
+                <a href="/partners" className="hover:text-[#00a2ff] transition-colors">
+                Jus'Jumpin'
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-[#00a2ff] transition-colors">
+                Mercy For Animals
+                </a>
+              </li>
+              
               <li>
                 <a
                   href="/partners"
@@ -77,18 +88,18 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <a
-                  href="/teams/core"
+                  href="/teams/faculty"
                   className="hover:text-[#00a2ff] transition-colors"
                 >
-                  CORE
+                  Faculty Coordinators
                 </a>
               </li>
               <li>
                 <a
-                  href="/teams/tech-team"
+                  href="/teams/convenor"
                   className="hover:text-[#00a2ff] transition-colors"
                 >
-                  TECH
+                  Convenors
                 </a>
               </li>
               <li>
@@ -96,7 +107,7 @@ export default function Footer() {
                   href="/teams/taskforce"
                   className="hover:text-[#00a2ff] transition-colors"
                 >
-                  TASKFORCE
+                  Taskforce
                 </a>
               </li>
               <li>

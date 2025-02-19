@@ -12,14 +12,14 @@ import { useNavigate } from "react-router";
 
 export default function EventCarousel() {
   const events = [
-    { id: 1, title: "Coding" },
-    { id: 2, title: "Flagship" },
-    { id: 3, title: "Robotics" },
-    { id: 4, title: "Quiz" },
-    { id: 5, title: "Gaming" },
-    { id: 6, title: "Initiatives" },
-    { id: 7, title: "Biotech" },
-    { id: 8, title: "Biz Events" },
+    { id: 1, title: "Coding", link: "/events/coding" },
+    { id: 2, title: "Flagship", link: "/events/flagship" },
+    { id: 3, title: "Robotics", link: "/events/robotics" },
+    { id: 4, title: "Quiz", link: "/events/quiz" },
+    { id: 5, title: "Gaming", link: "/events/gaming" },
+    { id: 6, title: "Initiatives", link: "/events/initiatives" },
+    { id: 7, title: "Biotech", link: "/events/bio-tech" },
+    { id: 8, title: "Biz Events", link: "/events/business" },
   ];
 
   // Duplicate events for seamless looping
@@ -37,7 +37,7 @@ export default function EventCarousel() {
         <CarouselContent className="">
           {loopedEvents.map((event, index) => (
             <CarouselItem key={index} className="lg:basis-1/3 cursor-pointer">
-              <Card title={event.title}/>
+              <Card title={event.title} link={event.link} />
             </CarouselItem>
           ))}
         </CarouselContent>
@@ -48,7 +48,7 @@ export default function EventCarousel() {
   );
 }
 
-const Card = ({ title }) => {
+const Card = ({ title, link }) => {
   const navigate = useNavigate();
   const [isActive, setIsActive] = React.useState(false);
 
@@ -57,7 +57,7 @@ const Card = ({ title }) => {
   };
 
   const handleClick = () => {
-    navigate(`/events/${title.toLowerCase()}`);
+    navigate(link);
   };
 
   return (

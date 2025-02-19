@@ -1,75 +1,45 @@
 import React from "react";
-import { useNavigate } from "react-router-dom"; // Import useNavigate from react-router-dom
 import SectionContainer from "../../components/SectionContainer";
 
 const Partners = () => {
-  const navigate = useNavigate(); // Create a navigate function
-
-  const partner = [
-    {
-      title: "FOOD PARTNER",
-      members: [
-        { id: 1, name: "COCA COLA", image: "/src/assets/team.jpeg" },
-        { id: 2, name: "Anirban Dasak", image: "/src/assets/team.jpeg" },
-        { id: 3, name: "Anirban Dasak", image: "/src/assets/team.jpeg" },
-      ],
-    },
-    {
-      title: "SOCIAL MEDIA PARTNER",
-      members: [
-        { id: 4, name: "Anirban Dasak", image: "/src/assets/team.jpeg" },
-        { id: 5, name: "Anirban Dasak", image: "/src/assets/team.jpeg" },
-        { id: 6, name: "Anirban Dasak", image: "/src/assets/team.jpeg" },
-      ],
-    },
-    {
-      title: "BEVERAGE PARTNER",
-      members: [
-        { id: 7, name: "Anirban Dasak", image: "/src/assets/team.jpeg" },
-        { id: 8, name: "Anirban Dasak", image: "/src/assets/team.jpeg" },
-        { id: 9, name: "Anirban Dasak", image: "/src/assets/team.jpeg" },
-      ],
-    },
+  const partners = [
+    { id: 1, name: "Sova", type: "Snack Partner", image: "/partners/sova.webp" },
+    { id: 2, name: "Mio Biscuits", type: "Snack Partner", image: "partners/mio.webp" },
+    { id: 3, name: "Inkzoid Foundation", type: "Community Partner", image: "/partners/inkzoid.webp" },
+    { id: 4, name: "HackX Community", type: "Promotional Partner", image: "/partners/hackx.webp" },
+    { id: 5, name: "Unbuttoned Bangaliana", type: "Social Media Partner", image: "/partners/ub.webp" },
+    { id: 6, name: "Edugraph", type: "Digital Media Partner", image: "/partners/edugraph.webp" },
+    { id: 7, name: "Kranti Foundation (Unity Rbtx)", type: "Workshop Partner", image: "/partners/kranti.webp" },
+    { id: 8, name: "Friends FM", type: "Exclusive Radio Partner", image: "/partners/friends.webp" },
+    { id: 9, name: "Jus' Jumpin'", type: "Official Fun Partner", image: "/partners/jusjumpin.webp" },
+    { id: 10, name: "Mercy For Animals", type: "Goodwill Partner", image: "/partners/mercy.webp" },
   ];
 
   return (
     <SectionContainer>
       <div className="team-page font-press px-4 py-8 text-white min-h-screen space-bg">
-        {/* <button 
-                className="absolute left-4 top-4 text-xl text-gray-300 hover:text-white transition"
-                onClick={() => navigate(-1)} // This will navigate to the previous page
-            >
-                {"<< BACK"}
-            </button> */}
-
-        <h1 className="text-2xl text-center  mb-12 lg:mb-12 uppercase lg:text-5xl font-press text-[#B01D15] drop-shadow-[0_0_20px_#B01D15]">
-          the official PARTNERS of ureckon’25
+        <h1 className="text-2xl text-center mb-12 lg:mb-12 uppercase lg:text-5xl font-press text-[#B01D15] drop-shadow-[0_0_20px_#B01D15]">
+          The Official Partners of Ureckon’25
         </h1>
 
-        <div className="flex justify-center mt-32">
-          <h2 className="text-2xl text-center  mb-12 lg:mb-12 uppercase lg:text-5xl font-press text-[#B01D15] drop-shadow-[0_0_20px_#B01D15]">
-            COMING SOON...
-          </h2>
+        <div className="w-full mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center">
+          {partners.map((partner) => (
+            <div
+              key={partner.id}
+              className="relative p-4 justify-between rounded-lg shadow-lg bg-[rgba(255,0,0,0.2)] card-glow w-full h-[420px] max-w-[350px]"
+            >
+              <img
+                src={partner.image}
+                alt={partner.name}
+                className="w-full h-64 object-contain rounded-md"
+              />
+              <h3 className="mt-3 text-lg font-bold tracking-wider text-center">
+                {partner.name}
+              </h3>
+              <p className="text-yellow-500 text-sm text-center">{partner.type}</p>
+            </div>
+          ))}
         </div>
-        {/* <div className="w-full mx-auto space-y-12">
-                {partner.map((category, index) => (
-                    <div key={index} className="text-center">
-                        <h2 className="text-xl text-center mb-5 lg:mb-12 lg:text-3xl font-press text-[#B01D15] drop-shadow-[0_0_20px_#B01D15]">
-                            {category.title}
-                        </h2>
-                        
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 place-items-center">
-                            {category.members.map((member) => (
-                                <div key={member.id} className={`relative p-4 justify-between rounded-lg shadow-lg bg-[rgba(255,0,0,0.2)] card-glow w-full h-[420px] max-w-[350px]`}>
-                                    <img src={member.image} alt={member.name} className="w-full h-64 object-cover  rounded-md" />
-                                    <h3 className="mt-3 text-lg font-bold tracking-wider">{member.name}</h3>
-                                    <p className="text-gray-400">{member.role}</p>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                ))}
-            </div> */}
       </div>
     </SectionContainer>
   );
