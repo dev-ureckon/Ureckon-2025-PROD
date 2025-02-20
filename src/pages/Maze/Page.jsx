@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 import Confetti from "react-confetti";
 import { ArrowUp, ArrowRight, ArrowDown, ArrowLeft } from "lucide-react";
 import { generateMaze, solve } from "../../lib/mazeUtils";
-import PacmanOpen from "../../assets/pacman-open.svg";
-import PacmanClose from "../../assets/pacman-close.svg";
-import Ghost from "../../assets/ghost.svg";
+import PacmanOpen from "../../assets/pacman-open.png";
+import PacmanClose from "../../assets/pacman-close.png";
+import Ghost from "../../assets/ghost.png";
 
 export default function Maze() {
   const [gameId, setGameId] = useState(1);
