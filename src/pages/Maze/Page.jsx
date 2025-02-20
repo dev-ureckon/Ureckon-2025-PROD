@@ -1,4 +1,4 @@
-import { useState, useMemo, useEffect } from "react";
+import { useState, useMemo, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import Confetti from "react-confetti";
 import { ArrowUp, ArrowRight, ArrowDown, ArrowLeft } from "lucide-react";
@@ -10,12 +10,14 @@ import Ghost from "../../assets/ghost.png";
 export default function Maze() {
   const [gameId, setGameId] = useState(1);
   const [status, setStatus] = useState("playing");
-  const [size, setSize] = useState(24);
+  const [size, setSize] = useState(20);
   const [cheatMode, setCheatMode] = useState(false);
   const [userPosition, setUserPosition] = useState([0, 0]);
   const [showConfetti, setShowConfetti] = useState(false);
   const [confettiOpacity, setConfettiOpacity] = useState(1);
   const [pacmanOpen, setPacmanOpen] = useState(true);
+  const pacAudioRef = useRef(null);
+  const winAudioRef = useRef(null);
 
   const isMobile = window.innerWidth <= 640;
   const unitSize = isMobile ? 16 : 32;
@@ -49,6 +51,42 @@ export default function Maze() {
       setPacmanOpen((prev) => !prev);
     }, 300);
     return () => clearInterval(interval);
+  }, []);
+
+  useEffect(() => {
+    if (status === "playing") {
+      pacAudioRef.current.play();
+    } else {
+      pacAudioRef.current.pause();
+      pacAudioRef.current.currentTime = 0;
+    }
+  }, [status]);
+
+  useEffect(() => {
+    const playAudio = () => {
+      if (status === "playing") {
+        pacAudioRef.current.play();
+      }
+    };
+    window.addEventListener("load", playAudio);
+    window.addEventListener("click", playAudio);
+    window.addEventListener("keydown", playAudio);
+    return () => {
+      window.removeEventListener("load", playAudio);
+      window.removeEventListener("click", playAudio);
+      window.removeEventListener("keydown", playAudio);
+    };
+  }, [status]);
+
+  useEffect(() => {
+    if (showConfetti) {
+      winAudioRef.current.play();
+    }
+  }, [showConfetti]);
+
+  useEffect(() => {
+    pacAudioRef.current.volume = 0.2;
+    winAudioRef.current.volume = 0.3;
   }, []);
 
   const makeClassName = (i, j) => {
@@ -85,6 +123,8 @@ export default function Maze() {
     setUserPosition([0, 0]);
     setStatus("playing");
     setGameId(gameId + 1);
+    setShowConfetti(false);
+    setConfettiOpacity(1);
   };
 
   const handleJoystickMove = (direction) => {
@@ -105,6 +145,8 @@ export default function Maze() {
       onKeyDown={handleMove}
       tabIndex={-1}
     >
+      <audio ref={pacAudioRef} src="/pac.mp3" loop />
+      <audio ref={winAudioRef} src="/win.mp3" />
       {showConfetti && <Confetti opacity={confettiOpacity} />}
       <div className="relative">
         <table id="maze" className="mt-4 border-collapse">
@@ -116,7 +158,7 @@ export default function Maze() {
                     key={`cell-${i}-${j}`}
                     className={`${makeClassName(i, j)} w-4 h-4 sm:w-8 sm:h-8`}
                   >
-                    {i === maze.length - 1 && j === maze[0].length - 1 && (
+                    {i === maze.length - 1 && j === maze[0].length - 1 && status !== "won" && (
                       <img src={Ghost} alt="Ghost" className="absolute inset-0 w-full h-full" />
                     )}
                     <div className="h-full w-full" />
