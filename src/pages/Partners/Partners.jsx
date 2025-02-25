@@ -1,6 +1,7 @@
 import React from "react";
 import SectionContainer from "../../components/SectionContainer";
 
+
 const Partners = () => {
   const partners = [
     { id: 1, name: "Sova", type: "Snack Partner", image: "/partners/sova.webp" },
@@ -13,7 +14,17 @@ const Partners = () => {
     { id: 8, name: "Friends FM", type: "Exclusive Radio Partner", image: "/partners/friends.webp" },
     { id: 9, name: "Jus' Jumpin'", type: "Official Fun Partner", image: "/partners/jusjumpin.webp" },
     { id: 10, name: "Mercy For Animals", type: "Goodwill Partner", image: "/partners/mercy.webp" },
-  ];
+    { id: 11, name: "Hayati", type: "Style Partner", image: "/partners/hayati.webp" },
+    { id: 12, name: "Body Engineering Suppliment", type: "Fitness Partner", image: "/partners/bes.webp" },
+    { id: 13, name: "Lets Game Now", type: "Experience Zone Partner", image: "/partners/game.webp" },
+    { id: 14, name: "Nalin Chandra Das & Sons", type: "Dessert Partner", image: "/partners/nalin.webp" },
+    { id: 15, name: "Marnix", type: "Auto Expo Partner", image: "/partners/marnix.webp" },
+    { id: 16, name: "Bengal Harley Davidson", type: "Auto Expo Partner", image: "/partners/bhd.webp" },
+    { id: 17, name: "Harley Davidson X440", type: "Auto Expo Partner", image: "/partners/x400.webp" },
+    { id: 18, name: "Citroën", type: "Auto Expo Partner", image: "/partners/citron.webp" }
+];
+
+  
 
   return (
     <SectionContainer>
