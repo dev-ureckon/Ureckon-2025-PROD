@@ -12,7 +12,8 @@ const TeamPage = () => {
 
   return (
     <SectionContainer>
-      <div className="text-white w-full h-screen flex flex-col items-center justify-center relative font-press mx-auto">
+      <div className="text-white w-full min-h-screen flex flex-col items-center justify-center relative font-press mx-auto -mt-[50%] lg:-mt-0 ">
+
         <Header />
         <CenterSection domains={domains} />
       </div>

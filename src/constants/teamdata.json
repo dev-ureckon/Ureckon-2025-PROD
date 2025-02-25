@@ -58,6 +58,11 @@
       "name": "Zico Chakraborty",
       "designation": "Corporate Relations Executive",
       "image": "/people/zico-chakraborty.webp"
+    },
+    {
+      "name": "Sk Rahamatulla",
+      "designation": "R&D Student Project Manager",
+      "image": "/people/Rahamatulla.webp"
     }
     
   ],
@@ -460,6 +465,13 @@
   "image": "/people/soham-mukherjee.webp",
   "linkedin": "",
   "instagram": "https://www.instagram.com/havok.sm_911",
+  "x": ""
+},
+{
+  "name": "Debarshi Banerjee",
+  "image": "/people/debarshi-banerjee.webp",
+  "linkedin": "https://www.linkedin.com/in/debarshi-banerjee-594107318",
+  "instagram": "",
   "x": ""
 }
   ],

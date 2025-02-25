@@ -1,6 +1,7 @@
 import React from "react";
 import SectionContainer from "../../components/SectionContainer";
 
+
 const Partners = () => {
   const partners = [
     { id: 1, name: "Sova", type: "Snack Partner", image: "/partners/sova.webp" },
@@ -14,6 +15,7 @@ const Partners = () => {
     { id: 9, name: "Jus' Jumpin'", type: "Official Fun Partner", image: "/partners/jusjumpin.webp" },
     { id: 10, name: "Mercy For Animals", type: "Goodwill Partner", image: "/partners/mercy.webp" },
   ];
+  
 
   return (
     <SectionContainer>
