@@ -1,19 +1,14 @@
 {
-
-
   "Faculty": [
-    
     {
       "name": "Prof. Dr. Sajal Dasgupta",
       "designation": "Vice-Chancellor",
       "image": "/people/sajal-dasgupta.webp"
-      
     },
     {
       "name": "Prof. Dr. Satyajit Chakrabarti",
       "designation": "Pro-vice Chancellor",
       "image": "/people/satyajit-chakrabarti.webp"
-      
     },
     {
       "name": "Prof. Dr. Sukalyan Goswami",
@@ -25,14 +20,11 @@
       "designation": "Dean (Science)",
       "image": "/people/rajiv-ganguly.webp"
     },
-    
     {
       "name": "Prof. Dr. Susmita Mukherjee",
       "designation": "Dean of Alumni Relations",
       "image": "/people/susmita-mukherjee.webp"
     },
-    
-    
     {
       "name": "Prof. Dr. Sudipta Sahana",
       "designation": "Head Of Department",
@@ -43,7 +35,6 @@
       "designation": "Vice President of Innovation Council UEMK",
       "image": "/people/anirban-das.webp"
     },
-    
     {
       "name": "Prof. Dr. Chiradeep Mukherjee",
       "designation": "Associate Professor",
@@ -64,13 +55,13 @@
       "designation": "R&D Student Project Manager",
       "image": "/people/Rahamatulla.webp"
     }
-    
   ],
-  "Fest-Advisor":[{
-    "name": "Subhas Karal",
-    "image": "/people/subhas-karal.webp"
-    
-  }],
+  "Fest-Advisor": [
+    {
+      "name": "Subhas Karal",
+      "image": "/people/subhas-karal.webp"
+    }
+  ],
   "Convenor": [
     {
       "name": "Arkadeep Sen",
@@ -86,7 +77,7 @@
     },
     {
       "name": "Sanjona Bhattacharjee",
-      "image":"/people/sanojna-b.webp",
+      "image": "/people/sanojna-b.webp",
       "linkedin": "https://www.linkedin.com/in/sanjona-bhattacharjee-62b30321b",
       "instagram": "https://www.instagram.com/san.bxby"
     },
@@ -98,12 +89,10 @@
     },
     {
       "name": "Avigyan Das",
-      "image":"/people/avi.webp",
+      "image": "/people/avi.webp",
       "linkedin": "https://www.linkedin.com/in/avigyandas/",
       "instagram": "https://www.instagram.com/kapav.raw/"
-
     }
-    
   ],
   "Taskforce": [
     {
@@ -368,7 +357,6 @@
       "instagram": "https://instagram.com/preetiii_227/",
       "x": ""
     },
-    
     {
       "name": "Subhamita Adhikari",
       "image": "/people/subhamita-adhikari.webp",
@@ -400,6 +388,13 @@
   ],
   "Branding": [
     {
+      "name": "Indrashish Bhattacharya",
+      "image": "/people/indrashish-bhattacharya.webp",
+      "linkedin": "https://www.linkedin.com/in/indrashish-bhattacharya-30a8292a8",
+      "instagram": "https://www.instagram.com/indra2_501",
+      "x": ""
+    },
+    {
       "name": "Praanit Chakraborty",
       "image": "/people/praanit-chakraborty.webp",
       "linkedin": "",
@@ -427,53 +422,48 @@
       "instagram": "https://instagram.com/sneheshgupta",
       "x": ""
     },
-
-{
-  "name": "Adrija Sarkar",
-  "image": "/people/adrija-sarkar.webp",
-  "linkedin": "https://www.linkedin.com/in/adrija-sarkar-918215320/",
-  "instagram": "https://www.instagram.com/adrijasarkarr/",
-  "x": ""
-},
-
-{
-  "name": "Subhadeep Dolai",
-  "image": "/people/subhadeep-dolai.webp",
-  "linkedin": "",
-  "instagram": "",
-  "x": ""
-},
-
-{
-  "name": "Monit Bhattacharya",
-  "image": "/people/monit-bhattacharya.webp",
-  "linkedin": "https://www.linkedin.com/in/monit-bhattacharjee-0602a1318/",
-  "instagram": "https://www.instagram.com/monitbhattacharjee/",
-  "x": ""
-},
-
-{
-  "name": "Sutavra Mitra",
-  "image": "/people/sutavra-mitra.webp",
-  "linkedin": "https://www.linkedin.com/in/sutavrariomitra6/",
-  "instagram": "https://www.instagram.com/sutavrario.0",
-  "x": ""
-},
-
-{
-  "name": "Soham Mukherjee",
-  "image": "/people/soham-mukherjee.webp",
-  "linkedin": "",
-  "instagram": "https://www.instagram.com/havok.sm_911",
-  "x": ""
-},
-{
-  "name": "Debarshi Banerjee",
-  "image": "/people/debarshi-banerjee.webp",
-  "linkedin": "https://www.linkedin.com/in/debarshi-banerjee-594107318",
-  "instagram": "",
-  "x": ""
-}
+    {
+      "name": "Adrija Sarkar",
+      "image": "/people/adrija-sarkar.webp",
+      "linkedin": "https://www.linkedin.com/in/adrija-sarkar-918215320/",
+      "instagram": "https://www.instagram.com/adrijasarkarr/",
+      "x": ""
+    },
+    {
+      "name": "Subhadeep Dolai",
+      "image": "/people/subhadeep-dolai.webp",
+      "linkedin": "",
+      "instagram": "",
+      "x": ""
+    },
+    {
+      "name": "Monit Bhattacharya",
+      "image": "/people/monit-bhattacharya.webp",
+      "linkedin": "https://www.linkedin.com/in/monit-bhattacharjee-0602a1318/",
+      "instagram": "https://www.instagram.com/monitbhattacharjee/",
+      "x": ""
+    },
+    {
+      "name": "Sutavra Mitra",
+      "image": "/people/sutavra-mitra.webp",
+      "linkedin": "https://www.linkedin.com/in/sutavrariomitra6/",
+      "instagram": "https://www.instagram.com/sutavrario.0",
+      "x": ""
+    },
+    {
+      "name": "Soham Mukherjee",
+      "image": "/people/soham-mukherjee.webp",
+      "linkedin": "",
+      "instagram": "https://www.instagram.com/havok.sm_911",
+      "x": ""
+    },
+    {
+      "name": "Debarshi Banerjee",
+      "image": "/people/debarshi-banerjee.webp",
+      "linkedin": "https://www.linkedin.com/in/debarshi-banerjee-594107318",
+      "instagram": "",
+      "x": ""
+    }
   ],
   "Coordinator": [
     {
@@ -1072,11 +1062,11 @@
       "x": ""
     },
     {
-      "name":"Debargha Bandyopadhyay",
-      "image":"/people/debargha-bandyopadhyay.webp",
+      "name": "Debargha Bandyopadhyay",
+      "image": "/people/debargha-bandyopadhyay.webp",
       "linkedin": "",
-      "instagram":"https://www.instagram.com/spore_nomore",
-      "x":""
+      "instagram": "https://www.instagram.com/spore_nomore",
+      "x": ""
     },
     {
       "name": "Anita Mukherjee",
@@ -1086,7 +1076,6 @@
       "x": ""
     }
   ],
-  
   "Lead": [
     {
       "name": "Sohail Raja",
@@ -1123,7 +1112,6 @@
       "instagram": "https://instagram.com/rohitnesson",
       "x": "https://x.com/ItsRohitness"
     },
-    
     {
       "name": "Sucharita Jalui",
       "image": "/people/sucharita-jalui.webp",
@@ -1188,7 +1176,13 @@
       "instagram": "https://instagram.com/mir__azz09",
       "x": "https://x.com/MirAzz09"
     },
-  
+    {
+      "name": "Subhradip Mondal",
+      "image": "/people/subhradip-mondal.webp",
+      "instagram": "https://www.instagram.com/mr.oggy_16",
+      "linkedin": "https://www.linkedin.com/in/subhradip-mondal-cse",
+      "x": ""
+    },
     {
       "name": "Sourasanta Dutta",
       "image": "/people/sourasanta-dutta.webp",
@@ -1216,9 +1210,8 @@
       "image": "/people/saptarshi-mandal.webp",
       "instagram": "https://www.instagram.com/just_gogol",
       "x": ""
-      }
+    }
   ],
-  
   "Tech-Team": [
     {
       "name": "Anita Mukherjee",
@@ -1307,95 +1300,95 @@
   ],
   "Deco-Team": [
     {
-        "name": "Monalisa Maji",
-        "image": "/people/monalisa-maji.webp",
-        "linkedin": "https://www.linkedin.com/in/monalisa-maji-8a644b293",
-        "instagram": "https://accountscenter.instagram.com/profiles/17841453639700579/",
-        "x": ""
+      "name": "Monalisa Maji",
+      "image": "/people/monalisa-maji.webp",
+      "linkedin": "https://www.linkedin.com/in/monalisa-maji-8a644b293",
+      "instagram": "https://accountscenter.instagram.com/profiles/17841453639700579/",
+      "x": ""
     },
     {
-        "name": "Somrik Mondal",
-        "image": "/people/somrik-mondal.webp",
-        "linkedin": "https://www.linkedin.com/in/somrik-mondal-558aa8321",
-        "instagram": "https://www.instagram.com/myself_somrizz05",
-        "x": ""
+      "name": "Somrik Mondal",
+      "image": "/people/somrik-mondal.webp",
+      "linkedin": "https://www.linkedin.com/in/somrik-mondal-558aa8321",
+      "instagram": "https://www.instagram.com/myself_somrizz05",
+      "x": ""
     },
     {
-        "name": "Shreya Dey",
-        "image": "/people/shreya-dey.webp",
-        "linkedin": "https://www.linkedin.com/in/shreyadey04",
-        "instagram": "https://www.instagram.com/dey_shreya2004",
-        "x": ""
+      "name": "Shreya Dey",
+      "image": "/people/shreya-dey.webp",
+      "linkedin": "https://www.linkedin.com/in/shreyadey04",
+      "instagram": "https://www.instagram.com/dey_shreya2004",
+      "x": ""
     },
     {
-        "name": "Sandip Saha",
-        "image": "/people/sandip-saha.webp",
-        "linkedin": "https://www.linkedin.com/in/sandip-saha-87174628a",
-        "instagram": "https://www.instagram.com/venomoussweets2.9__",
-        "x": "https://x.com/2SanDip9"
+      "name": "Sandip Saha",
+      "image": "/people/sandip-saha.webp",
+      "linkedin": "https://www.linkedin.com/in/sandip-saha-87174628a",
+      "instagram": "https://www.instagram.com/venomoussweets2.9__",
+      "x": "https://x.com/2SanDip9"
     },
     {
-        "name": "Sneha Roy",
-        "image": "/people/sneha-roy.webp",
-        "linkedin": "https://www.linkedin.com/in/sneha-roy-7227b4257",
-        "instagram": "https://www.instagram.com/_.wheres_my_plumeria._",
-        "x": ""
+      "name": "Sneha Roy",
+      "image": "/people/sneha-roy.webp",
+      "linkedin": "https://www.linkedin.com/in/sneha-roy-7227b4257",
+      "instagram": "https://www.instagram.com/_.wheres_my_plumeria._",
+      "x": ""
     },
     {
-        "name": "Pritha Dalui",
-        "image": "/people/pritha-dalui.webp",
-        "linkedin": "https://www.linkedin.com/in/pritha-dalui-83a86b294",
-        "instagram": "https://www.instagram.com/pritha_0.006",
-        "x": ""
+      "name": "Pritha Dalui",
+      "image": "/people/pritha-dalui.webp",
+      "linkedin": "https://www.linkedin.com/in/pritha-dalui-83a86b294",
+      "instagram": "https://www.instagram.com/pritha_0.006",
+      "x": ""
     },
     {
-        "name": "Sayantanee Sinha",
-        "image": "/people/sayantanee-sinha.webp",
-        "linkedin": "",
-        "instagram": "https://www.instagram.com/sayantaneeeee",
-        "x": ""
+      "name": "Sayantanee Sinha",
+      "image": "/people/sayantanee-sinha.webp",
+      "linkedin": "",
+      "instagram": "https://www.instagram.com/sayantaneeeee",
+      "x": ""
     },
     {
-        "name": "Subrata Kundu",
-        "image": "/people/subrata-kundu.webp",
-        "linkedin": "https://www.linkedin.com/in/subrata-kundu-283a6a286",
-        "instagram": "https://www.instagram.com/subratakundu_art",
-        "x": ""
+      "name": "Subrata Kundu",
+      "image": "/people/subrata-kundu.webp",
+      "linkedin": "https://www.linkedin.com/in/subrata-kundu-283a6a286",
+      "instagram": "https://www.instagram.com/subratakundu_art",
+      "x": ""
     },
     {
-        "name": "Sreja Metya",
-        "image": "/people/sreja-metya.webp",
-        "linkedin": "https://www.linkedin.com/in/sreja-metya-41967328a",
-        "instagram": "https://www.instagram.com/sreja_metya",
-        "x": ""
+      "name": "Sreja Metya",
+      "image": "/people/sreja-metya.webp",
+      "linkedin": "https://www.linkedin.com/in/sreja-metya-41967328a",
+      "instagram": "https://www.instagram.com/sreja_metya",
+      "x": ""
     },
     {
-        "name": "Pousali Saha",
-        "image": "/people/pousali-saha.webp",
-        "linkedin": "https://www.linkedin.com/in/pousali-saha-104029217",
-        "instagram": "https://www.instagram.com/__.pousali.__",
-        "x": ""
+      "name": "Pousali Saha",
+      "image": "/people/pousali-saha.webp",
+      "linkedin": "https://www.linkedin.com/in/pousali-saha-104029217",
+      "instagram": "https://www.instagram.com/__.pousali.__",
+      "x": ""
     },
     {
-        "name": "Samadrito Samanta",
-        "image": "/people/samadrito-samanta.webp",
-        "linkedin": "https://www.linkedin.com/in/samadrito-samanta-860aa1292",
-        "instagram": "https://www.instagram.com/why.notsam_",
-        "x": ""
+      "name": "Samadrito Samanta",
+      "image": "/people/samadrito-samanta.webp",
+      "linkedin": "https://www.linkedin.com/in/samadrito-samanta-860aa1292",
+      "instagram": "https://www.instagram.com/why.notsam_",
+      "x": ""
     },
     {
-        "name": "Samadrita Hazra",
-        "image": "/people/samadrita-hazra.webp",
-        "linkedin": "https://www.linkedin.com/in/samadrita-hazra-39b452294",
-        "instagram": "https://www.instagram.com/_samadrita_",
-        "x": ""
+      "name": "Samadrita Hazra",
+      "image": "/people/samadrita-hazra.webp",
+      "linkedin": "https://www.linkedin.com/in/samadrita-hazra-39b452294",
+      "instagram": "https://www.instagram.com/_samadrita_",
+      "x": ""
     },
     {
-        "name": "Sneha Bhattacharjee",
-        "image": "/people/sneha-bhattacharjee.webp",
-        "linkedin": "https://www.linkedin.com/in/sneha-bhattacharjee-21122231a",
-        "instagram": "https://www.instagram.com/sneha_bhattacharyya_",
-        "x": ""
+      "name": "Sneha Bhattacharjee",
+      "image": "/people/sneha-bhattacharjee.webp",
+      "linkedin": "https://www.linkedin.com/in/sneha-bhattacharjee-21122231a",
+      "instagram": "https://www.instagram.com/sneha_bhattacharyya_",
+      "x": ""
     },
     {
       "name": "Rishika Yadav",
@@ -1403,15 +1396,13 @@
       "linkedin": "https://www.linkedin.com/in/rishika-yadav-819011282/",
       "instagram": "https://www.instagram.com/rishika.yadav.960/",
       "x": ""
- },
-
-{
-      "name" : "Swastika Ghosh",
+    },
+    {
+      "name": "Swastika Ghosh",
       "image": "/people/swastika-ghosh.webp",
-      "linkedIn" : "https://www.linkedin.com/in/swastika-ghosh-741a6128a/",
+      "linkedIn": "https://www.linkedin.com/in/swastika-ghosh-741a6128a/",
       "instagram": "https://www.instagram.com/okayyswas_/",
       "x": "https://x.com/idkswasss"
-}
-]
-
+    }
+  ]
 }

@@ -94,8 +94,8 @@
       "coordinators": [
         {
           "name": "Coordinator Name",
-          "contact": "1234567890", 
-        
+          "contact": "1234567890",
+
           "image": "/people/coordinator-name.webp"
         }
       ]
@@ -467,12 +467,12 @@
       "problem": "https://drive.google.com/file/d/1GBcsquA6WGxOiAJiufyYJJ7zam9bnFY6/view",
       "coordinators": [
         {
-          "name": "Rishin Das",
-          "contact": "+91 6291176318",
-          "image": "/people/rishin-das.webp",
-          "linkedin": "linkedin.com/in/rishindas",
-          "instagram": "https://www.instagram.com/rishin.xd",
-          "x": "https://x.com/RishinXD47"
+          "name": "Mayukh Nath",
+          "contact": "+91 94764 57562",
+          "image": "/people/mayukh-nath.webp",
+          "linkedin": "https://linkedin.com/in/mayukhnath",
+          "instagram": "",
+          "x": ""
         }
       ]
     }
