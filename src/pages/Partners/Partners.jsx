@@ -1,30 +1,32 @@
 import React from "react";
 import SectionContainer from "../../components/SectionContainer";
 
-
 const Partners = () => {
   const partners = [
-    { id: 1, name: "Sova", type: "Snack Partner", image: "/partners/sova.webp" },
-    { id: 2, name: "Mio Biscuits", type: "Snack Partner", image: "partners/mio.webp" },
-    { id: 3, name: "Inkzoid Foundation", type: "Community Partner", image: "/partners/inkzoid.webp" },
-    { id: 4, name: "HackX Community", type: "Promotional Partner", image: "/partners/hackx.webp" },
-    { id: 5, name: "Unbuttoned Bangaliana", type: "Social Media Partner", image: "/partners/ub.webp" },
-    { id: 6, name: "Edugraph", type: "Digital Media Partner", image: "/partners/edugraph.webp" },
-    { id: 7, name: "Kranti Foundation (Unity Rbtx)", type: "Workshop Partner", image: "/partners/kranti.webp" },
-    { id: 8, name: "Friends FM", type: "Exclusive Radio Partner", image: "/partners/friends.webp" },
-    { id: 9, name: "Jus' Jumpin'", type: "Official Fun Partner", image: "/partners/jusjumpin.webp" },
-    { id: 10, name: "Mercy For Animals", type: "Goodwill Partner", image: "/partners/mercy.webp" },
-    { id: 11, name: "Hayati", type: "Style Partner", image: "/partners/hayati.webp" },
-    { id: 12, name: "Body Engineering Suppliment", type: "Fitness Partner", image: "/partners/bes.webp" },
-    { id: 13, name: "Lets Game Now", type: "Experience Zone Partner", image: "/partners/game.webp" },
-    { id: 14, name: "Nalin Chandra Das & Sons", type: "Dessert Partner", image: "/partners/nalin.webp" },
-    { id: 15, name: "Marnix", type: "Auto Expo Partner", image: "/partners/marnix.webp" },
-    { id: 16, name: "Bengal Harley Davidson", type: "Auto Expo Partner", image: "/partners/bhd.webp" },
-    { id: 17, name: "Harley Davidson X440", type: "Auto Expo Partner", image: "/partners/x400.webp" },
-    { id: 18, name: "Citroën", type: "Auto Expo Partner", image: "/partners/citron.webp" }
-];
-
-  
+    { name: "Sova", type: "Snacks Partner", image: "/partners/sova.webp" },
+    { name: "Mio Biscuits", type: "Snacks Partner", image: "partners/mio.webp" },
+    { name: "Tea Junction", type: "Snacks Partner", image: "/partners/teajunction.webp" },
+    { name: "Berlin Burgers", type: "Food Partner", image: "/partners/berlinburgers.webp" },
+    { name: "Inkzoid Foundation", type: "Promotional Partner", image: "/partners/inkzoid.webp" },
+    { name: "HackX Community", type: "Community Partner", image: "/partners/hackx.webp" },
+    { name: "Unbuttoned Bangaliana", type: "Social Media Partner", image: "/partners/ub.webp" },
+    { name: "Edugraph", type: "Digital Media Partner", image: "/partners/edugraph.webp" },
+    { name: "Kranti Foundation (Unity Rbtx)", type: "Workshop Partner", image: "/partners/kranti.webp" },
+    { name: "Friends FM", type: "Exclusive Radio Partner", image: "/partners/friends.webp" },
+    { name: "Jus' Jumpin'", type: "Official Fun Partner", image: "/partners/jusjumpin.webp" },
+    { name: "Mercy For Animals", type: "Goodwill Partner", image: "/partners/mercy.webp" },
+    { name: "Hayati", type: "Style Partner", image: "/partners/hayati.webp" },
+    { name: "Crazine", type: "Style Partner", image: "/partners/crazine.webp" },
+    { name: "Body Engineering Suppliment", type: "Fitness Partner", image: "/partners/bes.webp" },
+    { name: "Nalin Chandra Das & Sons", type: "Dessert Partner", image: "/partners/nalin.webp" },
+    { name: "Catoff", type: "Esports Partner", image: "/partners/catoff.webp" },
+    { name: "Marnix", type: "Auto Expo Partner", image: "/partners/marnix.webp" },
+    { name: "Bengal Harley Davidson", type: "Auto Expo Partner", image: "/partners/bhd.webp" },
+    { name: "Harley Davidson X440", type: "Auto Expo Partner", image: "/partners/x400.webp" },
+    { name: "Citroën", type: "Auto Expo Partner", image: "/partners/citron.webp" },
+    { name: "Illicium Motors", type: "Electric Mobility Partner", image: "/partners/illiciummotors.webp" },
+    { name: "Printeez", type: "Merchandise Partner", image: "/partners/printeez.webp" },
+  ];
 
   return (
     <SectionContainer>
@@ -34,9 +36,9 @@ const Partners = () => {
         </h1>
 
         <div className="w-full mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center">
-          {partners.map((partner) => (
+          {partners.map((partner, index) => (
             <div
-              key={partner.id}
+              key={index}
               className="relative p-4 justify-between rounded-lg shadow-lg bg-[rgba(255,0,0,0.2)] card-glow w-full h-[420px] max-w-[350px]"
             >
               <img
