@@ -26,6 +26,19 @@ const Partners = () => {
     { name: "Citroën", type: "Auto Expo Partner", image: "/partners/citron.webp" },
     { name: "Illicium Motors", type: "Electric Mobility Partner", image: "/partners/illiciummotors.webp" },
     { name: "Printeez", type: "Merchandise Partner", image: "/partners/printeez.webp" },
+    { name: "UGG", type: "Partner Club", image: "/partners/ugg.webp" },
+    { name: "Iris", type: "Partner Club", image: "/partners/iris.webp" },
+    { name: "GDG on Campus UEMK", type: "Partner Club", image: "/partners/gdguemk.webp" },
+    { name: "ACM UEMK Student Chapter", type: "Partner Club", image: "/partners/acmuemk.webp" },
+    { name: "IEEE UEMK SB", type: "Partner Club", image: "/partners/ieeeuem.webp" },
+    { name: "GFG Student Chapter UEMK", type: "Partner Club", image: "/partners/gfguemk.webp" },
+    { name: "Design Society UEMK", type: "Partner Club", image: "/partners/dsuemk.webp" },
+    { name: "Robo Mellontikos UEMK", type: "Partner Club", image: "/partners/rm.webp" },
+    { name: "SPIE OPTICA", type: "Partner Club", image: "/partners/spieoptica.webp" },
+    { name: "Pragya", type: "Partner Club", image: "/partners/pragya.webp" },
+    { name: "UEMK CODING CLUB", type: "Partner Club", image: "/partners/ucc.webp" },
+    { name: "⁠Institution's Innovation Council UEMK", type: "Partner Club", image: "/partners/iicuem.webp" },
+    { name: "UEMK Space Observatory", type: "Partner Club", image: "/partners/uso.webp" },
   ];
 
   return (
